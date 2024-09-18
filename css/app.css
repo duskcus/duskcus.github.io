@@ -49,18 +49,49 @@ div.content {
   padding-left: 30px;
 }
 
-/* Styling code snippets */
+/* Container for code block and line numbers */
+.codesnippet-wrapper {
+  display: flex;
+  background-color: #EBEBE6;
+  border-left: 4px solid #940A24;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+/* Styling for the code snippet */
 .codesnippet {
   font-family: "Consolas", "Monaco", monospace;
-  background-color: #EBEBE6; /* Light background to distinguish code */
-  color: #333; /* Darker text color for readability */
-  padding: 10px 15px; /* Add padding for spacing */
-  border-left: 4px solid #940A24; /* Red vertical line to emphasize code */
-  border-radius: 5px; /* Slightly round the corners */
-  overflow-x: auto; /* Horizontal scrolling for long code */
-  white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  margin-bottom: 1em; /* Spacing below the code block */
-  font-size: 0.95em; /* Slightly smaller text */
-  line-height: 1.5em; /* Increase line height for readability */
+  padding: 10px 15px;
+  color: #333;
+  background-color: transparent;
+  white-space: pre;
+  overflow-x: auto;
+  margin: 0;
+  flex: 1;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+/* Styling for line numbers */
+.line-numbers {
+  background-color: #e8e2d0; /* Slightly different background for line numbers */
+  color: #666;
+  text-align: right;
+  padding: 10px 10px;
+  user-select: none; /* Prevent copying line numbers */
+  border-right: 1px solid #ddd;
+}
+
+.line-numbers span {
+  display: block;
+  padding-right: 10px;
+}
+
+/* Prevent unwanted spaces when copying */
+.codesnippet::before,
+.codesnippet::after {
+  content: "";
+  display: none;
 }
 
