@@ -20,8 +20,9 @@ body {
   color: black;
   padding: 16px;
   text-decoration: none;
+  cursor: pointer;
 }
- 
+
 .sidebar a.active {
   background-color: #940A24;
   color: #E8E2D0;
@@ -29,7 +30,6 @@ body {
 }
 
 .sidebar a:hover:not(.active) {
-  color: #E8E2D0;
   background-color: #CAC29F;
   color: black;
 }
@@ -39,6 +39,17 @@ div.content {
   padding: 0.5em 2.5em;
 }
 
+/* Collapse child links */
+.child-links {
+  display: none;
+  margin-left: 20px;
+}
+
+.child-links a {
+  padding-left: 30px;
+}
+
+/* Styling code snippets */
 .codesnippet {
   font-family: "Consolas", sans-serif;
 }
