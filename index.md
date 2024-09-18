@@ -4,10 +4,9 @@ title: Home
 ---
 
 <h1>Title</h1>
-<p>WIP:</p>
-<p>Navigation</p>
-<p>N00B section</p>
-<p>Tools section</p>
-<p>Collapseable sidebar</p>
-<p>Animations</p>
-<p>Folder structure: Root->Subject(Example = Laravel)->Intro->Quickstart</p>
+<li>Navigation</li>
+<li>N00B section</li>
+<li>Tools section</li>
+<li>Collapseable sidebar</li>
+<li>Animations</li>
+<i>Folder structure: Root->Subject(Example = Laravel)->Intro->Quickstart</i>
