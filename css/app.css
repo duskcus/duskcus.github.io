@@ -20,14 +20,19 @@ button {
   border-radius: 4px;
 }
 
-.button a.active {
+button a.active {
   background-color: #CAC29F;
   color: #E8E2D0;
 }
 
-.button a:hover:not(.active) {
+button a:hover:not(.active) {
   background-color: #CAC29F;
   color: #E8E2D0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .sidebar {
