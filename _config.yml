@@ -1,5 +1,5 @@
 # _config.yml
-title: ?
+title: DuskcuS
 description: Custom Jekyll site without a theme.
 baseurl: ""  # leave empty for root URL
 url: "https://duskcus.github.io"  # your GitHub Pages URL
