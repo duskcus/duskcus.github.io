@@ -69,8 +69,8 @@ div.content {
   overflow-x: auto;
   margin: 0;
   flex: 1;
-  font-size: 0.95em;
-  line-height: 1.5em;
+/*   font-size: 0.95em; */
+/*   line-height: 1.5em; */
 }
 
 /* Styling for line numbers */
