@@ -2,9 +2,30 @@
 <header>
   <h1>My Website</h1>
   <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
+    <div class="sidebar">
+      <!-- New section -->
+      <a href="/">Home</a>
+      <a href="/views/news">News</a>
+      <a href="/views/contact">Contact</a>
+      <a href="/views/about">About</a>
+  
+        <!-- New section -->
+        <a class="parent active" href="javascript:void(0)" id="home">Laravel 11</a>
+        <div class="child-links">
+          <a href="/views/news">Intro</a>
+          <a href="/views/contact">Contact</a>
+          <a href="/views/about">About</a>
+          <a href="/views/tools">Tools</a>
+        </div>
+  
+        <!-- New section -->
+        <!-- <a class="parent active" href="javascript:void(0)" id="home">Godot 4</a>
+        <div class="child-links">
+          <a href="/views/news">News</a>
+          <a href="/views/contact">Contact</a>
+          <a href="/views/about">About</a>
+          <a href="/views/tools">Tools</a>
+        </div> -->
+      </div>
   </nav>
 </header>
