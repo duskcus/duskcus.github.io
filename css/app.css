@@ -62,35 +62,31 @@ div.content {
 /* Styling for the code snippet */
 .codesnippet {
   font-family: "Consolas", "Monaco", monospace;
-  padding: 10px 15px;
   color: #333;
   background-color: transparent;
   white-space: pre;
   overflow-x: auto;
   margin: 0;
   flex: 1;
+  
+  padding: 10px 15px;
   font-size: 0.95em;
   line-height: 1.5em;
-  position: relative;
 }
 
 /* Styling for line numbers */
 .line-numbers {
-  background-color: #e8e2d0;
+  background-color: #e8e2d0; /* Slightly different background for line numbers */
   color: #666;
   text-align: right;
-  padding: 10px 0; /* Remove extra horizontal padding */
-  user-select: none;
+  padding: 10px 10px;
+  user-select: none; /* Prevent copying line numbers */
   border-right: 1px solid #ddd;
-  margin: 0;
-  font-size: 0.95em; /* Match font size with the code */
-  line-height: 1.5em; /* Match line height with the code */
 }
 
 .line-numbers span {
   display: block;
   padding-right: 10px;
-  height: 1.5em; /* Match line height with the code */
 }
 
 /* Prevent unwanted spaces when copying */
