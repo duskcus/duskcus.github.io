@@ -3,7 +3,7 @@ layout: default
 title: Laravel Introduction
 ---
 
-<h1>Introduction</h1>
+<h2>INTRODUCTION</h2>
 
 <h3>Why Laravel?</h3>
 
