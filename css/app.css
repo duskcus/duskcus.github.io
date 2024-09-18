@@ -30,7 +30,7 @@ body {
 .sidebar a:hover:not(.active) {
   color: #E8E2D0;
   background-color: #CAC29F;
-  color: white;
+  color: black;
 }
 
 div.content {
