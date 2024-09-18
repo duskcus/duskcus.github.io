@@ -1,12 +1,21 @@
 // FOR THE COLLAPSEABLE IN THE NAVIGATION
 document.addEventListener('DOMContentLoaded', function () {
-  var homeLink = document.getElementById('home');
-  
-  homeLink.addEventListener('click', function() {
-    var childLinks = document.querySelector('.child-links');
-    childLinks.style.display = childLinks.style.display === 'block' ? 'none' : 'block';
+  document.querySelectorAll('.parent').forEach(function (link) {
+    link.addEventListener('click', function() {
+      // Get the target ID from the data attribute
+      var targetId = this.getAttribute('data-target');
+      var childLinks = document.getElementById(targetId);
+
+      // Toggle the display of the corresponding child-links
+      if (childLinks.style.display === 'block') {
+        childLinks.style.display = 'none';
+      } else {
+        childLinks.style.display = 'block';
+      }
+    });
   });
 });
+
 
 // SETS NUMBERS FOR EACH LINE IN THE CODESNIPPET
 document.addEventListener("DOMContentLoaded", function() {
