@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background-color: #fff;
 }
 
 .sidebar {
@@ -21,7 +22,7 @@ body {
 }
  
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #4934B7;
   color: white;
 }
 
