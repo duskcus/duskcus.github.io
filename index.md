@@ -8,10 +8,9 @@ title: Home
 <li>Here I'll share development tools and plugins that will hugely improve the speed of your workflow.</li>
 <li>It is structured around telling you why you want to learn it, and what the benefit is.</li>
 
-<h1>Title</h1>
-<li>Navigation</li>
+<!-- <li>Navigation</li>
 <li>N00B section</li>
 <li>Tools section</li>
 <li>Collapseable sidebar</li>
 <li>Animations</li>
-<i>Folder structure: Root->Subject(Example = Laravel)->Intro->Quickstart</i>
+<i>Folder structure: Root->Subject(Example = Laravel)->Intro->Quickstart</i> -->
