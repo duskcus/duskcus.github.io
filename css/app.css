@@ -62,7 +62,7 @@ div.content {
 /* Styling for the code snippet */
 .codesnippet {
   font-family: "Consolas", "Monaco", monospace;
-  padding: 10px 15px;
+/*   padding: 10px 15px; */
   color: #333;
   background-color: transparent;
   white-space: pre;
