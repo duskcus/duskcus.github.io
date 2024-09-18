@@ -15,6 +15,7 @@ body {
 }
 
 .sidebar a {
+  text-transform: uppercase;
   display: block;
   color: black;
   padding: 16px;
