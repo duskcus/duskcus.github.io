@@ -1,4 +1,4 @@
-function myFunction(p1, p2) {
+function myFunction() {
     // JavaScript for collapsible functionality
     document.getElementById('home').addEventListener('click', function() {
       var childLinks = document.querySelector('.child-links');
