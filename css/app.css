@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: #fff;
+  background-color: #FAF9F6;
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #E8E2D0;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -22,8 +22,8 @@ body {
 }
  
 .sidebar a.active {
-  background-color: #4934B7;
-  color: white;
+  background-color: #CAC29F;
+  color: #F9A6A6;
 }
 
 .sidebar a:hover:not(.active) {
