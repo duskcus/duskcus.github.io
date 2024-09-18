@@ -22,12 +22,12 @@ button {
 
 .button a.active {
   background-color: #CAC29F;
-  color: E8E2D0;
+  color: #E8E2D0;
 }
 
 .button a:hover:not(.active) {
   background-color: #CAC29F;
-  color: E8E2D0;
+  color: #E8E2D0;
 }
 
 .sidebar {
