@@ -3,7 +3,7 @@ layout: default
 title: Laravel Set-up
 ---
 
-<h2>SET-UP</h2>
+<h2>1.2 SET-UP</h2>
 
 <h3>Required:</h3>
 <p>Follow the order as some software may depend on eachother.</p>
