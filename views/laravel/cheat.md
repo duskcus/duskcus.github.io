@@ -29,7 +29,7 @@ php artisan route:cache
 </div>
 
 <pre class="codesnippet">
-<code>let x = 10;
+<code>  let x = 10;
   let y = 20;
   console.log(x + y);</code></pre>
 
