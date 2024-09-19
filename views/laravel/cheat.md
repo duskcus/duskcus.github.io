@@ -30,13 +30,13 @@ php artisan route:cache</code></pre>
 
 <h3>Tech Stack:</h3>
 <ul>
-  <a href="https://laravel.com/docs/11.x/installation">Laravel: https://laravel.com/docs/11.x/installation</a>
-  <a href="https://tailwindcss.com/docs/guides/laravel">Tailwind CSS: https://tailwindcss.com/docs/guides/laravel</a>
-  <a href="https://daisyui.com/">Daisy UI: https://daisyui.com/</a>
-  <a href="https://www.chartjs.org/docs/latest/">Chart.js https://www.chartjs.org/docs/latest/</a>
-  <a href="https://www.mysql.com/downloads/">MySQL: https://www.mysql.com/downloads/</a>
-  <a href="https://firebase.google.com/">Firebase: https://firebase.google.com/</a>
-  <a href="https://livewire.laravel.com/">Livewire: https://livewire.laravel.com/</a>
+  <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
+  <p>Tailwind CSS: <a href="https://tailwindcss.com/docs/guides/laravel">https://tailwindcss.com/docs/guides/laravel</a></p>
+  <p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
+  <p>Chart.js <a href="https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></p>
+  <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
+  <p>Firebase: <a href="https://firebase.google.com/">https://firebase.google.com/</a></p>
+  <p>Livewire: <a href="https://livewire.laravel.com/">https://livewire.laravel.com/</a></p>
 </ul>
 
 
