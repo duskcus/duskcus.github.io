@@ -9,7 +9,7 @@ title: Laravel Cheat Sheet
 <p>One to many = foreign key</p>
 <p>Many to many = binding table</p>
 
-<b>Important commands:</b>
+<h3>Important commands:</h3>
 <pre class="codesnippet">
 <code>php artisan serve
 npm run dev
@@ -17,7 +17,7 @@ php artisan migrate:fresh --seed
 php artisan make:seeder ProductSeeder
 php artisan make:model Product --controller --resource --requests --migration --seed</div></pre>
 
-<b>Caching commands::</b>
+<h3>Caching commands:</h3>
 <pre class="codesnippet">
 <code>php artisan optimize
 php artisan cache:clear
