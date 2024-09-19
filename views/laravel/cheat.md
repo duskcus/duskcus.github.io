@@ -4,10 +4,11 @@ title: Laravel Cheat Sheet
 ---
 
 <h2>Cheat</h2>
-<b>Important for database/migrations::</b>
+<h3>Important for database/migrations:</h3>
 <p>One or many should be the ID in question.</p>
 <p>One to many = foreign key</p>
 <p>Many to many = binding table</p>
+<br>
 
 <h3>Important commands:</h3>
 <pre class="codesnippet">
@@ -16,6 +17,7 @@ npm run dev
 php artisan migrate:fresh --seed
 php artisan make:seeder ProductSeeder
 php artisan make:model Product --controller --resource --requests --migration --seed</code></pre>
+<br>
 
 <h3>Caching commands:</h3>
 <pre class="codesnippet">
