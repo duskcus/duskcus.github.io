@@ -3,16 +3,15 @@ layout: default
 title: Laravel Introduction
 ---
 
-<h2>QUICK START</h2>
+<h2>SETUP</h2>
 
-<h3>What is Laravel?</h3>
-Laravel is framework great for quickly making web apps. I like to compare it to python. It has a large ecosystem, it is somewhat slower compared to other frameworks, however in realtime it isn't noticeable in many cases. I would say this sums up the main reasons to use. You can make web apps extremely fast, however if the app needs to be extremely fast, which in most cases it doesn't need to be, don't use it.
+<h3>Requirements:</h3>
+<p>Follow the order as some software may depend on eachother.</p>
+<ol>
+  <li>Text Editor: In this guide I'll use Visual Studio Code</li>
+  <li>PHP: https://www.php.net/downloads</li>
+  <li>Composer: https://getcomposer.org/download/</li>
+  <li>Laravel: https://laravel.com/docs/11.x/installation</li>
+</ol>
 
-<h3>You need basic experience with:</h3>
-<ul>
-  <li>PHP</li>
-  <li>HTML</li>
-  <li>CSS</li>
-</ul>
-
-<button><a href="/views/laravel/quick_start">Next</a></button>
+<a href="/views/laravel/quick_start"><button>Next</button></a>
