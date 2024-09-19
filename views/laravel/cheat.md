@@ -27,6 +27,7 @@ php artisan route:clear
 php artisan view:clear
 php artisan config:clear
 php artisan route:cache</code></pre>
+<br>
 
 <h3>Tech Stack:</h3>
 <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
