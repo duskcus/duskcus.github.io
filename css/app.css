@@ -86,7 +86,7 @@ div.content {
   display: flex;
   background-color: #EBEBE6;
   border-left: 4px solid #940A24;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-bottom: 1em;
   overflow: hidden;
 }
@@ -101,6 +101,7 @@ div.content {
   margin: 0;
   flex: 1;
   
+  border-radius: 4px;
   padding: 10px 15px;
   font-size: 0.95em;
   line-height: 1.5em;
