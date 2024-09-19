@@ -20,12 +20,12 @@ button {
   border-radius: 4px;
 }
 
-button a.active {
+a button.active {
   background-color: #CAC29F;
   color: #E8E2D0;
 }
 
-button a:hover:not(.active) {
+a button:hover:not(.active) {
   background-color: #CAC29F;
   color: #E8E2D0;
 }
