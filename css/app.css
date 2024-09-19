@@ -33,6 +33,10 @@ p {
   text-justify: inter-word;
 }
 
+.margin-text {
+  margin-right: 20%;
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
