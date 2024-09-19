@@ -9,9 +9,9 @@ title: Laravel Introduction
 <p>Follow the order as some software may depend on eachother.</p>
 <ol>
   <li>Text Editor: In this guide I'll use Visual Studio Code</li>
-  <li>PHP: https://www.php.net/downloads</li>
-  <li>Composer: https://getcomposer.org/download/</li>
-  <li>Laravel: https://laravel.com/docs/11.x/installation</li>
+  <li>PHP: <a href="https://www.php.net/downloads">https://www.php.net/downloads</a></li>
+  <li>Composer: <a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></li>
+  <li>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></li>
 </ol>
 
-<a href="/views/laravel/quick_start"><button>Next</button></a>
+<a href="/views/laravel/setup"><button>Next</button></a>
