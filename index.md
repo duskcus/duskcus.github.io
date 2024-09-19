@@ -3,12 +3,12 @@ layout: default
 title: Home
 ---
 
-<div class="text-center">
-  <h1>What is this site?</h1>
-  <li>This site was made to show you how to make applications in a way that is common at the workplace based on my experience.</li>
-  <li>Here I'll share development tools and plugins that will hugely improve the speed of your workflow.</li>
-  <li>It is structured around telling you why you want to learn it, and what the benefit is.</li>
-</div>
+
+<h1>What is this site?</h1>
+<li>This site was made to show you how to make applications in a way that is common at the workplace based on my experience.</li>
+<li>Here I'll share development tools and plugins that will hugely improve the speed of your workflow.</li>
+<li>It is structured around telling you why you want to learn it, and what the benefit is.</li>
+
 
 <!-- <li>Navigation</li>
 <li>N00B section</li>
