@@ -95,7 +95,7 @@ div.content {
 .codesnippet {
   font-family: "Consolas", "Monaco", monospace;
   color: #333;
-  background-color: transparent;
+  background-color: #EBEBE6;
   white-space: pre;
   overflow-x: auto;
   margin: 0;
