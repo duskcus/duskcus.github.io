@@ -29,7 +29,6 @@ php artisan config:clear
 php artisan route:cache</code></pre>
 
 <h3>Tech Stack:</h3>
-
 <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
 <p>Tailwind CSS: <a href="https://tailwindcss.com/docs/guides/laravel">https://tailwindcss.com/docs/guides/laravel</a></p>
 <p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
