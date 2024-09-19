@@ -16,9 +16,8 @@ title: Laravel Set-up
 </ol>
 
 <h3>Step 1. Create a Laravel project:</h3>
-<pre class="codesnippet">
-<code>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.
-laravel new projectname</code></pre>
+<p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.
+laravel new projectname</p>
 
 <h3>Step 2. Open your folder in cmd and install Tailwind:</h3>
 <pre class="codesnippet">
