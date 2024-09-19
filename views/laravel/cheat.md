@@ -10,7 +10,7 @@ title: Laravel Cheat Sheet
 <p>Many to many = binding table</p>
 <br>
 
-<h3>Important commands:</h3>
+<h3>Important Commands:</h3>
 <pre class="codesnippet">
 <code>php artisan serve
 npm run dev
@@ -19,7 +19,7 @@ php artisan make:seeder ProductSeeder
 php artisan make:model Product --controller --resource --requests --migration --seed</code></pre>
 <br>
 
-<h3>Caching commands:</h3>
+<h3>Caching Commands:</h3>
 <pre class="codesnippet">
 <code>php artisan optimize
 php artisan cache:clear
