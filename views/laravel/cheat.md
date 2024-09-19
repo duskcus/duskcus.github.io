@@ -15,7 +15,7 @@ title: Laravel Cheat Sheet
 npm run dev
 php artisan migrate:fresh --seed
 php artisan make:seeder ProductSeeder
-php artisan make:model Product --controller --resource --requests --migration --seed</div></pre>
+php artisan make:model Product --controller --resource --requests --migration --seed</code></pre>
 
 <h3>Caching commands:</h3>
 <pre class="codesnippet">
