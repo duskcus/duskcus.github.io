@@ -15,4 +15,72 @@ title: Laravel Set-up
   <li>Localhost: <a href="https://dbngin.com/download">https://dbngin.com/download</a></li>
 </ol>
 
+<h3>Step 1. Create a Laravel project:</p>
+<pre class="codesnippet">
+<code>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.
+laravel new projectname</code></pre>
+
+<h3>Step 2. Open your folder in cmd and install Tailwind:</p>
+<pre class="codesnippet">
+<code>npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p</code></pre>
+
+<h3>Step 3. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</p>
+<pre class="codesnippet">
+<code>@tailwind base;
+@tailwind components;
+@tailwind utilities;</code></pre>
+
+<h3>Step 4. Install daisyUI in your folders cmd:</p>
+<pre class="codesnippet">
+<code>npm i -D daisyui@latest</code></pre>
+
+<h3>Step 5. Then add daisyUI to your Projectname/tailwind.config.js files:</p>
+<pre class="codesnippet">
+<code>/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [require("daisyui")],
+    // Add the daisyui configuration here
+    daisyui: {
+        themes: ["light", "dark", "THEME YOU LIKE"],
+    },
+    }</code></pre>
+
+<h3>Extra 6. Or you can use your own theme:</p>
+<pre class="codesnippet">
+<code>module.exports = {
+  //...
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#a991f7",
+          "secondary": "#f6d860",
+          "accent": "#37cdbe",
+          "neutral": "#3d4451",
+          "base-100": "#ffffff",
+          "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
+          "--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
+          "--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
+          "--animation-btn": "0.25s", // duration of animation when you click on button
+          "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
+          "--btn-focus-scale": "0.95", // scale transform of button when you focus on it
+          "--border-btn": "1px", // border width of buttons
+          "--tab-border": "1px", // border width of tabs
+          "--tab-radius": "0.5rem", // border radius of tabs
+        },
+      },
+    ],
+  },
+}</code></pre>
+
+
 <a href="/views/laravel/setup"><button>Next</button></a>
