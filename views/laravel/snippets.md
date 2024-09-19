@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Laravel Introduction
+title: Laravel Snippets
 ---
 
-<h2>INTRODUCTION</h2>
-
-<h3>What is Laravel?</h3>
+<h2>SNIPPETS</h2>
 
 <h3>You need basic experience with:</h3>
 <li>PHP</li>
