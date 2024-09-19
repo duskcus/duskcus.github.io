@@ -30,13 +30,13 @@ php artisan route:cache</code></pre>
 
 <h3>Tech Stack:</h3>
 <ul>
-  <li>Laravel: https://laravel.com/docs/11.x/installation</li>
-  <li>Tailwind CSS: https://tailwindcss.com/docs/guides/laravel</li>
-  <li>Daisy UI: https://daisyui.com/</li>
-  <li>Chart.js https://www.chartjs.org/docs/latest/</li>
-  <li>MySQL: https://www.mysql.com/downloads/</li>
-  <li>Firebase: https://firebase.google.com/</li>
-  <li>Livewire: https://livewire.laravel.com/</li>
+  <li><a>Laravel: https://laravel.com/docs/11.x/installation</a></li>
+  <li><a>Tailwind CSS: https://tailwindcss.com/docs/guides/laravel</a></li>
+  <li><a>Daisy UI: https://daisyui.com/</a></li>
+  <li><a>Chart.js https://www.chartjs.org/docs/latest/</a></li>
+  <li><a>MySQL: https://www.mysql.com/downloads/</a></li>
+  <li><a>Firebase: https://firebase.google.com/</a></li>
+  <li><a>Livewire: https://livewire.laravel.com/</a></li>
 </ul>
 
 
