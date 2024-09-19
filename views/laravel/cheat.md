@@ -24,7 +24,7 @@ php artisan cache:clear
 php artisan route:clear
 php artisan view:clear
 php artisan config:clear
-php artisan route:cache;</code></pre>
+php artisan route:cache</code></pre>
 
 
 <!-- <button href="/views/laravel/quick_start">Back</button>-->
