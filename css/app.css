@@ -22,12 +22,10 @@ button {
 
 a button.active {
   background-color: #CAC29F;
-  color: #E8E2D0;
 }
 
 a button:hover:not(.active) {
   background-color: #CAC29F;
-  color: #E8E2D0;
 }
 
 p {
