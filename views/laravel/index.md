@@ -6,7 +6,7 @@ title: Laravel Introduction
 <h2>1.1 INTRODUCTION</h2>
 
 <h3>What is Laravel?</h3>
-<p>Laravel is framework great for quickly making web apps. I like to compare it to python. It has a large ecosystem, it is somewhat slower compared to other frameworks, however in realtime it isn't noticeable in many cases. I would say this sums up the main reasons to use. You can make web apps extremely fast, however if the app needs to be extremely fast, which in most cases it doesn't need to be, don't use it.</p>
+<p>Laravel is a great framework for quickly building web apps, with a large ecosystem. While it's slightly slower than some frameworks, the difference is often negligible. It's ideal for most projects unless when N2 notation becomes critical, which in 99% of cases it won't.</p>
 
 <h3>What do you need?</h3>
 <p>Basics in the following:</p>
