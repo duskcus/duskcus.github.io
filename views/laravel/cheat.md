@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Laravel Snippets
+title: Laravel Cheat Sheet
 ---
 
-<h2>SNIPPETS</h2>
+<h2>Cheat</h2>
 
 <h3>You need basic experience with:</h3>
 <li>PHP</li>
