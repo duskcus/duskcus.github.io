@@ -28,6 +28,17 @@ php artisan view:clear
 php artisan config:clear
 php artisan route:cache</code></pre>
 
+<h3>Tech Stack:</h3>
+<ul>
+  <li>Laravel: https://laravel.com/docs/11.x/installation</li>
+  <li>Tailwind CSS: https://tailwindcss.com/docs/guides/laravel</li>
+  <li>Daisy UI: https://daisyui.com/</li>
+  <li>Chart.js https://www.chartjs.org/docs/latest/</li>
+  <li>MySQL: https://www.mysql.com/downloads/</li>
+  <li>Firebase: https://firebase.google.com/</li>
+  <li>Livewire: https://livewire.laravel.com/</li>
+</ul>
+
 
 <!-- <button href="/views/laravel/quick_start">Back</button>-->
 <!-- <button href="/views/laravel/quick_start">Next</button> -->
