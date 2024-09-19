@@ -51,9 +51,9 @@ export default {
     daisyui: {
         themes: ["light", "dark", "THEME YOU LIKE"],
     },
-    }</code></pre>
+  }</code></pre>
 
-<h3>Extra 6. Or you can use your own theme:</h3>
+<p>Or you can use your own theme:</hp>
 <pre class="codesnippet">
 <code>module.exports = {
   //...
