@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Laravel Introduction
+title: Laravel Set-up
 ---
 
-<h2>SETUP</h2>
+<h2>SET-UP</h2>
 
 <h3>Required:</h3>
 <p>Follow the order as some software may depend on eachother.</p>
