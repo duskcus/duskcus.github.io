@@ -19,6 +19,8 @@ title: Laravel Introduction
 
 <h3>What Will You Learn?</h3>
 <ul>
+  <li>Setting-up a Development Environment</li>
+  <li>Installing Packages</li>
   <li>Component Based Coding</li>
   <li>Tailwind CSS and Daisy UI</li>
   <li>Models, Views and Controllers</li>
