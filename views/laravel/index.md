@@ -15,4 +15,4 @@ Laravel is framework great for quickly making web apps. I like to compare it to 
   <li>CSS</li>
 </ul>
 
-<a href="/views/laravel/setup"><button>Next</button></a>
+<a href="/views/laravel/setup"><button>Start Course</button></a>
