@@ -5,7 +5,7 @@ title: Laravel Introduction
 
 <h2>SETUP</h2>
 
-<h3>Minimum Requirements:</h3>
+<h3>Required:</h3>
 <p>Follow the order as some software may depend on eachother.</p>
 <ol>
   <li>Text Editor: In this guide I'll use Visual Studio Code</li>
