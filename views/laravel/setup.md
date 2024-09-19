@@ -53,7 +53,7 @@ export default {
     },
   }</code></pre>
 
-<p>Or you can use your own theme:</hp>
+<p>Or you can use your own theme:</p>
 <pre class="codesnippet">
 <code>module.exports = {
   //...
