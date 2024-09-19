@@ -31,8 +31,7 @@ php artisan route:cache
 <pre class="codesnippet">
 <code>let x = 10;
   let y = 20;
-  console.log(x + y);</code>
-  </pre>
+  console.log(x + y);</code></pre>
 
 
 <!-- <button href="/views/laravel/quick_start">Back</button>-->
