@@ -10,6 +10,9 @@
   div.content {
     margin: 0;
   }
+  .child-links {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
