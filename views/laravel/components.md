@@ -23,11 +23,10 @@ title: Laravel Components
 
 <h3>Step 2. Open your project folder in terminal and run the following commands:</h3>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
+  <div class="line-numbers"></div>
+  <pre class="codesnippet"><code>php artisan serve
+npm run dev</code></pre>
 </div>
-<pre class="codesnippet">
-<code>php artisan serve
-npm run dev</code></pre></div>
 <br>
 
 
@@ -35,109 +34,100 @@ npm run dev</code></pre></div>
 <p>Use all the code snippets presented in the example. You will probably need a formatting extension.
 Example of a layout page we’ll call later.</p>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
+  <div class="line-numbers"></div>
+  <pre class="codesnippet"><code>&lt;!DOCTYPE html&gt;
+&lt;html data-theme="nord" lang="&#123;&#123; str_replace('_', '-', app()-&gt;getLocale()) &#125;&#125;"&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;&#123;&#123; config('app.name', 'Laravel') &#125;&#125;&lt;/title&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+&lt;head&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;
+    &lt;script src="https://kit.fontawesome.com/29c53c0003.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &#64;vite('resources/css/app.css')
+&lt;/head&gt;
+
+&lt;body class="mx-auto"&gt;
+    &#123;&#123;-- INCLUDES FOR COMPONENTS --&#125;&#125;
+    &#64;include('components.navbar')
+
+    &lt;main&gt;
+        &#123;&#123;-- YIELD FOR CONTENT --&#125;&#125;
+        &#64;yield('content')
+    &lt;/main&gt;
+
+    &#64;include('components.footer')
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 </div>
-<pre class="codesnippet">
-<code><!DOCTYPE html>
-<html data-theme="nord" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<meta charset="UTF-8">
-<title>{{ config('app.name', 'Laravel') }}</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://kit.fontawesome.com/29c53c0003.js" crossorigin="anonymous"></script>
-    @vite('resources/css/app.css')
-</head>
-
-<body class="mx-auto">
-    {{-- INCLUDES FOR COMPONENTS --}}
-    @include('components.navbar')
-
-    <main>
-        {{-- YIELD FOR CONTENT --}}
-        @yield('content')
-    </main>
-
-    @include('components.footer')
-
-</body>
-
-</html></code></pre></div>
 <br>
 
 
 <h3>Step 4. Create a file “navbar.blade.php” within “views/components”:</h3>
-<p>Example of a blade file that would replace @include(‘navbar’):</p>
+<p>Example of a blade file that would replace &#64;include('navbar'):</p>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code><nav class="shadow-md bg-primary p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path
-                    d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-.707-6.293a1 1 0 1 1 1.414-1.414A2 2 0 0 0 10 8a2 2 0 0 0-1.707 1.707z" />
-            </svg>
-            <span class="font-semibold text-xl ml-2 mr-6">Logo</span>
+  <div class="line-numbers"></div>
+  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-primary p-4"&gt;
+    &lt;div class="max-w-7xl mx-auto flex justify-between items-center"&gt;
+        &lt;!-- Logo --&gt;
+        &lt;div class="flex items-center flex-shrink-0 text-white mr-6"&gt;
+            &lt;svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;
+                &lt;path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-.707-6.293a1 1 0 1 1 1.414-1.414A2 2 0 0 0 10 8a2 2 0 0 0-1.707 1.707z" /&gt;
+            &lt;/svg&gt;
+            &lt;span class="font-semibold text-xl ml-2 mr-6"&gt;Logo&lt;/span&gt;
+        &lt;/div&gt;
 
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="hidden md:block">
-            <a href="#"  class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+        &lt;!-- Navigation Links --&gt;
+        &lt;div class="hidden md:block"&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
                 Home
-            </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+            &lt;/a&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
                 Products
-            </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+            &lt;/a&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
                 About
-            </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+            &lt;/a&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
                 Services
-            </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300">
+            &lt;/a&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300"&gt;
                 Contact
-            </a>
-        </div>
-    </div>
-</nav> </code></pre></div>
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
 <br>
 
 
 <h3>Step 5. Create a file “footer.blade.php” within “components”:</h3>
-<p>Example of a blade file that would replace @include(‘footer’):</p>
+<p>Example of a blade file that would replace &#64;include('footer'):</p>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
+  <div class="line-numbers"></div>
+  <pre class="codesnippet"><code>&lt;!-- Footer --&gt;
+&lt;footer&gt;
+    &lt;div class="bg-primary text-center py-3 text-white"&gt;
+        &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
 </div>
-<pre class="codesnippet">
-<code>    <!-- Footer -->
-    <footer>
-        <div class="bg-primary text-center py-3 text-white">
-            <p>&copy; 2024 Your Website. All rights reserved.</p>
-        </div>
-    </footer></code></pre></div>
 <br>
 
 
 <h3>Step 6. Create a file “index.blade.php” within “views”:</h3>
-<p>Example of a blade file that would replace @yield:</p>
+<p>Example of a blade file that would replace &#64;yield:</p>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>@extends('layouts.layout')
+  <div class="line-numbers"></div>
+  <pre class="codesnippet"><code>&#64;extends('layouts.layout')
 
-{{-- @SECTION FOR THE START CONTENT --}}
-@section('content')
-    <section>
+&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
+    &lt;section&gt;
         hello world.
-    </section>
-
-    {{-- @ENDSECTION FOR THE END OF CONTENT --}}
-@endsection</code></pre></div>
+    &lt;/section&gt;
+&#64;endsection</code></pre>
+</div>
 <br>
 
 
