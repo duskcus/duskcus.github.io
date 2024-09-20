@@ -114,7 +114,9 @@ div.content {
   text-align: right;
   padding: 10px 10px;
   user-select: none; /* Prevent copying line numbers */
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #ddd;  
+  /* font-size: 0.95em; */
+  line-height: 1.5em;
 }
 
 .line-numbers span {
