@@ -38,3 +38,9 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
+
+div.content {
+  margin-right: 40%;
+  margin-left: 300px;
+  padding: 0.5em 2.5em;
+}
