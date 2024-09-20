@@ -2,7 +2,7 @@
 layout: default
 title: Laravel Set-up
 ---
-<p>Current URL: {{ page.url }}</p>
+
 <h2>1.2 SET-UP</h2>
 
 <h3>Required:</h3>
