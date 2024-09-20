@@ -35,13 +35,16 @@
 .sidebar a.active {
   background-color: #940A24;
   color: #E8E2D0;
-  font-weight: bold;
 }
 
 /* Hover effect */
 .sidebar a:hover:not(.active) {
   background-color: #CAC29F;
   color: black;
+}
+
+.parent {
+  font-weight: bold;
 }
 
 /* Child links indentation */
