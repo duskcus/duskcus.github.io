@@ -17,25 +17,40 @@ title: Laravel Set-up
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
-<code>laravel new projectname</code></pre>
+<code>laravel new projectname</code></pre></div>
 
 <h3>Step 2. Open your folder in cmd and install Tailwind:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
 <code>npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p</code></pre>
+npx tailwindcss init -p</code></pre></div>
 
 <h3>Step 3. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
 <code>@tailwind base;
 @tailwind components;
-@tailwind utilities;</code></pre>
+@tailwind utilities;</code></pre></div>
 
 <h3>Step 4. Install daisyUI in your folders cmd:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
-<code>npm i -D daisyui@latest</code></pre>
+<code>npm i -D daisyui@latest</code></pre></div>
 
 <h3>Step 5. Then add daisyUI to your Projectname/tailwind.config.js files:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
 <code>/** @type {import('tailwindcss').Config} */
 export default {
@@ -52,12 +67,13 @@ export default {
     daisyui: {
         themes: ["light", "dark", "THEME YOU LIKE"],
     },
-  }</code></pre>
+  }</code></pre></div>
 
 <p>Or you can use your own theme:</p>
-<pre class="codesnippet">
-<code>module.exports = {
-  //...
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>module.exports = {  //...
   daisyui: {
     themes: [
       {
@@ -80,7 +96,7 @@ export default {
       },
     ],
   },
-}</code></pre>
+}</code></pre></div>
 
 
 <a href="/views/laravel/setup"><button>Next</button></a>
