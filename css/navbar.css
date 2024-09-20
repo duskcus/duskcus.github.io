@@ -25,7 +25,8 @@
   text-transform: uppercase;
   display: block;
   color: black;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottem: 16px;
   text-decoration: none;
   cursor: pointer;
   border-bottom: solid 1px #333;
@@ -48,8 +49,8 @@ a .parent {
 }
 
 /* Child links indentation */
-.child-links a {
-  padding-left: 20px !important;
+.sidebar .child-links a {
+    padding-left: 20px;
 }
 
 /* Hamburger menu */
