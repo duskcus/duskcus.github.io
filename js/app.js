@@ -38,27 +38,26 @@ document.addEventListener("DOMContentLoaded", function() {
 // HAMBURGER MENU
 const navSlide = () => {
     const Burger = document.querySelector('.burger');
-    const Nav = document.querySelector('.nav-links');
-    const NavLinks = document.querySelectorAll('.nav-links li');
+    const Nav = document.querySelector('.sidebar'); // Target sidebar for toggling
+    const NavLinks = document.querySelectorAll('.sidebar a');
     
     Burger.addEventListener('click', () => {
-        //togglenav
+        // Toggle sidebar visibility
         Nav.classList.toggle('nav-active');
         
-        //animated links
+        // Animate the links
         NavLinks.forEach((link, index) => {
-            if (link.style.animation)
-            {
+            if (link.style.animation) {
                 link.style.animation = '';
-            } 
-            else
-            {
+            } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 + 0.5}s`;
             }
         });
-        //burger animation
-        Burger.classList.toggle('toggle')
+
+        // Animate burger icon
+        Burger.classList.toggle('toggle');
     });
 }
 
 navSlide();
+
