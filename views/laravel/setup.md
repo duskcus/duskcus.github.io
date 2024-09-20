@@ -98,4 +98,4 @@ export default {
 }</code></pre></div>
 
 
-<a href="/views/laravel/setup"><button>Next</button></a>
+<a href="/views/laravel/components"><button>Next</button></a>

@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
   const sidebar = document.querySelector('.sidebar');
+  const navLinks = document.querySelectorAll('.sidebar a');
 
   // Check localStorage to see if the hamburger menu should be open
   if (localStorage.getItem('menuState') === 'open') {
@@ -54,16 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Toggle the hamburger menu and save its state
   burger.addEventListener('click', function () {
-    const isMenuOpen = sidebar.classList.contains('nav-active');
+    sidebar.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
 
-    // Toggle classes based on the current state
-    if (!isMenuOpen) {
-      sidebar.classList.add('nav-active');
-      burger.classList.add('toggle');
+    // Save the menu state in localStorage
+    if (sidebar.classList.contains('nav-active')) {
       localStorage.setItem('menuState', 'open');
     } else {
-      sidebar.classList.remove('nav-active');
-      burger.classList.remove('toggle');
       localStorage.setItem('menuState', 'closed');
     }
   });
