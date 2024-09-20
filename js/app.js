@@ -34,3 +34,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+// HAMBURGER MENU
+const navSlide = () => {
+    const Burger = document.querySelector('.burger');
+    const Nav = document.querySelector('.nav-links');
+    const NavLinks = document.querySelectorAll('.nav-links li');
+    
+    Burger.addEventListener('click', () => {
+        //togglenav
+        Nav.classList.toggle('nav-active');
+        
+        //animated links
+        NavLinks.forEach((link, index) => {
+            if (link.style.animation)
+            {
+                link.style.animation = '';
+            } 
+            else
+            {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 + 0.5}s`;
+            }
+        });
+        //burger animation
+        Burger.classList.toggle('toggle')
+    });
+}
+
+navSlide();
