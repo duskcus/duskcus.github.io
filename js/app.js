@@ -1,19 +1,46 @@
 // FOR THE COLLAPSEABLE IN THE NAVIGATION
 document.addEventListener('DOMContentLoaded', function () {
+  // Function to handle the toggle of the collapsible section
   document.querySelectorAll('.parent').forEach(function (link) {
+    // Get the target ID from the data attribute
+    var targetId = link.getAttribute('data-target');
+    var childLinks = document.getElementById(targetId);
+
+    // Check localStorage to see if this section should be open
+    if (localStorage.getItem(targetId) === 'open') {
+      childLinks.style.display = 'block'; // Keep it open if stored as 'open'
+    } else {
+      childLinks.style.display = 'none'; // Otherwise, it's closed
+    }
+
+    // Add click event listener to toggle the section
     link.addEventListener('click', function() {
-      // Get the target ID from the data attribute
-      var targetId = this.getAttribute('data-target');
-      var childLinks = document.getElementById(targetId);
-      // Toggle the display of the corresponding child-links
       if (childLinks.style.display === 'block') {
         childLinks.style.display = 'none';
+        localStorage.setItem(targetId, 'closed'); // Save the closed state
       } else {
         childLinks.style.display = 'block';
+        localStorage.setItem(targetId, 'open');   // Save the open state
       }
     });
   });
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.querySelectorAll('.parent').forEach(function (link) {
+//     link.addEventListener('click', function() {
+//       // Get the target ID from the data attribute
+//       var targetId = this.getAttribute('data-target');
+//       var childLinks = document.getElementById(targetId);
+//       // Toggle the display of the corresponding child-links
+//       if (childLinks.style.display === 'block') {
+//         childLinks.style.display = 'none';
+//       } else {
+//         childLinks.style.display = 'block';
+//       }
+//     });
+//   });
+// });
 
 
 // SETS NUMBERS FOR EACH LINE IN THE CODESNIPPET
