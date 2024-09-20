@@ -7,13 +7,13 @@
   .sidebar a {
     text-align: center;
     float: none;
-    padding: 0;
+    padding: 16px 0px;
   }
   div.content {
     margin: 0;
   }
   .sidebar .child-links a {
-      padding: 0;
+      padding: 16px 0px;
   }
 }
 
