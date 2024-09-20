@@ -7,12 +7,14 @@ title: Laravel Set-up
 
 <h3>Required:</h3>
 <p>Follow the order as some software may depend on eachother.</p>
-<p>Text Editor: In this guide I'll use Visual Studio Code</p>
+<p>Text Editor: <a href="https://code.visualstudio.com/download">In this guide I'll use Visual Studio Code</a></p>
 <p>PHP: <a href="https://www.php.net/downloads">https://www.php.net/downloads</a></p>
 <p>Composer: <a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
 <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
 <p>Localhost: <a href="https://dbngin.com/download">https://dbngin.com/download</a></p>
 
+
+Setup env file and database
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>

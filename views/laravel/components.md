@@ -3,7 +3,7 @@ layout: default
 title: Laravel Components
 ---
 
-<h2>Components</h2>
+<h2>1.3 COMPONENTS</h2>
 
 <h3>Step 1. Create the following folders in your views:</h3>
 <ul>
@@ -13,26 +13,32 @@ title: Laravel Components
         </ul>
     <li>components
         <ul>
-            <li>footer</li>
-            <li>header</li>
+            <li>footer.blade.php</li>
+            <li>header.blade.php</li>
         </ul>
     </li>
     <li>index.blade.php</li>
 </ul>
 
-<h3>Step 1. Create the following folders in your views:</h3>
-<p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>
+
+<h3>Step 2. Open your project folder in terminal and run the following commands:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
-<code>laravel new projectname</code></pre></div>
+<code>php artisan serve
+npm run dev</code></pre></div>
 <br>
 
-Step 2. Create a file “layout.blade.php” within “views/layouts”:
-Use all the code snippets presented in the example. You will probably need a formatting extension.
-Example of a layout page we’ll call later.
-<!DOCTYPE html>
+
+<h3>Step 3. Create a file “layout.blade.php” within “views/layouts”:</h3>
+<p>Use all the code snippets presented in the example. You will probably need a formatting extension.
+Example of a layout page we’ll call later.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code><!DOCTYPE html>
 <html data-theme="nord" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <meta charset="UTF-8">
 <title>{{ config('app.name', 'Laravel') }}</title>
@@ -56,13 +62,17 @@ Example of a layout page we’ll call later.
 
 </body>
 
-</html>
+</html></code></pre></div>
+<br>
 
 
- 
-Step 3. Create a file “navbar.blade.php” within “views/components”:
-Example of a blade file that would replace @include(‘navbar’):
-<nav class="shadow-md bg-primary p-4">
+<h3>Step 4. Create a file “navbar.blade.php” within “views/components”:</h3>
+<p>Example of a blade file that would replace @include(‘navbar’):</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code><nav class="shadow-md bg-primary p-4">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -93,19 +103,32 @@ Example of a blade file that would replace @include(‘navbar’):
             </a>
         </div>
     </div>
-</nav> 
-Step 4. Create a file “footer.blade.php” within “components”:
-Example of a blade file that would replace @include(‘footer’):
-    <!-- Footer -->
+</nav> </code></pre></div>
+<br>
+
+
+<h3>Step 5. Create a file “footer.blade.php” within “components”:</h3>
+<p>Example of a blade file that would replace @include(‘footer’):</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code>    <!-- Footer -->
     <footer>
         <div class="bg-primary text-center py-3 text-white">
             <p>&copy; 2024 Your Website. All rights reserved.</p>
         </div>
-    </footer>
+    </footer></code></pre></div>
+<br>
 
-Step 5. Create a file “index.blade.php” within “views”:
-Example of a blade file that would replace @yield:
-@extends('layouts.layout')
+
+<h3>Step 6. Create a file “index.blade.php” within “views”:</h3>
+<p>Example of a blade file that would replace @yield:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code>@extends('layouts.layout')
 
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
@@ -114,11 +137,12 @@ Example of a blade file that would replace @yield:
     </section>
 
     {{-- @ENDSECTION FOR THE END OF CONTENT --}}
-@endsection
+@endsection</code></pre></div>
+<br>
 
 
-You should have a functioning page by now:
-You can now start replacing content within the sections.
+<p>You should have a functioning page by now:
+You can now start replacing content within the sections.</p>
 
 
 <a href="/views/laravel/setup"><button>Start Course</button></a>
