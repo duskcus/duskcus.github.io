@@ -6,12 +6,13 @@
   }
   .sidebar a {
     float: left;
+    padding: 0;
   }
   div.content {
     margin: 0;
   }
-  .child-links {
-    margin: 0;
+  .sidebar .child-links a {
+      padding: 0;
   }
 }
 
