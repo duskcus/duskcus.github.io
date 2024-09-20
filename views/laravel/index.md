@@ -29,6 +29,36 @@ title: Laravel Introduction
   <li>Livewire and Alpine.JS</li>
 </ul>
 
+```
+<!DOCTYPE html>
+<html data-theme="nord" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<meta charset="UTF-8">
+<title>{{ config('app.name', 'Laravel') }}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/29c53c0003.js" crossorigin="anonymous"></script>
+    @vite('resources/css/app.css')
+</head>
+
+<body class="mx-auto">
+    {{-- INCLUDES FOR COMPONENTS --}}
+    @include('components.navbar')
+
+    <main>
+        {{-- YIELD FOR CONTENT --}}
+        @yield('content')
+    </main>
+
+    @include('components.footer')
+
+</body>
+
+</html>
+![image](https://github.com/user-attachments/assets/ead56e6f-7f3c-4a72-be29-2cef2083e533)
+
+```
+
 Lastly there will be downloads and a cheatsheet.
 
 <a href="/views/laravel/setup"><button>Start Course</button></a>
