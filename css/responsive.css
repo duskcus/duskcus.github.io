@@ -32,7 +32,7 @@
     float: none;
   }
   button {
-    text-size: 1em;
+    font-size: 1em;
     padding: 12px 24px;
   }
 }
