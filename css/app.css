@@ -78,6 +78,9 @@ div.content {
 /* Collapse child links */
 .child-links {
   display: none;
+}
+
+.child-links a {
   padding-left: 20px !important;
 }
 
