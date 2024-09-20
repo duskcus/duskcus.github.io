@@ -48,7 +48,7 @@ Example of a layout page we’ll call later.</p>
 
 &lt;body class="mx-auto"&gt;
     &#123;&#123;-- INCLUDES FOR COMPONENTS --&#125;&#125;
-    &#64;include('components.navbar')
+    &#64;include('components.header')
 
     &lt;main&gt;
         &#123;&#123;-- YIELD FOR CONTENT --&#125;&#125;
@@ -63,8 +63,8 @@ Example of a layout page we’ll call later.</p>
 <br>
 
 
-<h3>Step 4. Create a file “navbar.blade.php” within “views/components”:</h3>
-<p>Example of a blade file that would replace &#64;include('navbar'):</p>
+<h3>Step 4. Create a file “header.blade.php” within “views/components”:</h3>
+<p>Example of a blade file that would replace &#64;include('header'):</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
   <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-primary p-4"&gt;
