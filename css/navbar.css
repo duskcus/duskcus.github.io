@@ -1,4 +1,4 @@
-/* Sidebar styling */
+/* SIDEBAR  */
 .sidebar {
   margin: 0;
   padding: 0;
@@ -7,20 +7,8 @@
   position: fixed;
   height: 100%;
   overflow: auto;
-  transition: transform 0.3s ease;
 }
 
-/* Sidebar is hidden by default on mobile */
-.sidebar {
-  transform: translateX(-100%);
-}
-
-/* When nav is active (for hamburger menu toggle) */
-.sidebar.nav-active {
-  transform: translateX(0);
-}
-
-/* Sidebar links */
 .sidebar a {
   text-transform: uppercase;
   display: block;
@@ -31,51 +19,28 @@
   border-bottom: solid 1px #333;
 }
 
-/* Active link style */
 .sidebar a.active {
   background-color: #940A24;
   color: #E8E2D0;
-  font-weight: bold;
+  font-weight: bold; /* changed to 'bold' for clarity */
 }
 
-/* Hover effect */
 .sidebar a:hover:not(.active) {
   background-color: #CAC29F;
   color: black;
 }
 
-/* Child links indentation */
+div.content {
+  margin-right: 40%;
+  margin-left: 300px;
+  padding: 0.5em 2.5em;
+}
+
+/* Collapse child links */
+.child-links {
+  display: none;
+}
+
 .child-links a {
   padding-left: 20px !important;
-}
-
-/* Hamburger menu */
-.burger {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 10;
-}
-
-.burger div {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px;
-  transition: all 0.3s ease;
-}
-
-/* Burger toggle effect */
-.burger.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.burger.toggle .line2 {
-  opacity: 0;
-}
-
-.burger.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
