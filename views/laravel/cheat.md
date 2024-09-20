@@ -3,7 +3,7 @@ layout: default
 title: Laravel Cheat Sheet
 ---
 
-<h2>Cheat</h2>
+<h2>CHEAT</h2>
 <h3>Important for database/migrations:</h3>
 <p>One or many should be the ID in question.</p>
 <p>One to many = foreign key</p>
