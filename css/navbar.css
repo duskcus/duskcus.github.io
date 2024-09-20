@@ -51,7 +51,7 @@
 
 /* Hamburger menu */
 .burger {
-  display: none;
+  display: block;
   cursor: pointer;
   position: absolute;
   top: 15px;
