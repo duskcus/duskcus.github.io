@@ -13,14 +13,6 @@
   .child-links {
     margin: 0;
   }
-
-  .sidebar {
-    width: 250px;
-  }
-
-  .sidebar.nav-active {
-    transform: translateX(0);
-  }
 }
 
 @media screen and (max-width: 425px) {
