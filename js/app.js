@@ -41,25 +41,30 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// HAMBURGER MENU
-const navSlide = () => {
-    const Burger = document.querySelector('.burger');
-    const Nav = document.querySelector('.sidebar'); // Target sidebar for toggling
-    const NavLinks = document.querySelectorAll('.sidebar a');
-    Burger.addEventListener('click', () => {
-        // Toggle sidebar visibility
-        Nav.classList.toggle('nav-active');
-        // Animate the links
-        NavLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 + 0.5}s`;
-            }
-        });
-        // Animate burger icon
-        Burger.classList.toggle('toggle');
-    });
-}
-navSlide();
+// FOR THE HAMBURGER MENU AND PERSISTENT NAVIGATION
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.burger');
+  const sidebar = document.querySelector('.sidebar');
+  const navLinks = document.querySelectorAll('.sidebar a');
+
+  // Check localStorage to see if the hamburger menu should be open
+  if (localStorage.getItem('menuState') === 'open') {
+    sidebar.classList.add('nav-active');
+    burger.classList.add('toggle');
+  }
+
+  // Toggle the hamburger menu and save its state
+  burger.addEventListener('click', function () {
+    sidebar.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+
+    // Save the menu state in localStorage
+    if (sidebar.classList.contains('nav-active')) {
+      localStorage.setItem('menuState', 'open');
+    } else {
+      localStorage.setItem('menuState', 'closed');
+    }
+  });
+});
+
 
