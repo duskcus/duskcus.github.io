@@ -23,13 +23,16 @@ php artisan make:model Product --controller --resource --requests --migration --
 <br>
 
 <h3>Caching Commands:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
 <pre class="codesnippet">
 <code>php artisan optimize
 php artisan cache:clear
 php artisan route:clear
 php artisan view:clear
 php artisan config:clear
-php artisan route:cache</code></pre>
+php artisan route:cache</code></pre></div>
 <br>
 
 <h3>Tech Stack:</h3>
