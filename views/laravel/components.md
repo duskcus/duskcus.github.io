@@ -131,7 +131,7 @@ Example of a layout page we’ll call later.</p>
 <br>
 
 
-<p>You should have a functioning page by now:
+<p>You should have a functioning page by now.
 You can now start replacing content within the sections.</p>
 
 
