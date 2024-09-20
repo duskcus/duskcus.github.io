@@ -78,11 +78,7 @@ div.content {
 /* Collapse child links */
 .child-links {
   display: none;
-  margin-left: 20px;
-}
-
-.child-links a {
-  padding-left: 30px;
+  padding-left: 20px !important;
 }
 
 /* Container for code block and line numbers */
