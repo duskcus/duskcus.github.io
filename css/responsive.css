@@ -21,6 +21,7 @@
     float: none;
   }
   button {
-    text-size: 1.5em;
+    text-size: 1em;
+    padding: 12px 24px;
   }
 }
