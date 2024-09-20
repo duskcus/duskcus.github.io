@@ -14,7 +14,7 @@ title: Laravel Set-up
 <p>Localhost: <a href="https://dbngin.com/download">https://dbngin.com/download</a></p>
 
 
-Setup env file and database
+<!-- Setup env file and database -->
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>
