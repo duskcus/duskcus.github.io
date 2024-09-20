@@ -1,3 +1,4 @@
+/* MODIFIED EXISTING HTML */
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -38,6 +39,8 @@ p {
   text-justify: inter-word;
 }
 
+
+/* SIDEBAR  */
 .sidebar {
   margin: 0;
   padding: 0;
@@ -61,7 +64,7 @@ p {
 .sidebar a.active {
   background-color: #940A24;
   color: #E8E2D0;
-  font-weight: semi-bold;
+  font-weight: bold; /* changed to 'bold' for clarity */
 }
 
 .sidebar a:hover:not(.active) {
@@ -84,6 +87,8 @@ div.content {
   padding-left: 20px !important;
 }
 
+
+/* CODESNIPPETS */
 /* Container for code block and line numbers */
 .codesnippet-wrapper {
   display: flex;
