@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
 // HAMBURGER MENU
 const navSlide = () => {
     const Burger = document.querySelector('.burger');
