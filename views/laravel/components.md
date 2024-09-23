@@ -30,7 +30,7 @@ npm run dev</code></pre>
 <br>
 
 
-<h3>Step 3. Create a file “layout.blade.php” within “views/layouts”:</h3>
+<h3>Step 3. Create a file “default.blade.php” within “views/layouts”:</h3>
 <p>Use all the code snippets presented in the example. You will probably need a formatting extension.
 Example of a layout page we’ll call later.</p>
 <div class="codesnippet-wrapper">
