@@ -43,7 +43,7 @@ Example of a layout page we’ll call later.</p>
     &#64;vite('resources/css/app.css')
 &lt;/head&gt;
 
-&lt;body class="mx-auto"&gt;
+&lt;body class="mx-auto bg-base-300"&gt;
     &#123;&#123;-- INCLUDES FOR COMPONENTS --&#125;&#125;
     &#64;include('components.header')
 
@@ -64,7 +64,7 @@ Example of a layout page we’ll call later.</p>
 <p>Example of a blade file that would replace &#64;include('header'):</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-primary p-4"&gt;
+  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-base-300 p-4"&gt;
     &lt;div class="max-w-7xl mx-auto flex justify-between items-center"&gt;
         &lt;!-- Logo --&gt;
         &lt;div class="flex items-center flex-shrink-0 text-white mr-6"&gt;
@@ -99,7 +99,7 @@ Example of a layout page we’ll call later.</p>
   <div class="line-numbers"></div>
   <pre class="codesnippet"><code>&lt;!-- Footer --&gt;
 &lt;footer&gt;
-    &lt;div class="bg-primary text-center py-3 text-white"&gt;
+    &lt;div class="bg-base-100 text-center py-3 text-white"&gt;
         &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/footer&gt;</code></pre>
