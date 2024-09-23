@@ -60,7 +60,7 @@ return new class extends Migration
 <pre class="codesnippet"><code>php artisan migrate</code></pre></div>
 
 
-<p>Alternatively you can also run this command to delete the your existing database and run migrations in one go, do keep in mind that this should never be done when running in production.</p>
+<p>Alternatively you can also run this command to delete the your existing database and run migrations in one go, do keep in mind that this should never be done when running in production as all oyur data will be lost.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
