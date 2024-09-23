@@ -18,5 +18,14 @@ title: Laravel Controllers
 </div>
 <pre class="codesnippet"><code>php artisan make:controlelr ProductController –-resource</code></pre></div>
 
+
+<h3>Controllers Logic</h3>
+<p>For this example we will look at a resource controlller:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>use App\Model\Product;</code></pre></div>
+
+
 <a href="/views/laravel/models"><button>Back</button></a>
 <a href="/views/laravel/seeders"><button>Next</button></a>
