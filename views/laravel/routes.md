@@ -19,7 +19,7 @@ title: Laravel Seeders
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>Route::get('/login', [AuthController::class, 'login'])->name('login');;
+<pre class="codesnippet"><code>Route::get('/login', [AuthController::class, 'login'])->name('login');</code></pre></div>
 
 <h3>Route with Parameters</h3>
 <div class="codesnippet-wrapper">
