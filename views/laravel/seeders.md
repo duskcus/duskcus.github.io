@@ -4,9 +4,11 @@ title: Laravel Seeders
 ---
 
 <h2>4. SEEDERS</h2>
-You can make tables in your databases quickly when developing with others:
-The following command and naming scheme is used to create a migration, with “products” being interchangeable. This will make a migration in app/database/migrations. It’s IMPORTANT to note that Laravel uses naming these naming schemes to read in data in general, so to prevent any debugging sessions try to follow these naming schemes.
+<p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others:
+To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
+
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>php artisan make:migration create_products_table</code></pre></div>
+<pre class="codesnippet"><code>php artisan make:seeder ProductSeeder()
+</code></pre></div>
