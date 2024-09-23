@@ -52,10 +52,10 @@ class ProductSeeder extends Seeder
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet">// Beneath namespace
+<pre class="codesnippet"><code>// Beneath namespace
   use App\Models\Product;
   // In public function run
-  <code>$this->call(ProductSeeder::class);</code></pre></div>
+  $this->call(ProductSeeder::class);</code></pre></div>
 
 <h3>DatabaseSeeder Example:</h3>
 <div class="codesnippet-wrapper">
