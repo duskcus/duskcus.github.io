@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
     }
 }</code></pre></div>
 
-<h3>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder.</h3>
+<h3>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
