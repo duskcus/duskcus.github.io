@@ -11,11 +11,11 @@ title: Laravel Controllers
 </div>
 <pre class="codesnippet"><code>php artisan make:controller ProductController</code></pre></div>
 
-<p>The easiest way to make a controller, model and resource is as followed, in this example “Product” needs to be capitalised:</p>
+<p>Laravel also has an alternative option for CRUD applications, here routes will automaticly created.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>php artisan make:model Product --controller –-resource</code></pre></div>
+<pre class="codesnippet"><code>php artisan make:controlelr ProductController –-resource</code></pre></div>
 
 <a href="/views/laravel/models"><button>Back</button></a>
 <a href="/views/laravel/seeders"><button>Next</button></a>
