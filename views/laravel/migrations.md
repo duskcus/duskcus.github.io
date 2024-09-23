@@ -68,4 +68,4 @@ return new class extends Migration
 
 
 <a href="/views/laravel/components"><button>Back</button></a>
-<a href="/views/laravel/controllers"><button>Next</button></a>
+<a href="/views/laravel/models"><button>Next</button></a>
