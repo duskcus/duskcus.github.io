@@ -5,13 +5,14 @@ title: Laravel Models
 
 <h2>1.2 MODELS</h2>
 <p>Models are a bit like blueprints, they are often specifically made to communicate between a controller and a view or contain the logic for interacting with a database. Laravel expects it to be a capilised singular noun so what you would type to make one would be:</p>
+<br>
 
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan make:model Product</code></pre></div>
 
-<h3>Model Example</h3>
+<h3>Example Model</h3>
 <p>Models are a bit like blueprints, they are often specifically made to communicate between a controller and a view or contain the logic for interacting with a database. Laravel expects it to be a capilised singular noun so what you would type to make one would be:</p>
 
 <div class="codesnippet-wrapper">
