@@ -3,7 +3,7 @@ layout: default
 title: Laravel Set-up
 ---
 
-<h2>1 SET-UP</h2>
+<h2>1. SET-UP</h2>
 <p>Starting this demo we'll be making a webshop.</p>
 
 <h3>Required:</h3>
