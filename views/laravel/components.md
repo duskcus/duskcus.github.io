@@ -27,7 +27,6 @@ title: Laravel Components
   <pre class="codesnippet"><code>php artisan serve
 npm run dev</code></pre>
 </div>
-<br>
 
 
 <h3>Step 3. Create a file “default.blade.php” within “views/layouts”:</h3>
