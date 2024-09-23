@@ -46,3 +46,39 @@ class ProductSeeder extends Seeder
         }
     }
 }</code></pre></div>
+
+<p>Lastly you will have to add the following line inside app/database/seeders/DatabaseSeeder.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>$this->call(ItemSeeder::class);</code></pre></div>
+
+<p>DatabaseSeeder Example:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code><?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        User::factory(10)->create();
+
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
+
+        $this->call(ItemSeeder::class);
+    }
+}</code></pre></div>
