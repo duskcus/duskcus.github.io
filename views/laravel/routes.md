@@ -15,6 +15,11 @@ title: Laravel Seeders
     return 'index';
 })->name('home');</code></pre></div>
 
+<h3>Route with Function</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>Route::get('/login', [AuthController::class, 'login'])->name('login');;
 
 <h3>Route with Parameters</h3>
 <div class="codesnippet-wrapper">
