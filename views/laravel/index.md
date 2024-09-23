@@ -29,6 +29,6 @@ title: Laravel Introduction
   <li>Livewire and Alpine.JS</li>
 </ul>
 
-Lastly there will be downloads and a cheatsheet.
+<p>Lastly there will be downloads and a cheatsheet.</p>
 
 <a href="/views/laravel/setup"><button>Start Course</button></a>
