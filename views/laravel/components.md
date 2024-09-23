@@ -125,7 +125,7 @@ Example of a layout page we’ll call later.</p>
 
 
 <p>You should have a functioning page by now.
-You can now start replacing content within the @sections.</p>
+You can start replacing content within the @sections.</p>
 
 
 <a href="/views/laravel/setup"><button>Back</button></a>
