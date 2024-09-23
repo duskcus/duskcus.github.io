@@ -12,8 +12,8 @@ title: Laravel Seeders
 </div>
 <pre class="codesnippet"><code>Route::get('/home', function () {
     return view('home')
-})->name('profile');;
-});</code></pre></div>
+})->name('profile');
+;</code></pre></div>
 
 <h3>Route with Parameters</h3>
 <div class="codesnippet-wrapper">
