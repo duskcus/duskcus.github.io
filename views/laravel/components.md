@@ -112,7 +112,7 @@ Example of a layout page we’ll call later.</p>
 <p>Example of a blade file that would replace &#64;yield:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&#64;extends('layouts.layout')
+  <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
 &#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
 &#64;section('content')
