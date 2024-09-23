@@ -13,8 +13,12 @@ Go over different blueprint functions such as timestamps:
 
 3.1 Example Code:
 
-Migration example:
-<?php
+<h3>Example Migration:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code><?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -33,7 +37,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('price');
             $table->string('image')->nullable();
-            $table->integer('amount');
+            $table->integer('stock');
             $table->string('category');
             $table->timestamps();
         });
@@ -46,5 +50,8 @@ return new class extends Migration
     {
         Schema::dropIfExists('products');
     }
-};
+};</code></pre></div>
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/f5485505-4098-47e9-aeb4-49303e6e03f5)
