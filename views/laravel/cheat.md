@@ -5,8 +5,10 @@ title: Laravel Cheat Sheet
 
 <h2>CHEATSHEET</h2>
 <h3>Important for database/migrations:</h3>
-<p>One or many should be the ID in question.</p>
+<p>Every unique customer can buy multiple products.</p>
 <p>One to many = foreign key</p>
+<br>
+<p>Multiple products can have the same multiple ingredients.</p>
 <p>Many to many = binding table</p>
 <br>
 
