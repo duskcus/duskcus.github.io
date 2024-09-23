@@ -15,8 +15,6 @@ title: Laravel Set-up
 <p>Localhost: <a href="https://dbngin.com/download">https://dbngin.com/download</a></p>
 
 
-<!-- Setup env file and database -->
-
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>
 <div class="codesnippet-wrapper">
@@ -25,7 +23,20 @@ title: Laravel Set-up
 <pre class="codesnippet">
 <code>laravel new projectname</code></pre></div>
 
-<h3>Step 2. Open your folder in cmd and install Tailwind:</h3>
+<h3>Step 2. Setup the .ENV file:</h3>
+<p>Most of the defaults should be fine, but these should be edited:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=databasename
+DB_USERNAME=root
+DB_PASSWORD=</code></pre></div>
+
+<h3>Step 3. Open your folder in cmd and install Tailwind:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -33,7 +44,7 @@ title: Laravel Set-up
 <code>npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p</code></pre></div>
 
-<h3>Step 3. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</h3>
+<h3>Step 4. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -42,14 +53,14 @@ npx tailwindcss init -p</code></pre></div>
 @tailwind components;
 @tailwind utilities;</code></pre></div>
 
-<h3>Step 4. Install daisyUI in your folders cmd:</h3>
+<h3>Step 5. Install daisyUI in your folders cmd:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
 <code>npm i -D daisyui@latest</code></pre></div>
 
-<h3>Step 5. Then add daisyUI to your Projectname/tailwind.config.js files:</h3>
+<h3>Step 6. Then add daisyUI to your Projectname/tailwind.config.js files:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
