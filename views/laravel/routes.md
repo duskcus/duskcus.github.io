@@ -11,8 +11,8 @@ title: Laravel Seeders
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>Route::get('/home', function () {
-    return 'index';
+<pre class="codesnippet"><code>Route::get('/', function () {
+    return view('index');
 })->name('home');</code></pre></div>
 
 <h3>Route with Function</h3>
