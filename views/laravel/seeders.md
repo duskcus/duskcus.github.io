@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'sword',
                 'description' => '1',
-                'price' => '1',
+                'price' => '50',
                 'stock' => '10',
                 'category' => 'weapon',
             ]
