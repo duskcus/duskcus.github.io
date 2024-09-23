@@ -8,12 +8,12 @@ title: Home
 <!-- <h3>In Completed</h3> -->
 
 <h3>In Progress</h3>
-<button>Laravel</button>
+<button>Laravel 11</button>
 
 <h3>To Be Coming Guides</h3>
-<button>Godot</button>
-<button>GitHub</button>
-<button>Hacking</button>
+<button>Godot 4.3</button>
+<button>GitHub 2024</button>
+<button>Hacking 2024</button>
 
 <!-- <h3>Set-up Guides Development Environment</h3> -->
 <!-- <button>Windows</button> -->
