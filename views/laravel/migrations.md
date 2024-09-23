@@ -4,6 +4,7 @@ title: Laravel Migrations
 ---
 
 <h2>1.3. MIGRATIONS</h2>
+<h3>Creating Migrations:</h3>
 <p>You can make tables in your databases quickly when developing with others:
 The following command and naming scheme is used to create a migration, with “products” being interchangeable. This will make a migration in app/database/migrations. It’s <b style="color:red;">IMPORTANT</b> to note that Laravel uses these naming schemes to read in data in general, so to prevent any debugging sessions try to follow these naming schemes. Lastly, it is important to note that Laravel does the migrations in order. So, if there are migrations which are dependent on eachother you may want to change the date to change the order.</p>
 <div class="codesnippet-wrapper">
