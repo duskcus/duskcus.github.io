@@ -17,7 +17,7 @@ title: Laravel Set-up
 
 
 <h3>Step 1. Create a Laravel project:</h3>
-<p>“projectname” can be changed to desired name. PS, you note that, everything I underline tends to be for changeable names.</p>
+<p>“projectname” can be changed to desired name.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
