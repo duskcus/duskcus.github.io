@@ -10,7 +10,7 @@ The following command and naming scheme is used to create a migration, with “p
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan make:migration create_products_table</code></pre></div>
-
+<br>
 
 <h3>Example Migration:</h3>
 <div class="codesnippet-wrapper">
@@ -50,7 +50,7 @@ return new class extends Migration
         Schema::dropIfExists('products');
     }
 };</code></pre></div>
-
+<br>
 
 <h3>Running migrations</h3>
 <p>To add these tables into your database you can run the following command:</p>
@@ -58,7 +58,7 @@ return new class extends Migration
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan migrate</code></pre></div>
-
+<br>
 
 <p>Alternatively you can also run this command to delete the your existing database and run migrations in one go, do keep in mind that this should never be done when running in production as all oyur data will be lost.</p>
 <div class="codesnippet-wrapper">
