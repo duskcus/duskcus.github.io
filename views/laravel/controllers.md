@@ -3,7 +3,7 @@ layout: default
 title: Laravel Controllers
 ---
 
-<h2>1.3 CONTROLLERS</h2>
+<h2>1.6 CONTROLLERS</h2>
 
 <h3>Creating Controllers</h3>
 <p>To simply make a controller use this command:</p>
