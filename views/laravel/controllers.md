@@ -10,3 +10,6 @@ The following command and naming scheme is used to create a migration, with “p
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan make:migration create_products_table</code></pre></div>
+
+<a href="/views/laravel/models"><button>Back</button></a>
+<a href="/views/laravel/seeders"><button>Next</button></a>
