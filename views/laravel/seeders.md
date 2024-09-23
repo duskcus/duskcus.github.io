@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
     }
 }</code></pre></div>
 
-<p>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder.</p>
+<h3>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder.</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -57,7 +57,7 @@ class ProductSeeder extends Seeder
   // In public function run
   <code>$this->call(ProductSeeder::class);</code></pre></div>
 
-<p>DatabaseSeeder Example:</p>
+<h3>DatabaseSeeder Example:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
