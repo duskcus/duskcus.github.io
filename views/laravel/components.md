@@ -69,9 +69,7 @@ Example of a layout page we’ll call later.</p>
     &lt;div class="max-w-7xl mx-auto flex justify-between items-center"&gt;
         &lt;!-- Logo --&gt;
         &lt;div class="flex items-center flex-shrink-0 text-white mr-6"&gt;
-            &lt;svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;
-                &lt;path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-.707-6.293a1 1 0 1 1 1.414-1.414A2 2 0 0 0 10 8a2 2 0 0 0-1.707 1.707z" /&gt;
-            &lt;/svg&gt;
+            &lt;!-- Logo Image --&gt;
             &lt;span class="font-semibold text-xl ml-2 mr-6"&gt;Logo&lt;/span&gt;
         &lt;/div&gt;
 
@@ -85,9 +83,6 @@ Example of a layout page we’ll call later.</p>
             &lt;/a&gt;
             &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
                 About
-            &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
-                Services
             &lt;/a&gt;
             &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300"&gt;
                 Contact
