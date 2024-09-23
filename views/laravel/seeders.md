@@ -86,3 +86,16 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductSeeder::class);
     }
 }</code></pre></div>
+
+<h3>Running Seeders:</h3>
+<p>You can run your seeder with the following command:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>php artisan db:seed ProductSeeder</code></pre></div>
+
+<p>Alternatively, you can also migrate fresh and seed:</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>php artisan migrate:fresh --seed</code></pre></div>
