@@ -47,11 +47,14 @@ class ProductSeeder extends Seeder
     }
 }</code></pre></div>
 
-<p>Lastly you will have to add the following line inside app/database/seeders/DatabaseSeeder.</p>
+<p>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>$this->call(ItemSeeder::class);</code></pre></div>
+<pre class="codesnippet">// Beneath namespace
+  use App\Models\Product;
+  // In public function run
+  <code>$this->call(ProductSeeder::class);</code></pre></div>
 
 <p>DatabaseSeeder Example:</p>
 <div class="codesnippet-wrapper">
@@ -62,7 +65,7 @@ class ProductSeeder extends Seeder
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -79,6 +82,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        $this->call(ItemSeeder::class);
+        $this->call(ProductSeeder::class);
     }
 }</code></pre></div>
