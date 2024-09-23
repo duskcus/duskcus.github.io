@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Laravel Migrations
+title: Laravel Controllers
 ---
 
-<h2>1.3 MIGRATIONS</h2>
+<h2>1.3 CONTROLLERS</h2>
 You can make tables in your databases quickly when developing with others:
 The following command and naming scheme is used to create a migration, with “products” being interchangeable. This will make a migration in app/database/migrations. It’s IMPORTANT to note that Laravel uses naming these naming schemes to read in data in general, so to prevent any debugging sessions try to follow these naming schemes.
 <div class="codesnippet-wrapper">
