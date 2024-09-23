@@ -7,7 +7,6 @@ title: Laravel Cheat Sheet
 <h3>Important for database/migrations:</h3>
 <p>Every unique customer can buy multiple products = One to many = foreign key</p>
 <p>Multiple products can have the same multiple ingredients = Many to many = binding table</p>
-<br>
 
 <h3>Important Commands:</h3>
 <div class="codesnippet-wrapper">
@@ -18,7 +17,6 @@ title: Laravel Cheat Sheet
 npm run dev
 php artisan migrate:fresh --seed
 php artisan make:model Product --controller --resource --requests --migration --seed</code></pre></div>
-<br>
 
 <h3>Caching Commands:</h3>
 <div class="codesnippet-wrapper">
@@ -31,7 +29,6 @@ php artisan route:clear
 php artisan view:clear
 php artisan config:clear
 php artisan route:cache</code></pre></div>
-<br>
 
 <h3>Tech Stack:</h3>
 <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
