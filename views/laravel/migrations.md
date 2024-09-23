@@ -52,6 +52,3 @@ return new class extends Migration
     }
 };</code></pre></div>
 <br>
-
-
-![image](https://github.com/user-attachments/assets/f5485505-4098-47e9-aeb4-49303e6e03f5)
