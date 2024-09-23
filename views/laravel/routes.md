@@ -35,8 +35,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>
-Route::resource('posts', PostController::class);</code></pre></div>
+<pre class="codesnippet"><code>Route::resource('posts', PostController::class);</code></pre></div>
 
 
 <h3>Route with Middleware</h3>
