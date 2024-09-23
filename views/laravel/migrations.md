@@ -10,7 +10,6 @@ The following command and naming scheme is used to create a migration, with “p
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan make:migration create_products_table</code></pre></div>
-<br>
 
 <h3>Example Migration:</h3>
 <div class="codesnippet-wrapper">
