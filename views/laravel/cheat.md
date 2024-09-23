@@ -17,7 +17,6 @@ title: Laravel Cheat Sheet
 <code>php artisan serve
 npm run dev
 php artisan migrate:fresh --seed
-php artisan make:seeder ProductSeeder
 php artisan make:model Product --controller --resource --requests --migration --seed</code></pre></div>
 <br>
 
