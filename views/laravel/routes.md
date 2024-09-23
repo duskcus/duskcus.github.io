@@ -31,6 +31,14 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 });</code></pre></div>
 
 
+<h3>Resource Route</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>
+Route::resource('posts', PostController::class);</code></pre></div>
+
+
 <h3>Route with Middleware</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
@@ -66,7 +74,4 @@ Route::prefix('admin')->group(function () {
     Route::get('/users', function () {
         return 'Manage Users';
     });
-});
-
-</code></pre></div>
-
+});</code></pre></div>
