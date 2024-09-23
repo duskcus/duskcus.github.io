@@ -15,12 +15,29 @@ title: Laravel Seeders
     return view('index');
 })->name('home');</code></pre></div>
 
+
+<h3>When Using Functions Call the Controller with Use</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>use App\Http\Controllers\ProductController;</code></pre></div>
+
+
 <h3>Route with Function</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>Route::get('/login', [AuthController::class, 'login'])->name('login');</code></pre></div>
 
+
+<h3>Resource Route</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>Route::resource('posts', PostController::class);</code></pre></div>
+
+
+<h2>Alternative Options</h2>
 <h3>Route with Parameters</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
@@ -34,13 +51,6 @@ Route::get('/user/{id}', function ($id) {
 Route::get('/user/{name?}', function ($name = 'Guest') {
     return 'Hello, '.$name;
 });</code></pre></div>
-
-
-<h3>Resource Route</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>Route::resource('posts', PostController::class);</code></pre></div>
 
 
 <h3>Route with Middleware</h3>
