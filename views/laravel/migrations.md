@@ -65,3 +65,7 @@ return new class extends Migration
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan migrate:fresh</code></pre></div>
+
+
+<a href="/views/laravel/components"><button>Back</button></a>
+<a href="/views/laravel/controllers"><button>Next</button></a>
