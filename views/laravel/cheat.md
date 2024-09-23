@@ -41,7 +41,6 @@ php artisan route:cache</code></pre></div>
 <p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
 <p>Chart.js <a href="https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></p>
 <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
-<p>Firebase: <a href="https://firebase.google.com/">https://firebase.google.com/</a></p>
 <p>Livewire: <a href="https://livewire.laravel.com/">https://livewire.laravel.com/</a></p>
 
 
