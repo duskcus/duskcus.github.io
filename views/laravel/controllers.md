@@ -42,7 +42,7 @@ class ProductController extends Controller
         $products = Product::all();
 
         // Return a view with products data
-        return view('products.index', compact('products'));
+        return view('products.index', ['products' => $products]);
     }
 
     /**
@@ -82,7 +82,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the product details view
-        return view('products.show', compact('product'));
+        return view('products.index', ['products' => $products]);
     }
 
     /**
@@ -94,7 +94,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the edit form view
-        return view('products.edit', compact('product'));
+        return view('products.index', ['products' => $products]);
     }
 
     /**
