@@ -35,7 +35,7 @@ DB_DATABASE=databasename
 DB_USERNAME=root
 DB_PASSWORD=</code></pre></div>
 
-<h3>Step 3. Open your folder in cmd and install Tailwind:</h3>
+<h3>Step 3. Open your folder in cmd/terminal and install Tailwind:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
