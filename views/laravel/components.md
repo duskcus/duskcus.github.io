@@ -135,4 +135,4 @@ Example of a layout page we’ll call later.</p>
 You can now start replacing content within the sections.</p>
 
 
-<a href="/views/laravel/setup"><button>Start Course</button></a>
+<a href="/views/laravel/setup"><button>Back</button></a>
