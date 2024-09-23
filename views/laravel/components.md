@@ -129,3 +129,4 @@ You can start replacing content within the @sections.</p>
 
 
 <a href="/views/laravel/setup"><button>Back</button></a>
+<a href="/views/laravel/migrations"><button>Next</button></a>
