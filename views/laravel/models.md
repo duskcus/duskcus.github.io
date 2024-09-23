@@ -4,9 +4,9 @@ title: Laravel Models
 ---
 
 <h2>1.3 MODELS</h2>
-You can make tables in your databases quickly when developing with others:
-The following command and naming scheme is used to create a migration, with “products” being interchangeable. This will make a migration in app/database/migrations. It’s IMPORTANT to note that Laravel uses naming these naming schemes to read in data in general, so to prevent any debugging sessions try to follow these naming schemes.
+<p>Models are a bit like blueprints, they are often specifically made to communicate between a controller and a view or contain the logic for interacting with a database.</p>
+
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>php artisan make:migration create_products_table</code></pre></div>
+<pre class="codesnippet"><code>php artisan make:model Product</code></pre></div>
