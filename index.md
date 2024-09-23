@@ -5,8 +5,10 @@ title: Home
 <h1>What is this site?</h1>
 <p>This is a place where I show how I personally set-up projects. It is supposed to be easy and quick. It is mainly focussed on Windows and Mac. I assume Linux users already know how to install everything.</p>
 
-<h3>To Be Coming Guides</h3>
+<h3>In Progress</h3>
 <button>Laravel</button>
+
+<h3>To Be Coming Guides</h3>
 <button>Godot</button>
 <button>GitHub</button>
 <button>Hacking</button>
