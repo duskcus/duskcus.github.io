@@ -41,8 +41,6 @@ Example of a layout page we’ll call later.</p>
 &lt;title&gt;&#123;&#123; config('app.name', 'Laravel') &#125;&#125;&lt;/title&gt;
 &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
 &lt;head&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;
-    &lt;script src="https://kit.fontawesome.com/29c53c0003.js" crossorigin="anonymous"&gt;&lt;/script&gt;
     &#64;vite('resources/css/app.css')
 &lt;/head&gt;
 
