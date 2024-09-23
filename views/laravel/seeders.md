@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
         $products = [
             [
                 'name' => 'sword',
-                'description' => '1',
+                'description' => 'A sword is an edged, bladed weapon intended for manual cutting or thrusting.',
                 'price' => '50',
                 'stock' => '10',
                 'category' => 'weapon',
