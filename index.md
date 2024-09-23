@@ -11,9 +11,10 @@ title: Home
 <button>GitHub</button>
 <button>Hacking</button>
 
-<h3>Set-up Guides Development Environment</h3>
-<button>Set-up Windows</button>
-<button>Set-up Mac</button>
+<!-- <h3>Set-up Guides Development Environment</h3> -->
+<!-- <button>Windows</button> -->
+<!-- <button>Mac</button> -->
+<!-- <button>Linux</button> -->
 
 
 <!-- <li>Navigation</li>
