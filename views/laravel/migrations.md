@@ -51,7 +51,7 @@ return new class extends Migration
     }
 };</code></pre></div>
 
-<h3>Running migrations</h3>
+<h3>Running Migrations</h3>
 <p>To add these tables into your database you can run the following command:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
