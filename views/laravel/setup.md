@@ -54,7 +54,7 @@ npx tailwindcss init -p</code></pre></div>
 @tailwind components;
 @tailwind utilities;</code></pre></div>
 
-<h3>Step 5. Install daisyUI in your folders cmd:</h3>
+<h3>Step 3. Open your folder in cmd and install daisyUI:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
