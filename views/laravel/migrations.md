@@ -58,3 +58,10 @@ return new class extends Migration
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan migrate</code></pre></div>
+
+
+<p>Alternatively you can also run this command to delete the entire table, do keep in mind that this should never be done when running in production.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>php artisan migrate:fresh</code></pre></div>
