@@ -36,7 +36,7 @@ Example of a layout page we’ll call later.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
   <pre class="codesnippet"><code>&lt;!DOCTYPE html&gt;
-&lt;html data-theme="nord" lang="&#123;&#123; str_replace('_', '-', app()-&gt;getLocale()) &#125;&#125;"&gt;
+&lt;html data-theme="dark" lang="&#123;&#123; str_replace('_', '-', app()-&gt;getLocale()) &#125;&#125;"&gt;
 &lt;meta charset="UTF-8"&gt;
 &lt;title&gt;&#123;&#123; config('app.name', 'Laravel') &#125;&#125;&lt;/title&gt;
 &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
