@@ -65,5 +65,5 @@ return new class extends Migration
 <pre class="codesnippet"><code>php artisan migrate:fresh</code></pre></div>
 
 
-<a href="/views/laravel/components"><button>Back</button></a>
-<a href="/views/laravel/models"><button>Next</button></a>
+<a href="/views/laravel/models"><button>Back</button></a>
+<a href="/views/laravel/seeder"><button>Next</button></a>
