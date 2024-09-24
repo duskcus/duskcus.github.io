@@ -16,7 +16,7 @@ title: Laravel Controllers
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>php artisan make:controlelr ProductController –-resource</code></pre></div>
+<pre class="codesnippet"><code>php artisan make:controller ProductController –-resource</code></pre></div>
 
 
 <h3>Controllers Logic</h3>
