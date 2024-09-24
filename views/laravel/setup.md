@@ -117,7 +117,7 @@ export default {
 </div>
 <pre class="codesnippet">
 <code>php artisan serve
-  npm run dev</code></pre></div>
+npm run dev</code></pre></div>
 
 <a href="/views/laravel/"><button>Back</button></a>
 <a href="/views/laravel/components"><button>Next</button></a>
