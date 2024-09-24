@@ -112,12 +112,9 @@ Example of a layout page we’ll call later.</p>
     &lt;/section&gt;
 &#64;endsection</code></pre>
 </div>
-<br>
 
 
-<p>You should have a functioning page by now.
-You can start replacing content within the @sections.</p>
-
+<p>You should have a functioning page by now. You can start replacing content within the @sections.</p>
 
 <a href="/views/laravel/setup"><button>Back</button></a>
 <a href="/views/laravel/migrations"><button>Next</button></a>
