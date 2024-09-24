@@ -11,7 +11,9 @@ title: Laravel Seeders
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>
+&#123;&#123;-- For normal routes --&#125;&#125;
 <a href="{{ route('products' }}"></a>
+&#123;&#123;-- Routes with parameter --&#125;&#125;
 <a href="{{ route('products.show', $product->id) }}"></a></code></pre></div>
 
 
