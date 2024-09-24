@@ -58,5 +58,5 @@ class Product extends Model
     ];
 }</code></pre></div>
 
-<a href="/views/laravel/"><button>Back</button></a>
-<a href="/views/laravel/components"><button>Next</button></a>
+<a href="/views/laravel/setup"><button>Back</button></a>
+<a href="/views/laravel/migrations"><button>Next</button></a>
