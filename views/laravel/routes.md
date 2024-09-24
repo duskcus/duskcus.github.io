@@ -7,8 +7,6 @@ title: Laravel Seeders
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
 
 <h2>Example Routes:</h2>
-
-<h3>Basic Route</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
