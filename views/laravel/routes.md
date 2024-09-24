@@ -129,3 +129,5 @@ Route::prefix('admin')->group(function () {
         return 'Manage Users';
     });
 });</code></pre></div>
+
+<a href="/views/laravel/controller"><button>Back</button></a>
