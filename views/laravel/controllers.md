@@ -19,8 +19,8 @@ title: Laravel Controllers
 <pre class="codesnippet"><code>php artisan make:controller ProductController –-resource</code></pre></div>
 
 
-<h3>Controllers Logic</h3>
-<p>For this example we will look at a resource controlller:</p>
+<h3>Example Controller Logic</h3>
+<p>For this example we will look at a resource controlller as it shows a lot of common functionality:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
