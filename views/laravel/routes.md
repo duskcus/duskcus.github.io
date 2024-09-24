@@ -10,9 +10,9 @@ title: Laravel Seeders
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>// Normal route names
+<pre class="codesnippet"><code><!--   Normal route names -->
 <a href="{{ route('products' }}"></a>
-// When passing a parameter
+<!--   When passing a parameter -->
 <a href="{{ route('products.show', $product->id) }}"></a></code></pre></div>
 
 
