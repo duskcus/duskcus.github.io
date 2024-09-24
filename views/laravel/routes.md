@@ -14,7 +14,7 @@ title: Laravel Seeders
 &#123;&#123;-- For normal routes --&#125;&#125;
 <a href="&#123;&#123 route('products' &#125;&#125;"></a>
 &#123;&#123;-- Routes with parameter --&#125;&#125;
-<a href="&#123;&#123 route('products.show', $product->id) &#125;&#125;"></a></code></pre></div>
+&#60;a href="&#123;&#123 route('products.show', $product->id) &#125;&#125;"></a></code></pre></div>
 
 
 <h2>Example Routes:</h2>
