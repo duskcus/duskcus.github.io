@@ -10,7 +10,7 @@ title: Laravel Seeders
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><?php
+<pre class="codesnippet"><code><?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
