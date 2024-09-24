@@ -82,7 +82,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the product details view
-        return view('products.index', ['products' => $products]);
+        return view('products.index', ['product' => $product]);
     }
 
     /**
@@ -94,7 +94,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the edit form view
-        return view('products.index', ['products' => $products]);
+        return view('products.index', ['product' => $product]);
     }
 
     /**
