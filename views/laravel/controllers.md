@@ -132,5 +132,5 @@ class ProductController extends Controller
 }</code></pre></div>
 
 
-<a href="/views/laravel/models"><button>Back</button></a>
-<a href="/views/laravel/seeders"><button>Next</button></a>
+<a href="/views/laravel/components"><button>Back</button></a>
+<a href="/views/laravel/routes"><button>Next</button></a>
