@@ -6,6 +6,39 @@ title: Laravel Seeders
 <h2>1.7. ROUTES</h2>
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
 
+<h2>Example Routes:</h2>
+
+<h3>Basic Route</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
+
+Route::get('/', function () {
+    return view('index');
+})->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+// RESOURCES
+Route::resource('products', ProductController::class);
+
+// AUTH
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+</code></pre></div>
+
+<h2>All options</h2>
 
 <h3>Basic Route</h3>
 <div class="codesnippet-wrapper">
@@ -37,7 +70,6 @@ title: Laravel Seeders
 <pre class="codesnippet"><code>Route::resource('posts', PostController::class);</code></pre></div>
 
 
-<h2>Alternative Options</h2>
 <h3>Route with Parameters</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
