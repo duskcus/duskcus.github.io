@@ -110,6 +110,14 @@ export default {
   },
 }</code></pre></div>
 
+<h3>Step 7. Start host:</h3>
+<p>Commands to start server if you forgot. I recommend running it from the artisan serve path as I've had experienced caching bugs etc when anything else.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code>php artisan serve
+  npm run dev</code></pre></div>
 
 <a href="/views/laravel/"><button>Back</button></a>
 <a href="/views/laravel/components"><button>Next</button></a>
