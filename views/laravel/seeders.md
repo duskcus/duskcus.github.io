@@ -99,3 +99,6 @@ class DatabaseSeeder extends Seeder
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan migrate:fresh --seed</code></pre></div>
+
+<a href="/views/laravel/migrations"><button>Back</button></a>
+<a href="/views/laravel/components"><button>Next</button></a>
