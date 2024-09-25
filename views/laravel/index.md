@@ -35,6 +35,7 @@ title: Laravel Introduction
   <li>Tailwind</li>
   <li>Alpine.js</li>
   <li>Laravel</li>
+  <li>Livewire</li>
   <li>MySQL</li>
 </ul>
 
