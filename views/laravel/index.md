@@ -29,6 +29,15 @@ title: Laravel Introduction
   <li>Livewire and Alpine.JS</li>
 </ul>
 
+<h3>What Tech Stack</h3>
+<p>A tech stack is a collection of technologies needed for a project:</p>
+<ul>
+  <li>Tailwind</li>
+  <li>Alpine.js</li>
+  <li>Laravel</li>
+  <li>MySQL</li>
+</ul>
+
 <p>Lastly there will be downloads and a cheatsheet.</p>
 
 <a href="/views/laravel/setup"><button>Start Course</button></a>
