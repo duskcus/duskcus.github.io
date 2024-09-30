@@ -44,15 +44,15 @@ title: Laravel Introduction
 <ul>
   <li>1. Webshop Setup</li>
       <ul>
-        <li>Basic's mostly setting up front-end</li>
+        <li>Setting up front-end, you'll learn to make a CRUD.</li>
       </ul>
   <li>2. Webshop Logic</li>
       <ul>
-        <li>Setting up back-end logic</li>
+        <li>Setting up back-end logic, you'll learn to implement relations and authentication.</li>
       </ul>
   <li>3. Admin Dashboard</li>
       <ul>
-        <li>Extending functionality for ERP systems</li>
+        <li>Both front-end and back-end with Livewire/JavaScript, you'll learn how to integrate ERP functionality onto the webshop</li>
       </ul>
 </ul>
 
