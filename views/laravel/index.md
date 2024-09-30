@@ -42,21 +42,18 @@ title: Laravel Introduction
 
 <h3>Chapter parts:</h3>
 <ul>
-    <li>1. Webshop Setup</li>
-        <ul>
-          <li>Basic's mostly setting up front-end</li>
-        </ul>
-    <li>
-    <li>2. Webshop Logic</li>
-        <ul>
-          <li>Setting up back-end logic</li>
-        </ul>
-    </li>
-    <li>3. Admin Dashboard</li>
-        <ul>
-          <li>Extending functionality for ERP systems</li>
-        </ul>
-    </li>
+  <li>1. Webshop Setup</li>
+      <ul>
+        <li>Basic's mostly setting up front-end</li>
+      </ul>
+  <li>2. Webshop Logic</li>
+      <ul>
+        <li>Setting up back-end logic</li>
+      </ul>
+  <li>3. Admin Dashboard</li>
+      <ul>
+        <li>Extending functionality for ERP systems</li>
+      </ul>
 </ul>
 
 
