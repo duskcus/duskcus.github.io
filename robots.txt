@@ -1,3 +1,4 @@
 You found my secret TODO list:
 
 Fix laravel components 1.5, missing CRUD folder and files
+Change concistency error in 1.7 routes
