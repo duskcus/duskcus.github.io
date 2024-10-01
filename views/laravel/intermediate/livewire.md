@@ -13,7 +13,6 @@ title: Laravel Livewire
 <pre class="codesnippet"><code>composer require livewire/livewire</code></pre></div>
 
 <h3>Creating a Livewire Component</h3>
-<p>Livewire is a bundled install with Alpine.js</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
