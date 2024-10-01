@@ -10,7 +10,7 @@ title: Home
 <h3>In Progress</h3>
 <button>Laravel 11</button>
 
-<h3>To Be Coming Guides</h3>
+<h3>Guides Coming in the Future</h3>
 <button>Godot 4.3</button>
 <button>GitHub 2024</button>
 <button>Hacking 2024</button>
