@@ -17,6 +17,7 @@ title: Laravel Cheat Sheet
 npm run dev
 php artisan migrate:fresh --seed
 php artisan make:model Product --controller --resource --requests --migration --seed</code></pre></div>
+php artisan make:livewire componentName
 
 <h3>Caching Commands:</h3>
 <div class="codesnippet-wrapper">
