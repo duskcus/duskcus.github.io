@@ -20,7 +20,7 @@ title: Laravel Set-up
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
-<code>laravel new webshop</code></pre></div>
+<code>laravel new <span style="color: red;">webshop</span></code></pre></div>
 
 <h3>Step 2. Setup the .ENV file:</h3>
 <p>Most of the defaults should be fine, but these should be edited to work with MySQL. You can change webshop to your database name:</p>
@@ -31,7 +31,7 @@ title: Laravel Set-up
 <code>DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=webshop
+DB_DATABASE=<span style="color: red;">webshop</span>
 DB_USERNAME=root
 DB_PASSWORD=</code></pre></div>
 
