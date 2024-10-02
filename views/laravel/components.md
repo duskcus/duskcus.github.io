@@ -49,7 +49,6 @@ Example of a layout page we’ll call later.</p>
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </div>
-<br>
 
 
 <h3>Step 3. Create a file “header.blade.php” within “views/components”:</h3>
@@ -82,7 +81,6 @@ Example of a layout page we’ll call later.</p>
     &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
 </div>
-<br>
 
 
 <h3>Step 4. Create a file “footer.blade.php” within “components”:</h3>
@@ -96,7 +94,6 @@ Example of a layout page we’ll call later.</p>
     &lt;/div&gt;
 &lt;/footer&gt;</code></pre>
 </div>
-<br>
 
 
 <h3>Step 5. Create a file “index.blade.php” within “views”:</h3>
