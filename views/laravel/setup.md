@@ -23,7 +23,7 @@ title: Laravel Set-up
 <code>laravel new webshop</code></pre></div>
 
 <h3>Step 2. Setup the .ENV file:</h3>
-<p>Most of the defaults should be fine, but these should be edited:</p>
+<p>Most of the defaults should be fine, but these should be edited to work with MySQL. You can change webshop to your database name:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
