@@ -56,8 +56,7 @@ Route::post('/register', [AuthController::class, 'register']);
 // LOGOUT
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/api', [ProductController::class, 'api']);
-</code></pre></div>
+Route::get('/api', [ProductController::class, 'api']);</code></pre></div>
 
 <h2>All options:</h2>
 
