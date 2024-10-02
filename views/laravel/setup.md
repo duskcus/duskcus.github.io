@@ -15,7 +15,7 @@ title: Laravel Set-up
 
 
 <h3>Step 1. Create a Laravel project:</h3>
-<p>“webshop” can be changed to desired name.</p>
+<p>“webshop” can be changed to your desired name.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
