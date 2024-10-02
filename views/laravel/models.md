@@ -9,7 +9,7 @@ title: Laravel Models
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>php artisan make:model Product</code></pre></div>
+<pre class="codesnippet"><code>php artisan make:model <span style="color: red;">Product</span></code></pre></div>
 
 <h3>Example Model:</h3>
 <div class="codesnippet-wrapper">
