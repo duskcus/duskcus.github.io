@@ -11,3 +11,11 @@ title: Laravel Octane
 composer require laravel/octane
 
 php artisan octane:install
+
+<h3>Step 1. Create a Laravel project:</h3>
+<p>“projectname” can be changed to desired name.</p>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet">
+<code>laravel new <span class="text-red-500">projectname</span></code></pre></div>
