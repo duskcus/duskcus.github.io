@@ -77,7 +77,7 @@ export default {
     plugins: [require("daisyui")],
     // Add the daisyui configuration here
     daisyui: {
-        themes: ["light", "dark", " <span style="color: red;">THEME YOU LIKE</span>"],
+        themes: ["light", "dark", "<span style="color: red;">THEME YOU LIKE</span>"],
     },
   }</code></pre></div>
 
