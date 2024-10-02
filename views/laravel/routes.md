@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Laravel Seeders
+title: Laravel Routes
 ---
 
 <h2>1.7. ROUTES</h2>
