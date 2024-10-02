@@ -5,8 +5,8 @@ title: Laravel Controllers
 
 <h2>1.6 CONTROLLERS</h2>
 
-<h3>Creating Controllers</h3>
-<p>To simply make a controller use this command:</p>
+<h3>Creating Controllers:</h3>
+<p>To simply make a controller use this command.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -19,7 +19,7 @@ title: Laravel Controllers
 <pre class="codesnippet"><code>php artisan make:controller ProductController –-resource</code></pre></div>
 
 
-<h3>Example Controller Logic</h3>
+<h3>Example Controller Logic:</h3>
 <p>For this example we will look at a resource controlller as it shows a lot of common functionality:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
