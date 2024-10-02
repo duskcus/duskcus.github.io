@@ -10,16 +10,14 @@ title: Laravel Seeders
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>
-&#60;a href="&#123;&#123; route('products' &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
+<pre class="codesnippet"><code>&#60;a href="&#123;&#123; route('products' &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
 
 
 <h3>Routes with Parameter</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>
-&#60;a href="&#123;&#123; route('products.show', $product->id) &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
+<pre class="codesnippet"><code>&#60;a href="&#123;&#123; route('products.show', $product->id) &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
 
 
 <h3>Example Routes:</h3>
