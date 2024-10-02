@@ -15,12 +15,12 @@ title: Laravel Set-up
 
 
 <h3>Step 1. Create a Laravel project:</h3>
-<p>“projectname” can be changed to desired name.</p>
+<p>“PROJECTNAME” can be changed to desired name.</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
-<code>laravel new projectname</code></pre></div>
+<code>laravel new PROJECTNAME</code></pre></div>
 
 <h3>Step 2. Setup the .ENV file:</h3>
 <p>Most of the defaults should be fine, but these should be edited:</p>
@@ -31,7 +31,7 @@ title: Laravel Set-up
 <code>DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=databasename
+DB_DATABASE=DATABASENAME
 DB_USERNAME=root
 DB_PASSWORD=</code></pre></div>
 
