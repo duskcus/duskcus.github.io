@@ -54,6 +54,10 @@ title: Laravel Introduction
       <ul>
         <li>Both front-end and back-end with Livewire/JavaScript, you'll learn how to integrate ERP functionality onto the webshop</li>
       </ul>
+  <li>4. Performance Boosting</li>
+    <ul>
+      <li>Both front-end and back-end with Livewire/JavaScript, you'll learn how to integrate ERP functionality onto the webshop</li>
+    </ul>
 </ul>
 
 
