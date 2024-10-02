@@ -6,17 +6,23 @@ title: Laravel Seeders
 <h2>1.7. ROUTES</h2>
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
 
-<h2>Calling Routes in Blade</h2>
+<h3>For Normal Routes</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
-<pre class="codesnippet"><code>&#123;&#123;-- For normal routes --&#125;&#125;
-&#60;a href="&#123;&#123; route('products' &#125;&#125;">InsertRouteName&#60;/a&#62;
-&#123;&#123;-- Routes with parameter --&#125;&#125;
+<pre class="codesnippet"><code>
+&#60;a href="&#123;&#123; route('products' &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
+
+
+<h3>Routes with Parameter</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>
 &#60;a href="&#123;&#123; route('products.show', $product->id) &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
 
 
-<h2>Example Routes:</h2>
+<h3>Example Routes:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
