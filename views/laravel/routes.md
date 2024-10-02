@@ -45,9 +45,18 @@ Route::get('/contact', function () {
 // RESOURCES
 Route::resource('products', ProductController::class);
 
-// AUTH
-Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::get('/register', [AuthController::class, 'register'])->name('register');
+// LOGIN
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+// REGISTER
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+// LOGOUT
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/api', [ProductController::class, 'api']);
 </code></pre></div>
 
 <h2>All options:</h2>
