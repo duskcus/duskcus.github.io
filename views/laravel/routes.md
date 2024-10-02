@@ -6,14 +6,14 @@ title: Laravel Seeders
 <h2>1.7. ROUTES</h2>
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
 
-<h3>For Normal Routes</h3>
+<h3>For Normal Routes:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>&#60;a href="&#123;&#123; route('products' &#125;&#125;">InsertRouteName&#60;/a&#62;</code></pre></div>
 
 
-<h3>Routes with Parameter</h3>
+<h3>Routes with Parameter:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -50,9 +50,9 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 </code></pre></div>
 
-<h2>All options</h2>
+<h2>All options:</h2>
 
-<h3>Basic Route</h3>
+<h3>Basic Route:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -61,28 +61,28 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 })->name('home');</code></pre></div>
 
 
-<h3>When Using Functions Call the Controller with Use</h3>
+<h3>When Using Functions Call the Controller with Use:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>use App\Http\Controllers\ProductController;</code></pre></div>
 
 
-<h3>Route with Function</h3>
+<h3>Route with Function:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>Route::get('/login', [AuthController::class, 'login'])->name('login');</code></pre></div>
 
 
-<h3>Resource Route</h3>
+<h3>Resource Route:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>Route::resource('posts', PostController::class);</code></pre></div>
 
 
-<h3>Route with Parameters</h3>
+<h3>Route with Parameters:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -97,7 +97,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 });</code></pre></div>
 
 
-<h3>Route with Middleware</h3>
+<h3>Route with Middleware:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
@@ -106,7 +106,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 })->middleware('auth');</code></pre></div>
 
 
-<h3>Route with Middleware</h3>
+<h3>Route with Middleware:</h3>
 <div class="codesnippet-wrapper">
   <div class="line-numbers">
 </div>
