@@ -16,4 +16,4 @@ title: Laravel Calendar
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
-<code>laravel new <span style="colour: red;">projectname</span></code></pre></div>
+<code>laravel new <span style="color: red;">projectname</span></code></pre></div>
