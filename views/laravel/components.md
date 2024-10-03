@@ -84,7 +84,8 @@ Example of a layout page we’ll call later.</p>
                 Contact
             &lt;/a&gt;
         &lt;/div&gt;
-    &lt;/div&gt;&lt;/nav&gt;</code></pre></div>
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div>
 
 
 <h3>Step 4. Create a file “footer.blade.php” within “components”:</h3>
