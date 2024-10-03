@@ -3,6 +3,7 @@ layout: default
 title: Laravel Livewire
 ---
 
+<h3>Livewire 3</h3>
 <p>I personally think Livewire is somewhat ratchet. Yet I also feel like it is benificial to write in logic as much in a single language. So what does it do? Well in my biased opinion it doesn't do anything that can't be done in JavaScript. So why use it? Use it if you want to code in PHP and do an AJAX request to live update something without refreshing the page.</p>
 
 <h2>Installing Livewire</h2>
