@@ -17,6 +17,14 @@ title: Laravel Components
             <li>header.blade.php</li>
         </ul>
     </li>
+    <li>products
+        <ul>
+            <li>create.blade.php</li>
+            <li>index.blade.php</li>
+            <li>edit.blade.php</li>
+            <li>show.blade.php</li>
+        </ul>
+    </li>
     <li>index.blade.php</li>
 </ul>
 
