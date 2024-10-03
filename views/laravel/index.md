@@ -14,6 +14,7 @@ title: Laravel Introduction
   <li>PHP</li>
   <li>HTML</li>
   <li>CSS</li>
+  <li>JavaScript</li>
   <li>MySQL</li>
 </ul>
 
