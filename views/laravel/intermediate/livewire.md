@@ -18,7 +18,7 @@ title: Laravel Livewire
 </div>
 <pre class="codesnippet"><code>php artisan make:livewire LineChart</code></pre></div>
 
-<h3>Here's a breakdown of the common wire syntaxes:</3>
+<h3>Here's a breakdown of the common wire syntaxes:</h3>
 <ul>
   <li>wire:model = input</li>
   <li>wire:click = button</li>
