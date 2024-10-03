@@ -49,7 +49,7 @@ Example: <div wire:poll.5s="refreshData">
 <h3>Expanding on the previous you can use modifiers:</h3>
 <p>Note that modifiers can be stacked onto eachother.</p>
 <ul>
-  <li>wire:model.live = input</li>
-  <li>wire:model.debounce.500ms="search" = input</li>
+  <li>wire:model.live</li>
+  <li>wire:model.debounce.500ms="search"</li>
   <li>wire:model.live.throttle.1s="liveSearch"</li>
 </ul>
