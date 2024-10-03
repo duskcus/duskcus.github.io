@@ -44,3 +44,12 @@ wire:poll
 This sets up automatic polling to refresh the component at specified intervals.
 Example: <div wire:poll.5s="refreshData">
 </p>
+
+
+<h3>Expanding on the previous you can use modifiers:</h3>
+<p>Note that modifiers can be stacked onto eachother.</p>
+<ul>
+  <li>wire:model.live = input</li>
+  <li>wire:model.debounce.500ms="search" = input</li>
+  <li><input wire:model.throttle.1s="liveSearch"></li>
+</ul>
