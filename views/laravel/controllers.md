@@ -63,14 +63,17 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
+            'image_url' => 'nullable|string',
+            'category' => 'required|string|max:255',
         ]);
 
         // Create a new product
         Product::create($request->all());
 
         // Redirect to the products list with success message
-        return redirect()->route('products.index')->with('success', 'Product created successfully.');
+        return redirect()->route('products.create')->with('success', 'Product created successfully.');
     }
 
     /**
@@ -82,7 +85,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the product details view
-        return view('products.index', ['product' => $product]);
+        return view('products.show', ['product' => $product]);
     }
 
     /**
@@ -94,7 +97,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Return the edit form view
-        return view('products.index', ['product' => $product]);
+        return view('products.edit', ['product' => $product]);
     }
 
     /**
@@ -106,7 +109,10 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
+            'image_url' => 'nullable|string',
+            'category' => 'required|string|max:255',
         ]);
 
         // Find the product by ID and update its details
@@ -129,7 +135,8 @@ class ProductController extends Controller
         // Redirect to the products list with success message
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
-}</code></pre></div>
+}
+</code></pre></div>
 
 
 <a href="/views/laravel/components"><button>Back</button></a>
