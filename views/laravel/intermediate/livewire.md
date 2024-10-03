@@ -18,9 +18,17 @@ title: Laravel Livewire
 </div>
 <pre class="codesnippet"><code>php artisan make:livewire LineChart</code></pre></div>
 
-<p>Here's a breakdown of the common wire: syntaxes:
+<h3>Here's a breakdown of the common wire syntaxes:</3>
+<ul>
+  <li>wire:model = input</li>
+  <li>wire:click = button</li>
+  <li>wire:submit = forms</li>
+  <li>wire:loading = loading text with a long process (image generation)</li>
+  <li>wire:poll = calling a function every time (livechart)</li>
+</ul>
 
-wire:model
+
+<p>wire:model
 This is used for two-way data binding. It connects an input element to a property in your Livewire component.
 Example: <input type="text" wire:model="name">
 wire:click
