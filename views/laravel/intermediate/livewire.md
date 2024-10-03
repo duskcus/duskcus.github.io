@@ -3,7 +3,7 @@ layout: default
 title: Laravel Livewire
 ---
 
-<p>I personally think Livewire is somewhat ratchet. Yet I feel like it is definetly benificial to write in a single language if your not experienced. So what does it do? Well in my biased opinion it doesn't do anything that can't be done normally. So why use it? Use it if you want to code in PHP and do an AJAX request to live update something without refreshing the page. In another situation where you want responsive UI, I recommend just using Alpine.js instead, but if you just want to stick to PHP then do use Livewire as it uses PHP syntax.</p>
+<p>I personally think Livewire is somewhat ratchet. Yet I also feel like it is benificial to write in logic as much in a single language. So what does it do? Well in my biased opinion it doesn't do anything that can't be done in JavaScript. So why use it? Use it if you want to code in PHP and do an AJAX request to live update something without refreshing the page.</p>
 
 <h2>Installing Livewire</h2>
 <p>Livewire is a bundled install with Alpine.js</p>
@@ -17,3 +17,22 @@ title: Laravel Livewire
   <div class="line-numbers">
 </div>
 <pre class="codesnippet"><code>php artisan make:livewire LineChart</code></pre></div>
+
+<p>Here's a breakdown of the common wire: syntaxes:
+
+wire:model
+This is used for two-way data binding. It connects an input element to a property in your Livewire component.
+Example: <input type="text" wire:model="name">
+wire:click
+This attaches a click event listener to an element, which triggers a method in your Livewire component when clicked.
+Example: <button wire:click="save">Save</button>
+wire:submit
+Used on form elements to handle form submissions, calling a method in your Livewire component.
+Example: <form wire:submit="handleSubmit">
+wire:loading
+This directive manipulates the element's visibility or state while a Livewire action is processing.
+Example: <div wire:loading>Processing...</div>
+wire:poll
+This sets up automatic polling to refresh the component at specified intervals.
+Example: <div wire:poll.5s="refreshData">
+</p>
