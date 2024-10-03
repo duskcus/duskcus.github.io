@@ -54,8 +54,7 @@ Example of a layout page we’ll call later.</p>
     &#64;include('components.footer')
 
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</div>
+&lt;/html&gt;</code></pre></div>
 
 
 <h3>Step 3. Create a file “header.blade.php” within “views/components”:</h3>
@@ -86,8 +85,7 @@ Example of a layout page we’ll call later.</p>
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/nav&gt;</code></pre>
-</div>
+&lt;/nav&gt;</code></pre></div>
 
 
 <h3>Step 4. Create a file “footer.blade.php” within “components”:</h3>
@@ -99,8 +97,7 @@ Example of a layout page we’ll call later.</p>
     &lt;div class="bg-base-100 text-center py-3 text-white"&gt;
         &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
     &lt;/div&gt;
-&lt;/footer&gt;</code></pre>
-</div>
+&lt;/footer&gt;</code></pre></div>
 
 
 <h3>Step 5. Create a file “index.blade.php” within “views”:</h3>
@@ -114,8 +111,7 @@ Example of a layout page we’ll call later.</p>
     &lt;section&gt;
         hello world.
     &lt;/section&gt;
-&#64;endsection</code></pre>
-</div>
+&#64;endsection</code></pre></div>
 
 
 <p>You should have a functioning page by now. You can start replacing content within the @sections.</p>
