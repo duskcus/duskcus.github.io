@@ -30,18 +30,22 @@ title: Laravel Livewire
 
 
 <p>wire:model
-This is used for two-way data binding. It connects an input element to a property in your Livewire component.
+This is used for two-way data binding. It connects an input element to a property in your Livewire component.</p>
 Example: <input type="text" wire:model="name">
-wire:click
+
+<p>wire:click
 This attaches a click event listener to an element, which triggers a method in your Livewire component when clicked.
-Example: <button wire:click="save">Save</button>
-wire:submit
+Example: <button wire:click="save">Save</button></p>
+
+<p>wire:submit
 Used on form elements to handle form submissions, calling a method in your Livewire component.
-Example: <form wire:submit="handleSubmit">
-wire:loading
+Example: <form wire:submit="handleSubmit"></p>
+
+<p>wire:loading
 This directive manipulates the element's visibility or state while a Livewire action is processing.
-Example: <div wire:loading>Processing...</div>
-wire:poll
+Example: <div wire:loading>Processing...</div></p>
+
+<p>wire:poll
 This sets up automatic polling to refresh the component at specified intervals.
 Example: <div wire:poll.5s="refreshData">
 </p>
