@@ -51,5 +51,5 @@ Example: <div wire:poll.5s="refreshData">
 <ul>
   <li>wire:model.live = input</li>
   <li>wire:model.debounce.500ms="search" = input</li>
-  <li><input wire:model.throttle.1s="liveSearch"></li>
+  <li>wire:model.throttle.1s="liveSearch"</li>
 </ul>
