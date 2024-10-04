@@ -6,7 +6,7 @@ title: Laravel Introduction
 <h2>INTRODUCTION</h2>
 
 <h3>What is Laravel?</h3>
-<p>Laravel is a great framework for quickly building web apps, with a large ecosystem. While it's slightly slower than some frameworks, the difference is often negligible. It's ideal for most projects unless when N2 notation becomes critical, which in 99% of cases it won't.</p>
+<p>Laravel is a great framework for quickly building web apps, with a large ecosystem. It can handle a good amount of concurrent users with octane, and openswoole. I guess the only downside is that its logic distribution doesn't make any sense.</p>
 
 <h3>What do you need?</h3>
 <p>Basics in the following:</p>
