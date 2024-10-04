@@ -1,5 +1,6 @@
 You found my secret TODO list:
 
+Add plugins section
 Fix laravel components 1.5, missing CRUD folder and files
 Restructure logic now 1.8 has been added instead of adding to components
 Add services maybe like 1.9
