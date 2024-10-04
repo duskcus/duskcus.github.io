@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <h1>What is this site?</h1>
-<p>This is a place where I show how I personally set-up projects. It is supposed to be easy, clean and quick. It is mainly focussed on development on Windows and Mac. I assume Linux users already know how to install everything.</p>
+<p>This is a place where I show how I personally set-up projects. It is mainly focussed best practises and quick development on Windows and Mac. I assume Linux users already know how to install everything.</p>
 
 <!-- <h3>In Completed</h3> -->
 
