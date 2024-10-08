@@ -46,7 +46,7 @@ title: Laravel Introduction
       </ul>
   <li>4. Performance Boosting</li>
     <ul>
-      <li>We start incorperating asynchronous code with OpenSwoole and Laravel Octane.</li>
+      <li>We start incorperating asynchronous code with Laravel Octane.</li>
     </ul>
 </ul>
 
