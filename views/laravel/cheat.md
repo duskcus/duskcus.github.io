@@ -39,7 +39,14 @@ php artisan route:cache</code></pre></div>
 <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
 <p>Livewire: <a href="https://livewire.laravel.com/">https://livewire.laravel.com/</a></p>
 
-
+<h3>Laravel Security:</h3>
+<p>Gate = Static admin and roles.</p>
+<p>Laravel Sanctum = Lightweight API tokens for singlepage applications.</p>
+<p>Laravel Passport = Auth0 and 3rd party integrations.</p>
+<p>Laravel TwoFactor = Easy and safe implemntation.</p>
+<p>Laravel Passkey = Modern solution, but unforgiving if you're a bad programmer.</p>
+<p>Jetstream is bloated with ratchet components.</p>
+<p>Breeze is not as flexibel, and it is quite easy to setup normal authorisation.</p>
 
 <!-- <button href="/views/laravel/quick_start">Back</button>-->
 <!-- <button href="/views/laravel/quick_start">Next</button> -->
