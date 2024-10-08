@@ -45,8 +45,8 @@ php artisan route:cache</code></pre></div>
 <p>Laravel Passport = Auth0 and 3rd party integrations.</p>
 <p>Laravel TwoFactor = Easy and safe implemntation.</p>
 <p>Laravel Passkey = Modern solution, but unforgiving if you're a bad programmer.</p>
-<p>Jetstream = Bloated with ratchet components.</p>
 <p>Breeze = Not as flexibel, and it is quite easy to setup normal authorisation.</p>
+<p>Jetstream = Bloated with ratchet components, and just as inflexible.</p>
 
 <!-- <button href="/views/laravel/quick_start">Back</button>-->
 <!-- <button href="/views/laravel/quick_start">Next</button> -->
