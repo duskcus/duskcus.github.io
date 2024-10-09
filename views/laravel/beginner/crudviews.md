@@ -3,7 +3,7 @@ layout: default
 title: Laravel Components
 ---
 
-<h2>1.8 CRUD Views</h2>
+<h2>1.8 CRUD views</h2>
 
 <h3>Step 1. Create the following folders in your views:</h3>
 <ul>
@@ -19,47 +19,46 @@ title: Laravel Components
 
 <h3>index.blade.php</h3>
 <div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>@extends('layouts.default')
+    <div class="line-numbers"></div>
+    <pre class="codesnippet"><code>&#64;extends(&#123;'layouts.default'&#125;)
 
-{{-- @SECTION FOR THE START CONTENT --}}
-@section('content')
-    <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
+&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
+    &lt;section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg"&gt;
 
-        <div class="w-full inline-flex">
-            <h1 class="text-4xl font-bold mb-6">Products</h1>
+        &lt;div class="w-full inline-flex"&gt;
+            &lt;h1 class="text-4xl font-bold mb-6"&gt;Products&lt;/h1&gt;
 
-            <div class="ml-auto inline-flex">
+            &lt;div class="ml-auto inline-flex"&gt;
 
-                <button class="btn btn-success">Create Product</button>
-                <button class="btn btn-primary ml-6">Edit Mode</button>
+                &lt;button class="btn btn-success"&gt;Create Product&lt;/button&gt;
+                &lt;button class="btn btn-primary ml-6"&gt;Edit Mode&lt;/button&gt;
                 
-            </div>
-        </div>
+            &lt;/div&gt;
+        &lt;/div&gt;
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
-            @foreach ($products as $product)
-                <div class="card bg-base-300 shadow-xl">
-                    <figure>
-                        <a href="{{ route('products.show', $product->id) }}"><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" /></a>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="text-xl capitalize">{{ $product->name }}</h2>
-                        <p>{{ $product->description }}</p>
-                        <p>€{{ $product->price }}</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+        &lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6"&gt;
+            &#64;foreach (&#36;products as &#36;product)
+                &lt;div class="card bg-base-300 shadow-xl"&gt;
+                    &lt;figure&gt;
+                        &lt;a href="&#123;&#123; route('products.show', &#36;product-&gt;id) &#125;&#125;"&gt;
+                            &lt;img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" /&gt;
+                        &lt;/a&gt;
+                    &lt;/figure&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h2 class="text-xl capitalize"&gt;&#123;&#123; &#36;product-&gt;name &#125;&#125;&lt;/h2&gt;
+                        &lt;p&gt;&#123;&#123; &#36;product-&gt;description &#125;&#125;&lt;/p&gt;
+                        &lt;p&gt;€&#123;&#123; &#36;product-&gt;price &#125;&#125;&lt;/p&gt;
+                        &lt;div class="card-actions justify-end"&gt;
+                            &lt;button class="btn btn-primary w-full"&gt;Buy Now&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &#64;endforeach
+        &lt;/div&gt;
 
-        </div>
-        {{ $products->links() }}
+        &#123;&#123; &#36;products-&gt;links() &#125;&#125;
 
-    </section>
-@endsection</code></pre></div>
-
-
+    &lt;/section&gt;
+&#64;endsection</code></pre>
+</div>
