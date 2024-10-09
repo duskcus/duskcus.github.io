@@ -25,7 +25,7 @@ php artisan make:livewire componentName</code></pre></div>
 <p>Tailwind CSS: <a href="https://tailwindcss.com/docs/guides/laravel">https://tailwindcss.com/docs/guides/laravel</a></p>
 <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
 
-<h3>To many good component libraries</h3>
+<h3>Component Libraries:</h3>
 <p>SkeletonUI: <a href="https://www.skeleton.dev/">https://www.skeleton.dev/</a></p>
 <p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
 <p>Flowbite: <a href="https://flowbite-svelte.com/">https://flowbite-svelte.com/</a></p>
