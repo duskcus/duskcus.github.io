@@ -17,6 +17,7 @@ title: Laravel Components
             <li>header.blade.php</li>
         </ul>
     </li>
+    <li>index.blade.php</li>
 </ul>
 
 
