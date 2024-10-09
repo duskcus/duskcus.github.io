@@ -3,7 +3,7 @@ layout: default
 title: Laravel Components
 ---
 
-<h2>1.8 CRUD views</h2>
+<h2>1.8 CRUD Views</h2>
 
 <h3>Step 1. Create the following folders in your views:</h3>
 <ul>
