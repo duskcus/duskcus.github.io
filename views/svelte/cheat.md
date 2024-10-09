@@ -24,4 +24,4 @@ php artisan make:livewire componentName</code></pre></div>
 <p>SvelteKit: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
 <p>Tailwind CSS: <a href="https://tailwindcss.com/docs/guides/laravel">https://tailwindcss.com/docs/guides/laravel</a></p>
 <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
-<p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
+<p>SkeletonUI: <a href="https://www.skeleton.dev/">https://www.skeleton.dev/</a></p>
