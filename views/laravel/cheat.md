@@ -34,13 +34,13 @@ php artisan route:cache</code></pre></div>
 <h3>Tech Stack:</h3>
 <p>Laravel: <a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a></p>
 <p>Tailwind CSS: <a href="https://tailwindcss.com/docs/guides/laravel">https://tailwindcss.com/docs/guides/laravel</a></p>
-<p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
 <p>MySQL: <a href="https://www.mysql.com/downloads/">https://www.mysql.com/downloads/</a></p>
+<p>Daisy UI: <a href="https://daisyui.com/">https://daisyui.com/</a></p>
 
 <h3>Laravel Security:</h3>
 <p>Gate = Static admin and roles.</p>
 <p>Laravel Sanctum = Lightweight API tokens for singlepage applications.</p>
-<p>Laravel Passport = Auth0 and 3rd party integrations.</p>
+<p>Laravel Passport = Oauth and 3rd party integrations.</p>
 <p>Laravel TwoFactor = Easy and safe implemntation.</p>
 <p>Laravel Passkey = Modern solution, but unforgiving if you're a bad programmer.</p>
 <p>Breeze = Not as flexibel, and it is quite easy to setup normal authorisation.</p>
