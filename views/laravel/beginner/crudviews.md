@@ -17,7 +17,7 @@ title: Laravel Components
     </li>
 </ul>
 
-<h3>index.blade.php</h3>
+<h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
     <pre class="codesnippet"><code>&#64;extends(&#123;'layouts.default'&#125;)
