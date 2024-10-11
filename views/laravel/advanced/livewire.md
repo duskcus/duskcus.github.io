@@ -4,7 +4,7 @@ title: Laravel Livewire
 ---
 
 <h3>Livewire 3</h3>
-<p>I personally think Livewire is somewhat ratchet. Yet I also feel like it is benificial to write in logic as much in a single language. So what does it do? Well in my biased opinion it doesn't do anything that can't be done in JavaScript. So why use it? It's an easy and fast way to code in PHP and do an AJAX request to live update something without refreshing the page.</p>
+<p>I personally think Livewire is somewhat ratchet. It blurs the line between front-end and back-end and completely breaks SOLID principles. So what does it do? Well in my biased opinion it doesn't do anything that can't be done in JavaScript. So why use it? It's an easy and fast way to code in single pages with Javascript functions in PHP. Furthermore, it can be benificial to write as much logic in a singlular language in project groups. I personally think it excels at dynamic pages with authentication when well implemented. When should I definitely not use it? When you integrate a javascript component you want to AJAX update, it more than often breaks the entire DOM content.</p>
 
 <h2>Installing Livewire</h2>
 <p>Livewire is a bundled install with Alpine.js</p>
