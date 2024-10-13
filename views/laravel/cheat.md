@@ -13,7 +13,8 @@ title: Laravel Cheat Sheet
   <div class="line-numbers">
 </div>
 <pre class="codesnippet">
-<code>php artisan serve
+<code>php artisan key:generate
+php artisan serve
 npm run dev
 php artisan migrate:fresh --seed
 php artisan make:model Product --controller --resource --requests --migration --seed
