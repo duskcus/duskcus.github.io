@@ -229,6 +229,4 @@ title: Laravel Components
 
         </form>
     </section>
-@endsection
-
 @endsection</code></pre></div>
