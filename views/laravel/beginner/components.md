@@ -21,7 +21,7 @@ title: Laravel Components
 </ul>
 
 
-<h3>Step 2. Create a file “default.blade.php” within “views/layouts”:</h3>
+<h3>Step 2. Create a file “default.blade.php” within “views/layouts/”:</h3>
 <p>Use all the code snippets presented in the example. You will probably need a formatting extension.
 Example of a layout page we’ll call later.</p>
 <div class="codesnippet-wrapper">
@@ -50,7 +50,7 @@ Example of a layout page we’ll call later.</p>
 &lt;/html&gt;</code></pre></div>
 
 
-<h3>Step 3. Create a file “header.blade.php” within “views/components”:</h3>
+<h3>Step 3. Create a file “header.blade.php” within “views/components/”:</h3>
 <p>Example of a blade file that would replace &#64;include('header'):</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
@@ -81,7 +81,7 @@ Example of a layout page we’ll call later.</p>
 &lt;/nav&gt;</code></pre></div>
 
 
-<h3>Step 4. Create a file “footer.blade.php” within “components”:</h3>
+<h3>Step 4. Create a file “footer.blade.php” within “views/components/”:</h3>
 <p>Example of a blade file that would replace &#64;include('footer'):</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
@@ -93,7 +93,7 @@ Example of a layout page we’ll call later.</p>
 &lt;/footer&gt;</code></pre></div>
 
 
-<h3>Step 5. Create a file “index.blade.php” within “views”:</h3>
+<h3>Step 5. Create a file “index.blade.php” within “views/”:</h3>
 <p>Example of a blade file that would replace &#64;yield:</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
