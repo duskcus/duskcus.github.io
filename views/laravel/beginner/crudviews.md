@@ -15,6 +15,8 @@ title: Laravel Components
 </ul>
 </li>
 </ul>
+
+
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
@@ -68,7 +70,9 @@ Copy    &lt;div class="w-full inline-flex"&gt;
 
 &lt;/section&gt;
 @endsection</code></pre></div>
-<h3>products/index.blade.php</h3>
+
+
+<h3>products/show.blade.php</h3>
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
@@ -90,7 +94,9 @@ Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
     &lt;/div&gt;
 &lt;/section&gt;
 @endsection</code></pre></div>
-<h3>products/index.blade.php</h3>
+
+
+<h3>products/edit.blade.php</h3>
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
@@ -145,7 +151,9 @@ Copy    &lt;form action="&#123;&#123; route('products.update', $product->id) &#1
 &lt;/section&gt;
 @endsection
 @endsection</code></pre></div>
-<h3>products/index.blade.php</h3>
+
+
+<h3>products/create.blade.php</h3>
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
