@@ -4,29 +4,25 @@ title: Laravel Components
 ---
 
 <h2>1.8 CRUD views</h2>
-
 <h3>Step 1. Create the following folders in your views:</h3>
 <ul>
-    <li>products
-        <ul>
-            <li>create.blade.php</li>
-            <li>index.blade.php</li>
-            <li>edit.blade.php</li>
-            <li>show.blade.php</li>
-        </ul>
-    </li>
+<li>products
+<ul>
+<li>create.blade.php</li>
+<li>index.blade.php</li>
+<li>edit.blade.php</li>
+<li>show.blade.php</li>
 </ul>
-
+</li>
+</ul>
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
-    <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>&#64;extends('layouts.default')
-
-&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
-&#64;section('content')
-    <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
-
-        &lt;div class="w-full inline-flex"&gt;
+<div class="line-numbers"></div>
+<pre class="codesnippet"><code>@extends('layouts.default')
+{{-- @SECTION FOR THE START CONTENT --}}
+@section('content')
+<section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
+Copy    &lt;div class="w-full inline-flex"&gt;
         &lt;h1 class="text-4xl font-bold mb-6"&gt;Products&lt;/h1&gt;
 
         &lt;div class="ml-auto inline-flex"&gt;
@@ -71,22 +67,18 @@ title: Laravel Components
     &#123;&#123; $products->links() &#125;&#125;
 
 &lt;/section&gt;
-&#64;endsection</code></pre></div>
-
-
+@endsection</code></pre></div>
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
-    <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>&#64;extends('layouts.default')
-
-&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
-&#64;section('content')
-    <section>
-        &#123;&#123;-- <a href="&#123;&#123;route('products.edit', $product->id)&#125;&#125;">
-            <button class="btn btn-info ml-auto">Edit Mode</button>
-        </a> --&#125;&#125;
-
-    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
+<div class="line-numbers"></div>
+<pre class="codesnippet"><code>@extends('layouts.default')
+{{-- @SECTION FOR THE START CONTENT --}}
+@section('content')
+<section>
+{{-- <a href="{{route('products.edit', $product->id)}}">
+<button class="btn btn-info ml-auto">Edit Mode</button>
+</a> --}}
+Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
     &lt;img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image"&gt;
     &lt;div&gt;
         &lt;p class="text-2xl mb-6 capitalize"&gt;&#123;&#123; $product->name &#125;&#125;&lt;/p&gt;
@@ -97,19 +89,15 @@ title: Laravel Components
     &lt;/div&gt;
     &lt;/div&gt;
 &lt;/section&gt;
-&#64;endsection</code></pre></div>
-
-
+@endsection</code></pre></div>
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
-    <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>&#64;extends('layouts.default')
-
-&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
-&#64;section('content')
-    <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
-
-        &lt;form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST"&gt;
+<div class="line-numbers"></div>
+<pre class="codesnippet"><code>@extends('layouts.default')
+{{-- @SECTION FOR THE START CONTENT --}}
+@section('content')
+<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
+Copy    &lt;form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST"&gt;
 
         &#64;csrf
         &#64;method('PUT')
@@ -155,21 +143,16 @@ title: Laravel Components
 
     &lt;/form&gt;
 &lt;/section&gt;
-&#64;endsection
-
-&#64;endsection</code></pre></div>
-
-
+@endsection
+@endsection</code></pre></div>
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
-    <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>&#64;extends('layouts.default')
-
-&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
-&#64;section('content')
-    <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
-
-        &#64;if (session('success'))
+<div class="line-numbers"></div>
+<pre class="codesnippet"><code>@extends('layouts.default')
+{{-- @SECTION FOR THE START CONTENT --}}
+@section('content')
+<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
+Copy    &#64;if (session('success'))
         &lt;div class="alert alert-success"&gt;
             &#123;&#123; session('success') &#125;&#125;
         &lt;/div&gt;
@@ -217,13 +200,6 @@ title: Laravel Components
             &lt;/label&gt;
             &lt;input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image"&gt;
         &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="category"&gt;
-                &lt;span class="label-text"&gt;Category&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" required&gt;
-        &lt;/div&gt;
-
 
         &lt;button type="submit" class="btn btn-success mt-6 w-full"&gt;Create&lt;/button&gt;
 
