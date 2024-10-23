@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Laravel Calendar
+title: Laravel Passkeys
 ---
 
 <h2>Calendar</h2>
