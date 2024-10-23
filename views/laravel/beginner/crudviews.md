@@ -21,7 +21,7 @@ title: Laravel Components
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
-{{-- @SECTION FOR THE START CONTENT --}}
+&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
 @section('content')
 <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
         &lt;div class="w-full inline-flex"&gt;
@@ -76,12 +76,12 @@ title: Laravel Components
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
-{{-- @SECTION FOR THE START CONTENT --}}
+&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
 @section('content')
 <section>
-{{-- <a href="{{route('products.edit', $product->id)}}">
+&#123;&#123;-- <a href="{{route('products.edit', $product->id)}}">
 &lt;button class="btn btn-info ml-auto"/&gt;Edit Mode&lt;/button&gt;
-</a> --}}
+</a> --&#125;&#125;
 Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
     &lt;img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image"&gt;
     &lt;div&gt;
@@ -100,7 +100,7 @@ Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
-{{-- @SECTION FOR THE START CONTENT --}}
+&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
 @section('content')
 <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 Copy    &lt;form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST"&gt;
@@ -157,7 +157,7 @@ Copy    &lt;form action="&#123;&#123; route('products.update', $product->id) &#1
 <div class="codesnippet-wrapper">
 <div class="line-numbers"></div>
 <pre class="codesnippet"><code>@extends('layouts.default')
-{{-- @SECTION FOR THE START CONTENT --}}
+&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
 @section('content')
 <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 Copy    &#64;if (session('success'))
