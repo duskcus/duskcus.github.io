@@ -20,10 +20,10 @@ title: Laravel Components
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>@extends('layouts.default')
+    <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
-@section('content')
+&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
     <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
 
         <div class="w-full inline-flex">
@@ -38,7 +38,7 @@ title: Laravel Components
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
-            @foreach ($products as $product)
+            &#64;foreach ($products as $product)
                 <div class="card bg-base-300 shadow-xl">
                     <figure>
                         <a href="&#123;&#123; route('products.show', $product->id) &#125;&#125;">
@@ -58,29 +58,29 @@ title: Laravel Components
 
                             &#123;&#123;-- DELETE --&#125;&#125;
                             <form class="w-full" action="&#123;&#123; route('products.destroy', $product->id) &#125;&#125;" method="POST">
-                                @csrf
-                                @method('DELETE')
+                                &#64;csrf
+                                &#64;method('DELETE')
                                 <button class="btn btn-error w-full" type="submit">Delete &#123;&#123; $product->name &#125;&#125;</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            @endforeach
+            &#64;endforeach
 
         </div>
         &#123;&#123; $products->links() &#125;&#125;
 
     </section>
-@endsection</code></pre></div>
+&#64;endsection</code></pre></div>
 
 
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>@extends('layouts.default')
+    <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
-@section('content')
+&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
     <section>
         &#123;&#123;-- <a href="&#123;&#123;route('products.edit', $product->id)&#125;&#125;">
             <button class="btn btn-info ml-auto">Edit Mode</button>
@@ -97,22 +97,22 @@ title: Laravel Components
         </div>
         </div>
     </section>
-@endsection</code></pre></div>
+&#64;endsection</code></pre></div>
 
 
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>@extends('layouts.default')
+    <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
-@section('content')
+&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
         <form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST">
 
-            @csrf
-            @method('PUT')
+            &#64;csrf
+            &#64;method('PUT')
 
             <div class="form-control mt-4">
                 <label class="label" for="name">
@@ -155,29 +155,29 @@ title: Laravel Components
 
         </form>
     </section>
-@endsection
+&#64;endsection
 
-@endsection</code></pre></div>
+&#64;endsection</code></pre></div>
 
 
 <h3>products/index.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
-    <pre class="codesnippet"><code>@extends('layouts.default')
+    <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
-@section('content')
+&#123;&#123;-- &#64;SECTION FOR THE START CONTENT --&#125;&#125;
+&#64;section('content')
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
-        @if (session('success'))
+        &#64;if (session('success'))
             <div class="alert alert-success">
                 &#123;&#123; session('success') &#125;&#125;
             </div>
-        @endif
+        &#64;endif
 
         <form action="&#123;&#123; route('products.store') &#125;&#125;" method="POST">
 
-            @csrf
+            &#64;csrf
 
             <div class="form-control mt-4">
                 <label class="label" for="name">
@@ -229,4 +229,4 @@ title: Laravel Components
 
         </form>
     </section>
-@endsection</code></pre></div>
+&#64;endsection</code></pre></div>
