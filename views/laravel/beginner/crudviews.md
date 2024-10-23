@@ -24,7 +24,7 @@ title: Laravel Components
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
 <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
-Copy    &lt;div class="w-full inline-flex"&gt;
+        &lt;div class="w-full inline-flex"&gt;
         &lt;h1 class="text-4xl font-bold mb-6"&gt;Products&lt;/h1&gt;
 
         &lt;div class="ml-auto inline-flex"&gt;
@@ -80,7 +80,7 @@ Copy    &lt;div class="w-full inline-flex"&gt;
 @section('content')
 <section>
 {{-- <a href="{{route('products.edit', $product->id)}}">
-<button class="btn btn-info ml-auto">Edit Mode</button>
+&lt;button class="btn btn-info ml-auto"/&gt;Edit Mode&lt;/button&gt;
 </a> --}}
 Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
     &lt;img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image"&gt;
