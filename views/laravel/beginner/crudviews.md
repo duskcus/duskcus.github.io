@@ -26,7 +26,7 @@ title: Laravel Components
 &#64;section('content')
     <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
 
-        <div class="w-full inline-flex">
+        &lt;div class="w-full inline-flex">
             <h1 class="text-4xl font-bold mb-6">Products</h1>
 
             <div class="ml-auto inline-flex">
