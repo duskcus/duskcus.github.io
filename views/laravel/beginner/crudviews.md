@@ -26,7 +26,7 @@ title: Laravel Components
 &#64;section('content')
     <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
 
-        &lt;div class="w-full inline-flex">
+        &lt;div class="w-full inline-flex"&gt;
             <h1 class="text-4xl font-bold mb-6">Products</h1>
 
             <div class="ml-auto inline-flex">
@@ -73,8 +73,7 @@ title: Laravel Components
     </section>
 &#64;endsection</code></pre></div>
 
-
-<h3>products/index.blade.php</h3>
+<h3>products/show.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
     <pre class="codesnippet"><code>&#64;extends('layouts.default')
@@ -99,8 +98,7 @@ title: Laravel Components
     </section>
 &#64;endsection</code></pre></div>
 
-
-<h3>products/index.blade.php</h3>
+<h3>products/edit.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
     <pre class="codesnippet"><code>&#64;extends('layouts.default')
@@ -155,12 +153,9 @@ title: Laravel Components
 
         </form>
     </section>
-&#64;endsection
-
 &#64;endsection</code></pre></div>
 
-
-<h3>products/index.blade.php</h3>
+<h3>products/create.blade.php</h3>
 <div class="codesnippet-wrapper">
     <div class="line-numbers"></div>
     <pre class="codesnippet"><code>&#64;extends('layouts.default')
@@ -223,7 +218,6 @@ title: Laravel Components
                 </label>
                 <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" required>
             </div>
-
 
             <button type="submit" class="btn btn-success mt-6 w-full">Create</button>
 
