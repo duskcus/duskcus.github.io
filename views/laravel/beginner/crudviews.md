@@ -109,52 +109,52 @@ title: Laravel Components
 &#64;section('content')
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
-        <form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST">
+        &lt;form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST"&gt;
 
-            &#64;csrf
-            &#64;method('PUT')
+        &#64;csrf
+        &#64;method('PUT')
 
-            <div class="form-control mt-4">
-                <label class="label" for="name">
-                    <span class="label-text">Name</span>
-                </label>
-                <input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" value="&#123;&#123;$product->name&#125;&#125;" required>
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="price">
-                    <span class="label-text">Price</span>
-                </label>
-                <input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" value="&#123;&#123;$product->price&#125;&#125;" required>
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="stock">
-                    <span class="label-text">Stock</span>
-                </label>
-                <input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" value="&#123;&#123;$product->stock&#125;&#125;" required>
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="description">
-                    <span class="label-text">Description</span>
-                </label>
-                <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" value="&#123;&#123;$product->description&#125;&#125;" required>
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="image">
-                    <span class="label-text">Image</span>
-                </label>
-                <input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image" value="&#123;&#123;$product->image&#125;&#125;">
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="category">
-                    <span class="label-text">Category</span>
-                </label>
-                <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" value="&#123;&#123;$product->category&#125;&#125;" required>
-            </div>
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="name"&gt;
+                &lt;span class="label-text"&gt;Name&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" value="&#123;&#123;$product->name&#125;&#125;" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="price"&gt;
+                &lt;span class="label-text"&gt;Price&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" value="&#123;&#123;$product->price&#125;&#125;" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="stock"&gt;
+                &lt;span class="label-text"&gt;Stock&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" value="&#123;&#123;$product->stock&#125;&#125;" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="description"&gt;
+                &lt;span class="label-text"&gt;Description&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" value="&#123;&#123;$product->description&#125;&#125;" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="image"&gt;
+                &lt;span class="label-text"&gt;Image&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image" value="&#123;&#123;$product->image&#125;&#125;"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="category"&gt;
+                &lt;span class="label-text"&gt;Category&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" value="&#123;&#123;$product->category&#125;&#125;" required&gt;
+        &lt;/div&gt;
 
-            <button type="submit" class="btn btn-info mt-6 w-full">Edit &#123;&#123; $product->name &#125;&#125;</button>
+        &lt;button type="submit" class="btn btn-info mt-6 w-full"&gt;Edit &#123;&#123; $product->name &#125;&#125;&lt;/button&gt;
 
-        </form>
-    </section>
+    &lt;/form&gt;
+&lt;/section&gt;
 &#64;endsection
 
 &#64;endsection</code></pre></div>
@@ -170,63 +170,63 @@ title: Laravel Components
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
         &#64;if (session('success'))
-            <div class="alert alert-success">
-                &#123;&#123; session('success') &#125;&#125;
-            </div>
-        &#64;endif
+        &lt;div class="alert alert-success"&gt;
+            &#123;&#123; session('success') &#125;&#125;
+        &lt;/div&gt;
+    &#64;endif
 
-        <form action="&#123;&#123; route('products.store') &#125;&#125;" method="POST">
+    &lt;form action="&#123;&#123; route('products.store') &#125;&#125;" method="POST"&gt;
 
-            &#64;csrf
+        &#64;csrf
 
-            <div class="form-control mt-4">
-                <label class="label" for="name">
-                    <span class="label-text">Name</span>
-                </label>
-                <input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" required>
-            </div>
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="name"&gt;
+                &lt;span class="label-text"&gt;Name&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" required&gt;
+        &lt;/div&gt;
 
-            <div class="flex flex-wrap -mx-2">
-                <div class="w-full md:w-1/2 px-2">
-                    <div class="form-control mt-4">
-                        <label class="label" for="modal_start_time">
-                            <span class="label-text">Price</span>
-                        </label>
-                        <input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" required>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 px-2">
-                    <div class="form-control mt-4">
-                        <label class="label" for="modal_end_time">
-                            <span class="label-text">Stock</span>
-                        </label>
-                        <input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" required>
-                    </div>
-                </div>
-            </div>
+        &lt;div class="flex flex-wrap -mx-2"&gt;
+            &lt;div class="w-full md:w-1/2 px-2"&gt;
+                &lt;div class="form-control mt-4"&gt;
+                    &lt;label class="label" for="modal_start_time"&gt;
+                        &lt;span class="label-text"&gt;Price&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" required&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="w-full md:w-1/2 px-2"&gt;
+                &lt;div class="form-control mt-4"&gt;
+                    &lt;label class="label" for="modal_end_time"&gt;
+                        &lt;span class="label-text"&gt;Stock&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" required&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 
-            <div class="form-control mt-4">
-                <label class="label" for="description">
-                    <span class="label-text">Description</span>
-                </label>
-                <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required>
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="image">
-                    <span class="label-text">Image</span>
-                </label>
-                <input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image">
-            </div>
-            <div class="form-control mt-4">
-                <label class="label" for="category">
-                    <span class="label-text">Category</span>
-                </label>
-                <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" required>
-            </div>
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="description"&gt;
+                &lt;span class="label-text"&gt;Description&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="image"&gt;
+                &lt;span class="label-text"&gt;Image&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-control mt-4"&gt;
+            &lt;label class="label" for="category"&gt;
+                &lt;span class="label-text"&gt;Category&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" required&gt;
+        &lt;/div&gt;
 
 
-            <button type="submit" class="btn btn-success mt-6 w-full">Create</button>
+        &lt;button type="submit" class="btn btn-success mt-6 w-full"&gt;Create&lt;/button&gt;
 
-        </form>
-    </section>
+    &lt;/form&gt;
+&lt;/section&gt;
 &#64;endsection</code></pre></div>
