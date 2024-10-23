@@ -86,17 +86,17 @@ title: Laravel Components
             <button class="btn btn-info ml-auto">Edit Mode</button>
         </a> --&#125;&#125;
 
-        <div class="grid grid-cols-2 gap-6 p-6">
-        <img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image">
-        <div>
-            <p class="text-2xl mb-6 capitalize">&#123;&#123; $product->name &#125;&#125;</p>
-            <p>&#123;&#123; $product->description &#125;&#125;</p>
-            <p>price: &#123;&#123; $product->price &#125;&#125;</p>
-            <p>stock: &#123;&#123; $product->stock &#125;&#125;</p>
-            <p>category: <a class="link" href="">&#123;&#123; $product->category &#125;&#125;</a></p>
-        </div>
-        </div>
-    </section>
+    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
+    &lt;img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image"&gt;
+    &lt;div&gt;
+        &lt;p class="text-2xl mb-6 capitalize"&gt;&#123;&#123; $product->name &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;&#123;&#123; $product->description &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;price: &#123;&#123; $product->price &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;stock: &#123;&#123; $product->stock &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;category: &lt;a class="link" href=""&gt;&#123;&#123; $product->category &#125;&#125;&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 &#64;endsection</code></pre></div>
 
 
