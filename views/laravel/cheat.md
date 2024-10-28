@@ -18,7 +18,8 @@ php artisan serve
 npm run dev
 php artisan migrate:fresh --seed
 php artisan make:model Product --controller --resource --requests --migration --seed
-php artisan make:livewire componentName</code></pre></div>
+php artisan make:livewire componentName
+php artisan make:middleware MiddleWareName</code></pre></div>
 
 <h3>Caching Commands:</h3>
 <div class="codesnippet-wrapper">
