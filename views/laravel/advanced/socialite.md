@@ -14,28 +14,34 @@
 
 Update your .env file with the following values:
 
-```GOOGLE_CLIENT_ID=your-google-client-id
+```
+GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
-GOOGLE_REDIRECT_URI=http://your-app-url.com/auth/google/callback```
+GOOGLE_REDIRECT_URI=http://your-app-url.com/auth/google/callback
+```
 
 4. Update config/services.php
 
 Add Google as a new service in config/services.php:
 
-```'google' => [
+```
+'google' => [
     'client_id' => env('GOOGLE_CLIENT_ID'),
     'client_secret' => env('GOOGLE_CLIENT_SECRET'),
     'redirect' => env('GOOGLE_REDIRECT_URI'),
-],```
+],
+```
 
 5. Create Routes
 
 Define routes for redirecting to Google and handling the callback:
 
-```use App\Http\Controllers\Auth\GoogleController;
+```
+use App\Http\Controllers\Auth\GoogleController;
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);```
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+```
 
 6. Create the Controller
 
