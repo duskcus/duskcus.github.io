@@ -10,9 +10,9 @@ title: Laravel Passkeys
 <p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
 
 <h3>Parts</h3>
+<li>Javascript/Package inclusion</li>
 <li>Form</li>
 <li>Endpoints</li>
-<li>Javascript</li>
 <li>Middleware in routes</li>
 
 <h3>Step 1. Create a Laravel project:</h3>
