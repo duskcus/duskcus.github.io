@@ -1,7 +1,7 @@
 <h2>1. Install Laravel Socialite</h2>
-  ```
-  composer require laravel/socialite
-  ```
+```
+composer require laravel/socialite
+```
 
 <h2>2. Configure Google API Credentials</h2>
 
