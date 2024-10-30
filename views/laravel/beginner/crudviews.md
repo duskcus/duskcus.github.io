@@ -18,58 +18,58 @@ title: Laravel Components
 
 
 <h3>products/index.blade.php</h3>
-<div class="codesnippet-wrapper">
-<div class="line-numbers"></div>
-<pre class="codesnippet"><code>@extends('layouts.default')
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
+```
+@extends('layouts.default')
+{{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-<section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
-        &lt;div class="w-full inline-flex"&gt;
-        &lt;h1 class="text-4xl font-bold mb-6"&gt;Products&lt;/h1&gt;
 
-        &lt;div class="ml-auto inline-flex"&gt;
+        <div class="w-full inline-flex">
+        <h1 class="text-4xl font-bold mb-6">Products</h1>
 
-            &lt;a class="btn btn-success" href="&#123;&#123; route('products.create') &#125;&#125;"&gt;
-                &lt;button&gt;Create Product&lt;/button&gt;
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+        <div class="ml-auto inline-flex">
 
-    &lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6"&gt;
-        &#64;foreach ($products as $product)
-            &lt;div class="card bg-base-300 shadow-xl"&gt;
-                &lt;figure&gt;
-                    &lt;a href="&#123;&#123; route('products.show', $product->id) &#125;&#125;"&gt;
-                        &lt;img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" /&gt;
-                    &lt;/a&gt;
-                &lt;/figure&gt;
-                &lt;div class="card-body"&gt;
-                    &lt;h2 class="text-xl capitalize"&gt;&#123;&#123; $product->name &#125;&#125;&lt;/h2&gt;
-                    &lt;p&gt;&#123;&#123; $product->description &#125;&#125;&lt;/p&gt;
-                    &lt;p&gt;€&#123;&#123; $product->price &#125;&#125;&lt;/p&gt;
-                    &lt;div class="card-actions justify-end"&gt;
-                        &lt;button class="btn btn-primary w-full"&gt;Buy Now&lt;/button&gt;
-                        &#123;&#123;-- EDIT --&#125;&#125;
-                        &lt;a class="btn btn-info w-full" href="&#123;&#123; route('products.edit', $product->id) &#125;&#125;"&gt;
-                            &lt;button&gt;Edit &#123;&#123; $product->name &#125;&#125;&lt;/button&gt;
-                        &lt;/a&gt;
+            <a class="btn btn-success" href="{{ route('products.create') }}">
+                <button>Create Product</button>
+            </a>
+        </div>
+    </div>
 
-                        &#123;&#123;-- DELETE --&#125;&#125;
-                        &lt;form class="w-full" action="&#123;&#123; route('products.destroy', $product->id) &#125;&#125;" method="POST"&gt;
-                            &#64;csrf
-                            &#64;method('DELETE')
-                            &lt;button class="btn btn-error w-full" type="submit"&gt;Delete &#123;&#123; $product->name &#125;&#125;&lt;/button&gt;
-                        &lt;/form&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &#64;endforeach
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
+        @foreach ($products as $product)
+            <div class="card bg-base-300 shadow-xl">
+                <figure>
+                    <a href="{{ route('products.show', $product->id) }}">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                    </a>
+                </figure>
+                <div class="card-body">
+                    <h2 class="text-xl capitalize">{{ $product->name }}</h2>
+                    <p>{{ $product->description }}</p>
+                    <p>€{{ $product->price }}</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Buy Now</button>
+                        {{-- EDIT --}}
+                        <a class="btn btn-info w-full" href="{{ route('products.edit', $product->id) }}">
+                            <button>Edit {{ $product->name }}</button>
+                        </a>
 
-    &lt;/div&gt;
-    &#123;&#123; $products->links() &#125;&#125;
+                        {{-- DELETE --}}
+                        <form class="w-full" action="{{ route('products.destroy', $product->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-error w-full" type="submit">Delete {{ $product->name }}</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        @endforeach
 
-&lt;/section&gt;
+    </div>
+    {{ $products->links() }}
+
+</section>
 @endsection</code></pre></div>
+```
 
 
 <h3>products/show.blade.php</h3>
