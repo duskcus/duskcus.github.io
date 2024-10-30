@@ -1,5 +1,7 @@
 1. Install Laravel Socialite
-  ```composer require laravel/socialite```
+  ```
+  composer require laravel/socialite
+  ```
 
 2. Configure Google API Credentials
 
