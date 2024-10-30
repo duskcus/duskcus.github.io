@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Github Introduction
 ---
 
 <h1>Title</h1>
