@@ -53,4 +53,13 @@
   font-family: "Consolas", "Monaco", monospace;
   color: #333;
   background-color: #EBEBE6;
+  white-space: pre;
+  overflow-x: auto;
+  margin: 0;
+  flex: 1;
+  
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 0.95em;
+  line-height: 1.5em;
 }
