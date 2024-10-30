@@ -3,10 +3,7 @@ layout: default
 title: Github Cheatsheet
 ---
 
-<h2>INTRODUCTION</h2>
-
-<h3>What is GitHub?</h3>
-<p>Laravel is a great framework for quickly building web apps, with a large ecosystem. It can handle a good amount of concurrent users with octane, and openswoole. I guess the only downside is that its logic distribution doesn't make any sense.</p>
+<h2>CHEATSHEET</h2>
 
 <h3>Important Commands:</h3>
 <div class="codesnippet-wrapper">
