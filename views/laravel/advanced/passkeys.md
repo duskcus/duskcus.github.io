@@ -3,10 +3,10 @@ layout: default
 title: Laravel Passkeys
 ---
 
-<h2>Calendar</h2>
+<h2>Passkeys</h2>
 
-<h3>Set-up</h3>
-<p>Laravel is a great framework for quickly building web apps, with a large ecosystem. While it's slightly slower than some frameworks, the difference is often negligible. It's ideal for most projects unless when N2 notation becomes critical, which in 99% of cases it won't.</p>
+<h3>What are passkeys</h3>
+<p>Passkeys is pretty much like second auth without the manual numeric code insertion which saves you a few seconds.</p>
 <p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
 
 
