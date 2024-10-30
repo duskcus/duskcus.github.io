@@ -1,9 +1,9 @@
-1. Install Laravel Socialite
+<h2>1. Install Laravel Socialite</h2>
   ```
   composer require laravel/socialite
   ```
 
-2. Configure Google API Credentials
+<h2>2. Configure Google API Credentials</h2>
 
 	1.	Go to the Google Cloud Console.
 	2.	Navigate to APIs & Services > Credentials.
@@ -12,7 +12,7 @@
 	5.	In the Authorized redirect URIs, add your callback URL, typically:
 
 
- 3. Add Google Credentials to .env
+<h2>3. Add Google Credentials to .env</h2>
 
 Update your .env file with the following values:
 
@@ -22,7 +22,7 @@ GOOGLE_CLIENT_SECRET=your-google-client-secret
 GOOGLE_REDIRECT_URI=http://your-app-url.com/auth/google/callback
 ```
 
-4. Update config/services.php
+<h2>4. Update config/services.php</h2>
 
 Add Google as a new service in config/services.php:
 
@@ -34,7 +34,7 @@ Add Google as a new service in config/services.php:
 ],
 ```
 
-5. Create Routes
+<h2>5. Create Routes</h2>
 
 Define routes for redirecting to Google and handling the callback:
 
@@ -45,7 +45,7 @@ Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 ```
 
-6. Create the Controller
+<h2>6. Create the Controller</h2>
 
 Create a new controller for handling the Google authentication logic. Run:
 php artisan make:controller Auth/GoogleController
