@@ -73,144 +73,155 @@ title: Laravel Components
 
 
 <h3>products/show.blade.php</h3>
-<div class="codesnippet-wrapper">
-<div class="line-numbers"></div>
-<pre class="codesnippet"><code>@extends('layouts.default')
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
+```
+@extends('layouts.default')
+
+{{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-<section>
-&#123;&#123;-- <a href="{{route('products.edit', $product->id)}}">
-&lt;button class="btn btn-info ml-auto"/&gt;Edit Mode&lt;/button&gt;
-</a> --&#125;&#125;
-Copy    &lt;div class="grid grid-cols-2 gap-6 p-6"&gt;
-    &lt;img class="h-[300px]" src="&#123;&#123; $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' &#125;&#125;" alt="Product Image"&gt;
-    &lt;div&gt;
-        &lt;p class="text-2xl mb-6 capitalize"&gt;&#123;&#123; $product->name &#125;&#125;&lt;/p&gt;
-        &lt;p&gt;&#123;&#123; $product->description &#125;&#125;&lt;/p&gt;
-        &lt;p&gt;price: &#123;&#123; $product->price &#125;&#125;&lt;/p&gt;
-        &lt;p&gt;stock: &#123;&#123; $product->stock &#125;&#125;&lt;/p&gt;
-        &lt;p&gt;category: &lt;a class="link" href=""&gt;&#123;&#123; $product->category &#125;&#125;&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-@endsection</code></pre></div>
+    <section>
+        {{-- <a href="{{route('products.edit', $product->id)}}">
+            <button class="btn btn-info ml-auto">Edit Mode</button>
+        </a> --}}
+
+        <div class="grid grid-cols-2 gap-6 p-6">
+        <img class="h-[300px]" src="{{ $product->image ?? 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }}" alt="Product Image">
+        <div>
+            <p class="text-2xl mb-6 capitalize">{{ $product->name }}</p>
+            <p>{{ $product->description }}</p>
+            <p>price: {{ $product->price }}</p>
+            <p>stock: {{ $product->stock }}</p>
+            <p>category: <a class="link" href="">{{ $product->category }}</a></p>
+        </div>
+        </div>
+    </section>
+@endsection
+```
 
 
 <h3>products/edit.blade.php</h3>
-<div class="codesnippet-wrapper">
-<div class="line-numbers"></div>
-<pre class="codesnippet"><code>@extends('layouts.default')
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
+```
+@extends('layouts.default')
+
+{{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
-Copy    &lt;form action="&#123;&#123; route('products.update', $product->id) &#125;&#125;" method="POST"&gt;
+    <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
-        &#64;csrf
-        &#64;method('PUT')
+        <form action="{{ route('products.update', $product->id) }}" method="POST">
 
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="name"&gt;
-                &lt;span class="label-text"&gt;Name&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" value="&#123;&#123;$product->name&#125;&#125;" required&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="price"&gt;
-                &lt;span class="label-text"&gt;Price&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" value="&#123;&#123;$product->price&#125;&#125;" required&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="stock"&gt;
-                &lt;span class="label-text"&gt;Stock&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" value="&#123;&#123;$product->stock&#125;&#125;" required&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="description"&gt;
-                &lt;span class="label-text"&gt;Description&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" value="&#123;&#123;$product->description&#125;&#125;" required&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="image"&gt;
-                &lt;span class="label-text"&gt;Image&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image" value="&#123;&#123;$product->image&#125;&#125;"&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="category"&gt;
-                &lt;span class="label-text"&gt;Category&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" value="&#123;&#123;$product->category&#125;&#125;" required&gt;
-        &lt;/div&gt;
+            @csrf
+            @method('PUT')
 
-        &lt;button type="submit" class="btn btn-info mt-6 w-full"&gt;Edit &#123;&#123; $product->name &#125;&#125;&lt;/button&gt;
+            <div class="form-control mt-4">
+                <label class="label" for="name">
+                    <span class="label-text">Name</span>
+                </label>
+                <input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" value="{{$product->name}}" required>
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="price">
+                    <span class="label-text">Price</span>
+                </label>
+                <input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" value="{{$product->price}}" required>
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="stock">
+                    <span class="label-text">Stock</span>
+                </label>
+                <input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" value="{{$product->stock}}" required>
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="description">
+                    <span class="label-text">Description</span>
+                </label>
+                <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" value="{{$product->description}}" required>
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="image">
+                    <span class="label-text">Image</span>
+                </label>
+                <input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image" value="{{$product->image}}">
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="category">
+                    <span class="label-text">Category</span>
+                </label>
+                <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" value="{{$product->category}}" required>
+            </div>
 
-    &lt;/form&gt;
-&lt;/section&gt;
+            <button type="submit" class="btn btn-info mt-6 w-full">Edit {{ $product->name }}</button>
+
+        </form>
+    </section>
 @endsection
-@endsection</code></pre></div>
+```
 
 
 <h3>products/create.blade.php</h3>
-<div class="codesnippet-wrapper">
-<div class="line-numbers"></div>
-<pre class="codesnippet"><code>@extends('layouts.default')
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
+```@extends('layouts.default')
+
+{{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
-Copy    &#64;if (session('success'))
-        &lt;div class="alert alert-success"&gt;
-            &#123;&#123; session('success') &#125;&#125;
-        &lt;/div&gt;
-    &#64;endif
+    <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
-    &lt;form action="&#123;&#123; route('products.store') &#125;&#125;" method="POST"&gt;
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
 
-        &#64;csrf
+        <form action="{{ route('products.store') }}" method="POST">
 
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="name"&gt;
-                &lt;span class="label-text"&gt;Name&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" required&gt;
-        &lt;/div&gt;
+            @csrf
 
-        &lt;div class="flex flex-wrap -mx-2"&gt;
-            &lt;div class="w-full md:w-1/2 px-2"&gt;
-                &lt;div class="form-control mt-4"&gt;
-                    &lt;label class="label" for="modal_start_time"&gt;
-                        &lt;span class="label-text"&gt;Price&lt;/span&gt;
-                    &lt;/label&gt;
-                    &lt;input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" required&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="w-full md:w-1/2 px-2"&gt;
-                &lt;div class="form-control mt-4"&gt;
-                    &lt;label class="label" for="modal_end_time"&gt;
-                        &lt;span class="label-text"&gt;Stock&lt;/span&gt;
-                    &lt;/label&gt;
-                    &lt;input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" required&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+            <div class="form-control mt-4">
+                <label class="label" for="name">
+                    <span class="label-text">Name</span>
+                </label>
+                <input type="text" name="name" id="name" class="input input-bordered w-full" placeholder="Name" required>
+            </div>
 
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="description"&gt;
-                &lt;span class="label-text"&gt;Description&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required&gt;
-        &lt;/div&gt;
-        &lt;div class="form-control mt-4"&gt;
-            &lt;label class="label" for="image"&gt;
-                &lt;span class="label-text"&gt;Image&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image"&gt;
-        &lt;/div&gt;
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-2">
+                    <div class="form-control mt-4">
+                        <label class="label" for="modal_start_time">
+                            <span class="label-text">Price</span>
+                        </label>
+                        <input type="text" name="price" id="price" class="input input-bordered w-full" placeholder="Price" required>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-2">
+                    <div class="form-control mt-4">
+                        <label class="label" for="modal_end_time">
+                            <span class="label-text">Stock</span>
+                        </label>
+                        <input type="text" name="stock" id="stock" class="input input-bordered w-full" placeholder="Stock" required>
+                    </div>
+                </div>
+            </div>
 
-        &lt;button type="submit" class="btn btn-success mt-6 w-full"&gt;Create&lt;/button&gt;
+            <div class="form-control mt-4">
+                <label class="label" for="description">
+                    <span class="label-text">Description</span>
+                </label>
+                <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required>
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="image">
+                    <span class="label-text">Image</span>
+                </label>
+                <input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image">
+            </div>
+            <div class="form-control mt-4">
+                <label class="label" for="category">
+                    <span class="label-text">Category</span>
+                </label>
+                <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" required>
+            </div>
 
-    &lt;/form&gt;
-&lt;/section&gt;
-&#64;endsection</code></pre></div>
+
+            <button type="submit" class="btn btn-success mt-6 w-full">Create</button>
+
+        </form>
+    </section>
+@endsection
+```
