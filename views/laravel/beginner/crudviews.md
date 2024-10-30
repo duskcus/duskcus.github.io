@@ -157,7 +157,8 @@ title: Laravel Components
 
 
 <h3>products/create.blade.php</h3>
-```@extends('layouts.default')
+```
+@extends('layouts.default')
 
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
