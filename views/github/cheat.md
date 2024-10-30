@@ -16,5 +16,6 @@ title: Github Cheatsheet
 <code>git push
 git pull
 git commit
+git checkout
 git merge
-git checkout</code></pre></div>
+git merge origin</code></pre></div>
