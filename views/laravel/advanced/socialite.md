@@ -1,4 +1,5 @@
 <h2>1. Install Laravel Socialite</h2>
+
 ```
 composer require laravel/socialite
 ```
