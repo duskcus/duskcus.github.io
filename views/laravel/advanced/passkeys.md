@@ -9,6 +9,11 @@ title: Laravel Passkeys
 <p>Passkeys is pretty much like second auth without the manual numeric code insertion which saves you a few seconds. Eitherway I'll show you how to implement this feature. For this feature I'd like to use laravel-webauthn as I find the package quite pleasing to use.</p>
 <p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
 
+<h3>Parts</h3>
+<li>Form</li>
+<li>Endpoints</li>
+<li>Javascript</li>
+<li>Middleware in routes</li>
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name.</p>
