@@ -90,3 +90,10 @@ class GoogleController extends Controller
     }
 }
 ```
+
+<h2>7. Create a link or button</h2>
+    <a href="{{ route('webauthn.auth') }}">
+        <button class="px-3 py-2 ml-4 bg-white rounded-md" type="button">
+            <i class="fa-brands fa-google"></i> Google
+        </button>
+    </a>
