@@ -1,15 +1,20 @@
 ---
 layout: default
-title: Home
+title: Godot Introduction
 ---
 
-<h1>Title</h1>
-<li>Navigation</li>
+<h2>INTRODUCTION</h2>
 
-<h1>Title</h1>
-<li>Navigation</li>
-<li>N00B section</li>
-<li>Tools section</li>
-<li>Collapseable sidebar</li>
-<li>Animations</li>
-<i>Folder structure: Root->Subject(Example = Laravel)->Intro->Quickstart</i>
+<h3>What is Godot?</h3>
+<p>Godot is a open source game engine. It's main benefits are multiplatform game exporting and modular use of languages.</p>
+
+<h3>What Will You Learn?</h3>
+In this course we'll make a metroidvania to teach you the most important parts.
+
+<ul>
+  <li>Godot Script</li>
+  <li>Map Structure</li>
+  <li>Node Structure</li>
+  <li>Optimisation</li>
+  <li>Basic and Advanced Multiplayer Integration</li>
+</ul>
