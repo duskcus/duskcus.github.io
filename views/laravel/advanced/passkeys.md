@@ -17,8 +17,6 @@ title: Laravel Passkeys
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“projectname” can be changed to desired name.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>laravel new <span style="color: red;">projectname</span></code></pre></div>
+```
+code
+```
