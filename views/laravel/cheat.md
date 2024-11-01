@@ -41,6 +41,7 @@ php artisan route:cache</code></pre></div>
 
 <h3>Laravel Security:</h3>
 <p>Gate = Static admin and roles.</p>
+<p>Laravel Fortify = Breeze without the garbage files, pretty good.</p>
 <p>Laravel Sanctum = Lightweight API tokens for singlepage applications.</p>
 <p>Laravel Passport = Oauth and 3rd party integrations.</p>
 <p>Laravel TwoFactor = Easy and safe implemntation.</p>
