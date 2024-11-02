@@ -1,3 +1,10 @@
+---
+layout: default
+title: Laravel Cheat Sheet
+---
+
+<h2>Relations</h2>
+
 ```
 //model
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
