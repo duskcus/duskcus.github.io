@@ -114,3 +114,20 @@ To run the tests, use:
 ```
 php artisan test
 ```
+
+Using RefreshDatabase auto runs pamfs
+```
+<?php
+
+namespace Tests\Feature;
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class PostTest extends TestCase
+{
+    use RefreshDatabase;
+
+    // Your test methods go here...
+}
+```
