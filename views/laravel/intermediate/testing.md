@@ -27,7 +27,7 @@ class PostTest extends TestCase
      */
     public function test_user_can_create_a_post()
     {
-        // Mock data for the post
+        // Define the mock data for the post
         $postData = [
             'title' => 'Sample Post Title',
             'body' => 'This is the body of the sample post.',
@@ -36,9 +36,9 @@ class PostTest extends TestCase
         // Send a POST request to create a new post
         $response = $this->post('/posts', $postData);
 
-        // Assert that the post was created
-        $response->assertStatus(201); // HTTP 201 for created resource
-        $this->assertDatabaseHas('posts', $postData); // Verify post in database
+        // Assert that the post was created successfully
+        $response->assertStatus(201); // Expecting HTTP 201 for created resource
+        $this->assertDatabaseHas('posts', $postData); // Verify post exists in the database
     }
 
     /**
@@ -46,8 +46,11 @@ class PostTest extends TestCase
      */
     public function test_user_can_view_a_post()
     {
-        // Create a post in the database
-        $post = Post::factory()->create();
+        // Manually insert a post into the database
+        $post = Post::create([
+            'title' => 'Sample Post Title',
+            'body' => 'This is the body of the sample post.',
+        ]);
 
         // Send a GET request to retrieve the post
         $response = $this->get('/posts/' . $post->id);
@@ -66,10 +69,13 @@ class PostTest extends TestCase
      */
     public function test_user_can_update_a_post()
     {
-        // Create a post in the database
-        $post = Post::factory()->create();
+        // Manually insert a post into the database
+        $post = Post::create([
+            'title' => 'Sample Post Title',
+            'body' => 'This is the body of the sample post.',
+        ]);
 
-        // Updated data for the post
+        // Define the updated data for the post
         $updatedData = [
             'title' => 'Updated Post Title',
             'body' => 'This is the updated body of the post.',
@@ -78,9 +84,9 @@ class PostTest extends TestCase
         // Send a PUT request to update the post
         $response = $this->put('/posts/' . $post->id, $updatedData);
 
-        // Assert that the post was updated
+        // Assert that the post was updated successfully
         $response->assertStatus(200);
-        $this->assertDatabaseHas('posts', $updatedData); // Verify updated data in database
+        $this->assertDatabaseHas('posts', $updatedData); // Verify updated data in the database
     }
 
     /**
@@ -88,15 +94,18 @@ class PostTest extends TestCase
      */
     public function test_user_can_delete_a_post()
     {
-        // Create a post in the database
-        $post = Post::factory()->create();
+        // Manually insert a post into the database
+        $post = Post::create([
+            'title' => 'Sample Post Title',
+            'body' => 'This is the body of the sample post.',
+        ]);
 
         // Send a DELETE request to delete the post
         $response = $this->delete('/posts/' . $post->id);
 
-        // Assert that the post was deleted
+        // Assert that the post was deleted successfully
         $response->assertStatus(200);
-        $this->assertDatabaseMissing('posts', ['id' => $post->id]); // Verify post is removed
+        $this->assertDatabaseMissing('posts', ['id' => $post->id]); // Verify post is removed from the database
     }
 }
 ```
