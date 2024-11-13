@@ -4,12 +4,9 @@ title: Laravel Services
 ---
 
 <h2>x.x SERVICES</h2>
-<p>Services, while not an official part of Laravel, are a popular architectural pattern used by many developers to encapsulate and organize an application's business logic. This pattern, which creates a layer between controllers and models, offers benefits such as separation of concerns, code reusability, improved testability, better scalability, and easier maintainability. To implement Services in Laravel:</p>
+<p>Services, while not an official part of Laravel, are a popular architectural pattern used by many developers to encapsulate and organize an application's business logic. This pattern, which creates a layer between controllers and models, offers benefits such as separation of concerns, code reusability, improved testability, better scalability, and easier maintainability. To implement Services in Laravel, this is not to be confused with service containers which is a different thing:</p>
 
 <p>Create a Services directory in your app folder.</p>
-```
-php artisan make:provider EmailServiceProvider
-```
 
 <h3>Example Service:</h3>
 <div class="codesnippet-wrapper">
