@@ -15,8 +15,9 @@ title: Laravel Passkeys
 <li>Endpoints</li>
 <li>Middleware in routes</li>
 
-<h3>Step 1. Create a Laravel project:</h3>
+<h3>Step 1. Create a one to many</h3>
 <p>“projectname” can be changed to desired name.</p>
 ```
-code
+php artisan install:api
+composer require web-auth/webauthn-lib
 ```
