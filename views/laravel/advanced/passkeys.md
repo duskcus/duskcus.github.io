@@ -6,24 +6,22 @@ title: Laravel Passkeys
 <h2>Passkeys</h2>
 
 <h3>What are passkeys</h3>
-<p>Passkeys is pretty much like second auth without the manual numeric code insertion which saves you a few seconds. Eitherway I'll show you how to implement this feature. For this feature I'd like to use laravel-webauthn as I find the package quite pleasing to use.</p>
-<p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
+<p>Passkeys are faster and safer than second auth, but its harder to implement. Eitherway I'll show you how to implement this feature.</p> 
 
-<h3>Parts</h3>
-<li>Javascript/Package inclusion</li>
-<li>Form</li>
-<li>Endpoints</li>
-<li>Middleware in routes</li>
+<h3>The following is used</h3>
+<li>https://laravel.com/docs/11.x/sanctum</li>
+<li>https://webauthn-doc.spomky-labs.com/</li>
+<li>https://simplewebauthn.dev/docs/packages/browser</li>
 
-<h3>Step 1. Create a one to many</h3>
-<p>Run the following command in your terminal.</p>
+
+<h3>Step 1. Install the following packages</h3>
 ```
-npm install @simplewebauthn/browser
 php artisan install:api
-composer require web-auth/webauthn-lib
 php artisan make:model Passkey -f -m -p --resource
 php artisan make:policy PasskeyPolicy --model=Passkey
 php artisan make:controller Api/PasskeyController
+composer require web-auth/webauthn-lib
+npm install @simplewebauthn/browser
 ```
 
 <p>Install alpine.js if you don't have it prebundled with livewire.</p>
@@ -112,9 +110,8 @@ document.addEventListener('alpine.init', () => {
 Alpine.start();
 ```
 
-https://laravel.com/docs/11.x/sanctum
-https://webauthn-doc.spomky-labs.com/
-https://simplewebauthn.dev/docs/packages/browser
+```
+```
 
-```
-```
+<p>An alternative way of implementing this is using laravel-webauthn.</p>
+<p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
