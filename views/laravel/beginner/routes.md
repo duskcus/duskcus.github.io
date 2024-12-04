@@ -129,4 +129,12 @@ Route::prefix('admin')->group(function () {
     });
 });</code></pre></div>
 
+<h3>Redirect:</h3>
+<div class="codesnippet-wrapper">
+  <div class="line-numbers">
+</div>
+<pre class="codesnippet"><code>Route::get('/dashboard', function () {
+    return redirect('/home/dashboard');
+});</code></pre></div>
+
 <a href="/views/laravel/controller"><button>Back</button></a>
