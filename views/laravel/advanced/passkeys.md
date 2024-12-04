@@ -25,7 +25,7 @@ npm install @simplewebauthn/browser
 ```
 
 
-<p>Install alpine.js if you don't have it prebundled with livewire.</p>
+<p>Optionally install alpine.js if you want to use it.</p>
 ```
 npm install alpinejs
 ```
