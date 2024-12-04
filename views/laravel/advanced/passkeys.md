@@ -18,6 +18,8 @@ title: Laravel Passkeys
 <h3>Step 1. Create a one to many</h3>
 <p>Run the following command in your terminal.</p>
 ```
+npm install alpinejs
+npm install @simplewebauthn/browser
 php artisan install:api
 composer require web-auth/webauthn-lib
 php artisan make:model Passkey -f -m -p --resource
@@ -78,7 +80,7 @@ Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])-
 
 ```
 
-<h3>Step 2. Edit js/app.js</h3>
+<h3>Step 3. Edit js/app.js</h3>
 <p>js/app.js</p>
 ```
 import './bootstrap';
@@ -103,10 +105,6 @@ document.addEventListener('alpine.init', () => {
 
 
 Alpine.start();
-```
-
-```
-npm install @simplewebauthn/browser
 ```
 
 https://laravel.com/docs/11.x/sanctum
