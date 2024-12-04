@@ -23,6 +23,10 @@ composer require web-auth/webauthn-lib
 ```
 
 ```
+php artisan make:model Passkey -f -m -p --resource
+```
+
+```
 php artisan make:provider AuthServiceProvider
 ```
 
