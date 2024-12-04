@@ -107,5 +107,4 @@ Alpine.start();
 ```
 ```
 
-<p>An alternative way of implementing this is using laravel-webauthn.</p>
-<p><a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
+<p>An alternative way of implementing this is using <a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
