@@ -21,3 +21,43 @@ title: Laravel Passkeys
 php artisan install:api
 composer require web-auth/webauthn-lib
 ```
+
+```
+php artisan make:provider AuthServiceProvider
+```
+
+```
+php artisan make:policy PasskeyPolicy --model=Passkey
+```
+
+```
+php artisan make:controller Api/PasskeyController
+```
+
+Api/PasskeyController
+```
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class PasskeyController extends Controller
+{
+    public function registerOptions() {}
+}
+
+```
+
+api.php
+```
+<?php
+
+use App\Http\Controllers\Api\PasskeyController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])->middleware('auth:sanctum');
+
+```
