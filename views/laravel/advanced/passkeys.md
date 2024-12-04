@@ -78,11 +78,15 @@ Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])-
 
 ```
 
+<h3>Step 2. Edit js/app.js</h3>
+<p>js/app.js</p>
 ```
 import './bootstrap';
 
 
-import Alpine from 'alpinejs'
+import Alpine from 'alpinejs';
+import axios from 'axios';
+import { startRegistration } from '@simplewebauthn/browser';
 
 window.Alpine = Alpine
 
@@ -90,11 +94,24 @@ document.addEventListener('alpine.init', () => {
     Alpine.data('registerPasskey', () => ({
         async register(){
             const options = await axios.get('/api/passkeys/register');
-            console.log(options.data);
+            const passkey = await startRegistration(options.data)
+
+            console.log(passkey);
         },
     }));
 });
 
 
 Alpine.start();
+```
+
+```
+npm install @simplewebauthn/browser
+```
+
+https://laravel.com/docs/11.x/sanctum
+https://webauthn-doc.spomky-labs.com/
+https://simplewebauthn.dev/docs/packages/browser
+
+```
 ```
