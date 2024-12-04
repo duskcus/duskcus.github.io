@@ -24,18 +24,14 @@ composer require web-auth/webauthn-lib
 npm install @simplewebauthn/browser
 ```
 
+
 <p>Install alpine.js if you don't have it prebundled with livewire.</p>
 ```
 npm install alpinejs
 ```
 
 
-```
-php artisan make:provider AuthServiceProvider
-```
-
-<h3>Step 2. Edit PasskeyController</h3>
-<p>Api/PasskeyController</p>
+<h3>Step 2. Edit the Api/PasskeyController</h3>
 ```
 <?php
 
@@ -70,8 +66,7 @@ class PasskeyController extends Controller
 }
 ```
 
-<h3>Step 2. Edit api.php</h3>
-<p>api.php</p>
+<h3>Step 3. Edit resources/routes/api.php</h3>
 ```
 <?php
 
@@ -83,8 +78,7 @@ Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])-
 
 ```
 
-<h3>Step 3. Edit js/app.js</h3>
-<p>js/app.js</p>
+<h3>Step 4. Edit resources/js/app.js</h3>
 ```
 import './bootstrap';
 
