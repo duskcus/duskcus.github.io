@@ -16,29 +16,21 @@ title: Laravel Passkeys
 <li>Middleware in routes</li>
 
 <h3>Step 1. Create a one to many</h3>
-<p>“projectname” can be changed to desired name.</p>
+<p>Run the following command in your terminal.</p>
 ```
 php artisan install:api
 composer require web-auth/webauthn-lib
-```
-
-```
 php artisan make:model Passkey -f -m -p --resource
+php artisan make:policy PasskeyPolicy --model=Passkey
+php artisan make:controller Api/PasskeyController
 ```
 
 ```
 php artisan make:provider AuthServiceProvider
 ```
 
-```
-php artisan make:policy PasskeyPolicy --model=Passkey
-```
-
-```
-php artisan make:controller Api/PasskeyController
-```
-
-Api/PasskeyController
+<h3>Step 2. Edit PasskeyController</h3>
+<p>Api/PasskeyController</p>
 ```
 <?php
 
@@ -73,7 +65,8 @@ class PasskeyController extends Controller
 }
 ```
 
-api.php
+<h3>Step 2. Edit api.php</h3>
+<p>api.php</p>
 ```
 <?php
 
