@@ -18,7 +18,6 @@ title: Laravel Passkeys
 <h3>Step 1. Create a one to many</h3>
 <p>Run the following command in your terminal.</p>
 ```
-npm install alpinejs
 npm install @simplewebauthn/browser
 php artisan install:api
 composer require web-auth/webauthn-lib
@@ -26,6 +25,12 @@ php artisan make:model Passkey -f -m -p --resource
 php artisan make:policy PasskeyPolicy --model=Passkey
 php artisan make:controller Api/PasskeyController
 ```
+
+<p>Install alpine.js if you don't have it prebundled with livewire.</p>
+```
+npm install alpinejs
+```
+
 
 ```
 php artisan make:provider AuthServiceProvider
