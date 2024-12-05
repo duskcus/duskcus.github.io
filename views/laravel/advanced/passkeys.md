@@ -31,9 +31,13 @@ npm install alpinejs
 ```
 composer require livewire/livewire
 ```
-<p>To use alpine in livewire you need this tag in your blade file.</p>
+<p>To use alpine with livewire installed you need this tag in your blade file.</p>
 ```
 @livewireScripts
+```
+<p>To debug whether alpine is running you can simply type this in dev tools.</p>
+```
+Alpine
 ```
 
 <h3>Step 2. Edit the passkey migration</h3>
