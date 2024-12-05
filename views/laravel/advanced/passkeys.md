@@ -27,7 +27,14 @@ npm install @simplewebauthn/browser
 ```
 npm install alpinejs
 ```
-
+<p>Or install livewire instead as it is bundled with alpine.js.</p>
+```
+composer require livewire/livewire
+```
+<p>To use alpine in livewire you need this tag in your blade file.</p>
+```
+@livewireScripts
+```
 
 <h3>Step 2. Edit the passkey migration</h3>
 ```
@@ -67,57 +74,7 @@ return new class extends Migration
 ```
 
 
-<h3>Step 3. Edit the passkey factory</h3>
-```
-<?php
-
-namespace Database\Factories;
-
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
-
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
- */
-class UserFactory extends Factory
-{
-    /**
-     * The current password being used by the factory.
-     */
-    protected static ?string $password;
-
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
-        ];
-    }
-
-    /**
-     * Indicate that the model's email address should be unverified.
-     */
-    public function unverified(): static
-    {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
-    }
-}
-
-```
-
-
-<h3>Step 4. Edit Controllers/PasskeyController</h3>
+<h3>Step 3. Edit Controllers/PasskeyController</h3>
 ```
 <?php
 
@@ -236,7 +193,7 @@ class PasskeyController extends Controller
 ```
 
 
-<h3>Step 5. Edit the Controllers/Api/PasskeyController</h3>
+<h3>Step 4. Edit the Controllers/Api/PasskeyController</h3>
 ```
 <?php
 
@@ -302,7 +259,7 @@ class PasskeyController extends Controller
 
 ```
 
-<h3>Step 6. Edit resources/routes/api.php</h3>
+<h3>Step 5. Edit resources/routes/api.php</h3>
 ```
 <?php
 
@@ -313,7 +270,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])->middleware('auth:sanctum');
 ```
 
-<h3>Step 5. Edit resources/js/app.js</h3>
+<h3>Step 6. Edit resources/js/app.js</h3>
 ```
 import './bootstrap';
 
@@ -337,9 +294,6 @@ document.addEventListener('alpine.init', () => {
 
 
 Alpine.start();
-```
-
-```
 ```
 
 <p>An alternative way of implementing this is using <a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
