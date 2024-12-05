@@ -189,7 +189,6 @@ class PasskeyController extends Controller
         return to_route('profile.edit')->withFragment('managePasskeys');
     }
 }
-
 ```
 
 
@@ -256,44 +255,113 @@ class PasskeyController extends Controller
         return JsonSerializer::serialize($options);
     }
 }
-
 ```
+
 
 <h3>Step 5. Edit resources/routes/api.php</h3>
 ```
 <?php
 
 use App\Http\Controllers\Api\PasskeyController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])->middleware('auth:sanctum');
+Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])
+    ->middleware('auth:sanctum');
+
+Route::get('/passkeys/authenticate', [PasskeyController::class, 'authenticateOptions']);
 ```
+
 
 <h3>Step 6. Edit resources/js/app.js</h3>
 ```
-import './bootstrap';
+import {
+    browserSupportsWebAuthn,
+    startAuthentication,
+    startRegistration,
+} from '@simplewebauthn/browser'
+import './bootstrap'
 
+// import Alpine from 'alpinejs'
+import { passkeyFailed } from './lang'
+import axios from 'axios'
 
-import Alpine from 'alpinejs';
-import axios from 'axios';
-import { startRegistration } from '@simplewebauthn/browser';
+// window.Alpine = Alpine
 
-window.Alpine = Alpine
-
-document.addEventListener('alpine.init', () => {
+document.addEventListener('alpine:init', () => {
     Alpine.data('registerPasskey', () => ({
-        async register(){
-            const options = await axios.get('/api/passkeys/register');
-            const passkey = await startRegistration(options.data)
+        name: '',
+        errors: null,
+        browserSupportsWebAuthn,
+        async register(form) {
+            const locale = document.documentElement.getAttribute('lang') ?? 'en'
 
-            console.log(passkey);
+            this.errors = null
+
+            if (!this.browserSupportsWebAuthn()) {
+                return
+            }
+
+            const options = await axios.get('/api/passkeys/register', {
+                params: { name: this.name },
+                validateStatus: (status) => [200, 422].includes(status),
+            })
+
+            if (options.status === 422) {
+                this.errors = options.data.errors
+                return
+            }
+
+            let passkey
+
+            try {
+                passkey = await startRegistration(options.data)
+            } catch (e) {
+                this.errors = { name: [passkeyFailed[locale]] }
+                return
+            }
+
+            form.addEventListener('formdata', ({ formData }) => {
+                formData.set('passkey', JSON.stringify(passkey))
+            })
+
+            form.submit()
         },
-    }));
-});
+    }))
 
+    Alpine.data('authenticatePasskey', () => ({
+        showPasswordField: !browserSupportsWebAuthn(),
+        email: '',
+        async authenticate(form, manualSubmission = false) {
+            if (this.showPasswordField) {
+                return form.submit()
+            }
 
-Alpine.start();
+            let answer
+
+            try {
+                const options = await axios.get('/api/passkeys/authenticate', {
+                    params: { email: this.email },
+                })
+                answer = await startAuthentication(options.data)
+            } catch (e) {
+                if (manualSubmission) {
+                    this.showPasswordField = true
+                }
+
+                return
+            }
+
+            form.action = '/passkeys/authenticate'
+            form.addEventListener('formdata', ({ formData }) => {
+                formData.set('answer', JSON.stringify(answer))
+            })
+
+            form.submit()
+        },
+    }))
+})
+
+// Alpine.start()
 ```
 
 <p>An alternative way of implementing this is using <a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
