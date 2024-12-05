@@ -343,3 +343,4 @@ Alpine.start();
 ```
 
 <p>An alternative way of implementing this is using <a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
+<p>This one looks promising but is still in development <a href="https://github.com/spatie/laravel-passkeys">https://github.com/spatie/laravel-passkeys</a></p>
