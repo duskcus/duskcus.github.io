@@ -379,5 +379,15 @@ document.addEventListener('alpine:init', () => {
 // Alpine.start()
 ```
 
+<h3>Checklist</h3>
+<li>Packages/dependencies</li>
+<li>Migration tables</li>
+<li>CRUD for passkeys</li>
+<li>Endpoint Resource Controller</li>
+<li>Sanctum API controller</li>
+<li>Routes for web and api</li>
+<li>app.js code</li>
+<li>Correct forms</li>
+
 <p>An alternative way of implementing this is using <a href="https://github.com/asbiin/laravel-webauthn">https://github.com/asbiin/laravel-webauthn</a></p>
 <p>This one looks promising but is still in development <a href="https://github.com/spatie/laravel-passkeys">https://github.com/spatie/laravel-passkeys</a></p>
