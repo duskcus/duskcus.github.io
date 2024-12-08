@@ -35,7 +35,7 @@ composer require livewire/livewire
 ```
 @livewireScripts
 ```
-<p>To debug whether alpine is running you can simply type this in dev tools.</p>
+<p>To debug whether alpine is running you can simply typ this in dev tools console.</p>
 ```
 Alpine
 ```
