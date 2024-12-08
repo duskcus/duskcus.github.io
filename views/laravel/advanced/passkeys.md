@@ -12,7 +12,19 @@ title: Laravel Passkeys
 <li>https://laravel.com/docs/11.x/sanctum</li>
 <li>https://webauthn-doc.spomky-labs.com/</li>
 <li>https://simplewebauthn.dev/</li>
+<p>You also need a https host, that isn't localhost. I'll use ngrok for this.</p>
 
+<p>When using ngrok you probably want to edit your app/Providers/AppServiceProvider.php</p>
+```
+use Illuminate\Support\Facades\URL;
+
+public function boot()
+{
+    if (app()->environment('local')) {
+        URL::forceScheme('https');
+    }
+}
+```
 
 <h3>Step 1. Install the following packages</h3>
 ```
