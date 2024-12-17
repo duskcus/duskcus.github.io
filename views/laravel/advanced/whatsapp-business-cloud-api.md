@@ -8,9 +8,9 @@
 <li>Controller</li>
 <li>Route endpoint</li>
 
-<p>Add your phone number to user seeders/DatabaseSeeder for testing</p>
+<h3>1. Add your phone number to user seeders/DatabaseSeeder for testing</h3>
 
-<p>New user migration</p>
+<h3>2. New user migration</h3>
 ```
 <?php
 
@@ -64,7 +64,7 @@ return new class extends Migration
 };
 ```
 
-<p>Crate a controller</p>
+<h3>3. Create a controller</h3>
 ```
 <?php
 
@@ -210,7 +210,7 @@ class WhatsAppController extends Controller
     }
 ```
 
-<p>form</p>
+<h3>4. Create the form</h3>
 ```
 @extends('layouts.default')
 
@@ -302,4 +302,9 @@ class WhatsAppController extends Controller
         </div>
     </section>
 @endsection
+```
+
+<h3>5. Add the post endpoint</h3>
+```
+Route::post('/whatsapp', [WhatsAppController::class, 'sendTestMessage'])->name('whatsapp');
 ```
