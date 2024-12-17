@@ -2,7 +2,7 @@
 <li>Meta developer account</li>
 <li>WhatsApp business account</li>
 
-<p>Needed in app</p>
+<p>We need the following in the app</p>
 <li>Phone numbers migration</li>
 <li>Form</li>
 <li>Controller</li>
