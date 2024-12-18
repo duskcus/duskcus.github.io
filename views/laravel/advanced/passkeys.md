@@ -5,8 +5,7 @@ title: Laravel Passkeys
 
 <h2>Passkeys</h2>
 <h3>What are passkeys?</h3>
-<p>Passkeys are faster and safer than second auth, but its harder to implement. Eitherway I'll show you how to implement this feature.</p> 
-
+<p>Passkeys are faster and safer than second auth, but its harder to implement. Eitherway I'll show you how to implement this feature.</p>
 
 <h3>The following is used</h3>
 <li>https://laravel.com/docs/11.x/sanctum</li>
@@ -20,40 +19,52 @@ use Illuminate\Support\Facades\URL;
 
 public function boot()
 {
-    if (app()->environment('local')) {
-        URL::forceScheme('https');
-    }
+if (app()->environment('local')) {
+URL::forceScheme('https');
 }
+}
+
 ```
 
 <h3>Step 1. Install the following packages</h3>
 ```
+
 php artisan install:api
 php artisan make:model Passkey -f -m -p --resource
 php artisan make:policy PasskeyPolicy --model=Passkey
 php artisan make:controller Api/PasskeyController
 composer require web-auth/webauthn-lib
 npm install @simplewebauthn/browser
+
 ```
 <p>Optionally install alpine.js if you want to use it.</p>
 ```
+
 npm install alpinejs
+
 ```
 <p>Or install livewire instead as it is bundled with alpine.js.</p>
 ```
+
 composer require livewire/livewire
+
 ```
 <p>To use alpine with livewire installed you need this tag in your blade file.</p>
 ```
+
 @livewireScripts
+
 ```
 <p>To debug whether alpine is running you can simply typ this in dev tools console.</p>
 ```
+
 Alpine
+
 ```
 
 <h3>Step 2. Edit the passkey migration</h3>
 ```
+
 <?php
 
 use App\Models\User;
