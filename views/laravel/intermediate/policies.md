@@ -4,9 +4,9 @@ title: Laravel Policies
 ---
 
 ```
-php artisan make:policy PostPolicy
+php artisan make:policy ProductPolicy
 ```
 
 ```
-php artisan make:policy PostPolicy --model=Post
+php artisan make:policy ProductPolicy --model=Product
 ```
