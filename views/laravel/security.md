@@ -6,7 +6,6 @@
 <li>Gates or policies for secured routes</li>
 
 
-
 <h3>Laravel Security Packages:</h3>
 <p>Gate = Static admin and roles.</p>
 <p>Laravel Fortify = Breeze without the garbage files, pretty good.</p>
