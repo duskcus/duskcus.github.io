@@ -3,6 +3,8 @@
 <li>Test input fields</li>
 <li>Be sure to turn off debug in env APP_DEBUG=false</li>
 <li>Be sure to turn off local in env APP_ENV=production</li>
+<li>Gates or policies for secured routes</li>
+
 
 
 <h3>Laravel Security Packages:</h3>
