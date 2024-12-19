@@ -8,6 +8,7 @@ title: Laravel Policies
 php artisan make:policy ProductPolicy
 ```
 
+<p>This gives a template version of the policy.</p>
 ```
 php artisan make:policy ProductPolicy --model=Product
 ```
