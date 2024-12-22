@@ -8,7 +8,7 @@ title: Laravel Middleware
 <p>Laravel has specific naming schemes for policies for auto detection, it often uses a model reference and ends with Policy.</p>
 
 ```
-php artisan make:middleware AuthenticationMiddleware
+php artisan make:middleware AuthMiddleware
 ```
 
 <p>Add your middleware to your bootstrap/app.php file.</p>
@@ -16,24 +16,39 @@ php artisan make:middleware AuthenticationMiddleware
 ```
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Configuration\Exceptions;
-use Illuminate\Foundation\Configuration\Middleware;
+namespace App\Http\Middleware;
 
-return Application::configure(basePath: dirname(**DIR**))
-->withRouting(
-web: **DIR**.'/../routes/web.php',
-api: **DIR**.'/../routes/api.php',
-commands: **DIR**.'/../routes/console.php',
-health: '/up',
-)
-->withMiddleware(function (Middleware $middleware) {
-$middleware->alias([
-'AuthenticationMiddleware' => \App\Http\Middleware\AuthenticationMiddleware::class,
-]);
-})
-->withExceptions(function (Exceptions $exceptions) {
-//
-})->create();
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
 
+class AuthMiddleware
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        // If the user is not authenticated, redirect them to the login page
+        if (!Auth::check()) {
+            // Check if the request is for a route other than login or register
+            if (!$request->is('login') && !$request->is('register')) {
+                // return redirect('/login');
+                // abort(403); // Redirect to dashboard if authenticated
+                abort(404); // Fake message for unauthorized people, but mostly hackers
+            }
+        } else {
+            // If the user is authenticated, redirect to the dashboard if accessing login or register
+            if ($request->is('login') || $request->is('register')) {
+                return redirect('/dashboard');
+            }
+        }
+
+        // Continue with the request if no conditions are met
+        return $next($request);
+    }
+}
 ```
