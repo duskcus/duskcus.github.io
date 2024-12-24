@@ -34,20 +34,16 @@ title: Laravel Introduction
 <ul>
   <li>1. Webshop Setup</li>
       <ul>
-        <li>Setting up front-end, you'll learn to make a CRUD.</li>
+        <li>You'll learn to make a CRUD.</li>
       </ul>
-  <li>2. Webshop Logic</li>
+  <li>2. Clean Code</li>
       <ul>
-        <li>Setting up back-end logic, you'll learn to implement relations and authentication.</li>
+        <li>The proper way for integrating SOLID and DRY code.</li>
       </ul>
-  <li>3. Admin Dashboard</li>
+  <li>3. Cookbook</li>
       <ul>
-        <li>Both front-end and back-end with Livewire/JavaScript, you'll learn how to integrate ERP functionality onto the webshop</li>
+        <li>Performance/productivity optimisations and more third party integrations.</li>
       </ul>
-  <li>4. Performance Boosting</li>
-    <ul>
-      <li>We start incorperating asynchronous code with Laravel Octane.</li>
-    </ul>
 </ul>
 
 
