@@ -19,7 +19,8 @@ npm run dev
 php artisan migrate:fresh --seed
 php artisan make:model Product --controller --resource --requests --migration --seed
 php artisan make:livewire componentName
-php artisan make:middleware MiddlewareName</code></pre></div>
+php artisan make:middleware ProductMiddleware
+php artisan make:policy ProductPolicy --model=Product</code></pre></div>
 
 <h3>Caching Commands:</h3>
 <div class="codesnippet-wrapper">
