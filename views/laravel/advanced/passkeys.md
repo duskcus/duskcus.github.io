@@ -18,53 +18,50 @@ title: Laravel Passkeys
 use Illuminate\Support\Facades\URL;
 
 public function boot()
-{
-if (app()->environment('local')) {
-URL::forceScheme('https');
+    {
+    if (app()->environment('local')) {
+    URL::forceScheme('https');
+    }
 }
-}
-
 ```
 
 <h3>Step 1. Install the following packages</h3>
 ```
-
 php artisan install:api
 php artisan make:model Passkey -f -m -p --resource
 php artisan make:policy PasskeyPolicy --model=Passkey
 php artisan make:controller Api/PasskeyController
 composer require web-auth/webauthn-lib
 npm install @simplewebauthn/browser
-
 ```
+
 <p>Optionally install alpine.js if you want to use it.</p>
-```
 
+```
 npm install alpinejs
-
 ```
+
 <p>Or install livewire instead as it is bundled with alpine.js.</p>
-```
 
+```
 composer require livewire/livewire
-
 ```
+
 <p>To use alpine with livewire installed you need this tag in your blade file.</p>
-```
 
+```
 @livewireScripts
-
 ```
+
 <p>To debug whether alpine is running you can simply typ this in dev tools console.</p>
+
 ```
-
 Alpine
-
 ```
 
 <h3>Step 2. Edit the passkey migration</h3>
-```
 
+```
 <?php
 
 use App\Models\User;
@@ -101,6 +98,7 @@ return new class extends Migration
 
 
 <h3>Step 3. Edit Controllers/PasskeyController</h3>
+
 ```
 <?php
 
@@ -219,6 +217,7 @@ class PasskeyController extends Controller
 
 
 <h3>Step 4. Edit the Controllers/Api/PasskeyController</h3>
+
 ```
 <?php
 
@@ -285,6 +284,7 @@ class PasskeyController extends Controller
 
 
 <h3>Step 5. Edit resources/routes/api.php</h3>
+
 ```
 <?php
 
@@ -299,6 +299,7 @@ Route::get('/passkeys/authenticate', [PasskeyController::class, 'authenticateOpt
 
 
 <h3>Step 6. Edit resources/js/app.js</h3>
+
 ```
 import {
     browserSupportsWebAuthn,
