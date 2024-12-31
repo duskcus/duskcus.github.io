@@ -59,7 +59,7 @@ Example of a layout page we’ll call later.</p>
         &lt;!-- Logo --&gt;
         &lt;div class="flex items-center flex-shrink-0 text-white hover:text-gray-300 mr-6"&gt;
             &lt;!-- Logo Image --&gt;
-            &lt;span class="font-semibold text-xl ml-2 mr-6"&gt;Logo&lt;/span&gt;
+            &lt;a href="#" class="font-semibold text-xl ml-2 mr-6"&gt;Logo&lt;/a&gt;
         &lt;/div&gt;
 
         &lt;!-- Navigation Links --&gt;
