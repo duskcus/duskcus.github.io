@@ -9,7 +9,7 @@ title: Laravel Passkeys
 
 <h3>The following is used</h3>
 <li><a></a>https://laravel.com/docs/11.x/sanctum/</a></li>
-<li><a>https://webauthn-doc.spomky-labs.com//</a></li>
+<li><a>https://webauthn-doc.spomky-labs.com/</a></li>
 <li><a>https://simplewebauthn.dev/</a></li>
 <p>You also need a https host, that isn't localhost. I'll use ngrok for this.</p>
 
