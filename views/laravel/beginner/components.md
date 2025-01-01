@@ -54,26 +54,26 @@ Example of a layout page we’ll call later.</p>
 <p>Example of a blade file that would replace &#64;include('header'):</p>
 <div class="codesnippet-wrapper">
   <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-base-300 p-4"&gt;
+  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-base-300 py-4"&gt;
     &lt;div class="max-w-7xl mx-auto flex justify-between items-center"&gt;
         &lt;!-- Logo --&gt;
-        &lt;div class="flex items-center flex-shrink-0 text-white hover:text-gray-300 mr-6"&gt;
+        &lt;div class="flex items-center flex-shrink-0 text-base-content hover:text-gray-300 mr-6"&gt;
             &lt;!-- Logo Image --&gt;
-            &lt;a href="#" class="font-semibold text-xl ml-2 mr-6"&gt;Logo&lt;/a&gt;
+            &lt;a href="#" class="font-semibold text-xl"&gt;Logo&lt;/a&gt;
         &lt;/div&gt;
 
         &lt;!-- Navigation Links --&gt;
         &lt;div class="hidden md:block"&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
                 Home
             &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
                 Products
             &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4"&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
                 About
             &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300"&gt;
+            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300"&gt;
                 Contact
             &lt;/a&gt;
         &lt;/div&gt;
@@ -87,7 +87,7 @@ Example of a layout page we’ll call later.</p>
   <div class="line-numbers"></div>
   <pre class="codesnippet"><code>&lt;!-- Footer --&gt;
 &lt;footer&gt;
-    &lt;div class="bg-base-100 text-center py-3 text-white"&gt;
+    &lt;div class="bg-base-300 text-center py-3 text-base-content"&gt;
         &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/footer&gt;</code></pre></div>
