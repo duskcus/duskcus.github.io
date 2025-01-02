@@ -25,6 +25,12 @@ public function boot()
 }
 ```
 
+<p>Also make sure to have the right link in the APP_URL otherwise passkeys can break on register and or authentication</p>
+
+```
+APP_URL=https://ngroklink
+```
+
 
 <h3>Step 1. Install the following packages</h3>
 ```
