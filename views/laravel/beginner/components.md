@@ -31,8 +31,9 @@ Example of a layout page we’ll call later.</p>
 &lt;meta charset="UTF-8"&gt;
 &lt;title&gt;&#123;&#123; config('app.name', 'Laravel') &#125;&#125;&lt;/title&gt;
 &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+&lt;<meta name="csrf-token" content="{{ csrf_token() }}">&gt;
 &lt;head&gt;
-    &#64;vite('resources/css/app.css')
+    &#64;vite('resources/css/app.css', 'resources/js/app.js'])
 &lt;/head&gt;
 
 &lt;body class="mx-auto bg-base-300"&gt;
