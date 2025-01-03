@@ -47,6 +47,8 @@ Example of a layout page we’ll call later.</p>
 
     &#64;include('components.footer')
 
+    &lt;!-- @livewireScripts --&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;</code></pre></div>
 
