@@ -54,6 +54,6 @@ Example:</p> <div wire:poll.5s="refreshData">
 <p>Note that modifiers can be stacked onto eachother.</p>
 <ul>
   <li>wire:model.live</li>
-  <li>wire:model.debounce.500ms="search"</li>
+  <li>wire:model.live.debounce.500ms="search"</li>
   <li>wire:model.live.throttle.1s="liveSearch"</li>
 </ul>
