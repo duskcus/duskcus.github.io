@@ -7,17 +7,15 @@ title: Laravel Seeders
 <h3>Creating Seeders:</h3>
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
 
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan make:seeder <span style="color: red;">Product</span>Seeder</code></pre></div>
+```
+php artisan make:seeder ProductSeeder
+```
 
 <h3>Example Seeder:</h3>
 <p>You can make seeders to quickly fill your database with data when developing, this is both useful for deployment as it is for working with others. To make a seeder you need to use the following command, and make sure to CamelCase the name.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code><?php
+
+```
+<?php
 
 namespace Database\Seeders;
 
@@ -46,7 +44,8 @@ class ProductSeeder extends Seeder
             Product::create($product);
         }
     }
-}</code></pre></div>
+}
+```
 
 <h3>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder:</h3>
 <div class="codesnippet-wrapper">
@@ -58,10 +57,9 @@ class ProductSeeder extends Seeder
   $this->call(ProductSeeder::class);</code></pre></div>
 
 <h3>DatabaseSeeder Example:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code><?php
+
+```
+<?php
 
 namespace Database\Seeders;
 
@@ -85,20 +83,21 @@ class DatabaseSeeder extends Seeder
 
         $this->call(ProductSeeder::class);
     }
-}</code></pre></div>
+}
+```
 
 <h3>Running Seeders:</h3>
 <p>You can run your seeder with the following command:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan db:seed ProductSeeder</code></pre></div>
+
+```
+php artisan db:seed ProductSeeder
+```
 
 <p>Alternatively, you can also migrate fresh and seed:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan migrate:fresh --seed</code></pre></div>
+
+```
+php artisan migrate:fresh --seed
+```
 
 <a href="/views/laravel/migrations"><button>Back</button></a>
 <a href="/views/laravel/components"><button>Next</button></a>
