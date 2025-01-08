@@ -6,16 +6,14 @@ title: Laravel Models
 <h2>1.2 MODELS</h2>
 <p>Models are a bit like blueprints, they are often specifically made to communicate between a controller and a view or contain the logic for interacting with a database. Laravel expects it to be a capilised singular noun so what you would type to make one would be:</p>
 
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan make:model <span style="color: red;">Product</span></code></pre></div>
+```
+php artisan make:model Product
+```
 
 <h3>Example Model:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code><?php
+
+```
+<?php
 
 namespace App\Models;
 
@@ -56,7 +54,8 @@ class Product extends Model
         'price' => 'integer',
         'stock' => 'integer',
     ];
-}</code></pre></div>
+}
+```
 
 <a href="/views/laravel/setup"><button>Back</button></a>
 <a href="/views/laravel/migrations"><button>Next</button></a>
