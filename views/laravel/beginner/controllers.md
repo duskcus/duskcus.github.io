@@ -7,24 +7,23 @@ title: Laravel Controllers
 
 <h3>Creating Controllers:</h3>
 <p>To simply make a controller use this command.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan make:controller <span style="color:red;">Product</span>Controller</code></pre></div>
+
+```
+php artisan make:controller ProductController
+
+```
 
 <p>Laravel also has an alternative option for CRUD applications, here routes will automaticly created.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>php artisan make:controller <span style="color:red;">Product</span>Controller –-resource</code></pre></div>
 
+```
+php artisan make:controller ProductController –-resource
+```
 
 <h3>Example Controller Logic:</h3>
 <p>For this example we will look at a resource controlller as it shows a lot of common functionality:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code><?php
+
+```
+<?php
 
 namespace App\Http\Controllers;
 
@@ -136,7 +135,7 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
 }
-</code></pre></div>
+```
 
 
 <a href="/views/laravel/components"><button>Back</button></a>
