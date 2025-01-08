@@ -24,90 +24,85 @@ title: Laravel Components
 <h3>Step 2. Create a file “default.blade.php” within “views/layouts/”:</h3>
 <p>Use all the code snippets presented in the example. You will probably need a formatting extension.
 Example of a layout page we’ll call later.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&lt;!DOCTYPE html&gt;
-&lt;html data-theme="dark" lang="&#123;&#123; str_replace('_', '-', app()-&gt;getLocale()) &#125;&#125;"&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;&#123;&#123; config('app.name', 'Laravel') &#125;&#125;&lt;/title&gt;
-&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
-&lt;<meta name="csrf-token" content="{{ csrf_token() }}">&gt;
-&lt;head&gt;
-    &#64;vite('resources/css/app.css', 'resources/js/app.js'])
-&lt;/head&gt;
 
-&lt;body class="mx-auto bg-base-300"&gt;
-    &#123;&#123;-- INCLUDES FOR COMPONENTS --&#125;&#125;
-    &#64;include('components.header')
+```
+<!DOCTYPE html>
+<html data-theme="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @vite('resources/css/app.css')
+</head>
 
-    &lt;main&gt;
-        &#123;&#123;-- YIELD FOR CONTENT --&#125;&#125;
-        &#64;yield('content')
-    &lt;/main&gt;
+<body class="mx-auto bg-base-100">
+    {{-- INCLUDES FOR COMPONENTS --}}
+    @include('components.header')
 
-    &#64;include('components.footer')
+    <main class="py-4 mx-[10%]">
+        {{-- YIELD FOR CONTENT --}}
+        @yield('content')
+    </main>
 
-    &#123;&#123;-- @livewireScripts --&#125;&#125;
+    @include('components.footer')
 
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div>
+</body>
+</html>
+```
 
 
 <h3>Step 3. Create a file “header.blade.php” within “views/components/”:</h3>
 <p>Example of a blade file that would replace &#64;include('header'):</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&lt;nav class="shadow-md bg-base-300 py-4"&gt;
-    &lt;div class="max-w-7xl mx-auto flex justify-between items-center"&gt;
-        &lt;!-- Logo --&gt;
-        &lt;div class="flex items-center flex-shrink-0 text-base-content hover:text-gray-300 mr-6"&gt;
-            &lt;!-- Logo Image --&gt;
-            &lt;a href="#" class="font-semibold text-xl"&gt;Logo&lt;/a&gt;
-        &lt;/div&gt;
 
-        &lt;!-- Navigation Links --&gt;
-        &lt;div class="hidden md:block"&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
+```
+<nav class="p-4 shadow-md bg-base-300">
+    <div class="flex items-center justify-between mx-auto max-w-7xl">
+        <!-- Logo -->
+        <div class="flex items-center flex-shrink-0 mr-6 text-white hover:text-gray-300">
+            <!-- Logo Image -->
+            <span class="ml-2 mr-6 text-xl font-semibold">Logo</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+            <a href="{{ route('home') }}"
+                class="link no-underline block mt-4 lg:inline-block lg:mt-0 mr-4
+                {{ request()->routeIs('Home') ? 'text-primary' : 'hover:opacity-75' }}">
                 Home
-            &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
-                Products
-            &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300 mr-4"&gt;
-                About
-            &lt;/a&gt;
-            &lt;a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-base-content hover:text-gray-300"&gt;
-                Contact
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;</code></pre></div>
+            </a>
+        </div>
+    </div>
+</nav>
+```
 
 
 <h3>Step 4. Create a file “footer.blade.php” within “views/components/”:</h3>
 <p>Example of a blade file that would replace &#64;include('footer'):</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&lt;!-- Footer --&gt;
-&lt;footer&gt;
-    &lt;div class="bg-base-300 text-center py-3 text-base-content"&gt;
-        &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/footer&gt;</code></pre></div>
+
+```
+<!-- Footer -->
+<footer>
+    <div class="py-3 text-center text-white bg-base-300">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </div>
+</footer>
+```
 
 
 <h3>Step 5. Create a file “index.blade.php” within “views/”:</h3>
 <p>Example of a blade file that would replace &#64;yield:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers"></div>
-  <pre class="codesnippet"><code>&#64;extends('layouts.default')
 
-&#123;&#123;-- @SECTION FOR THE START CONTENT --&#125;&#125;
-&#64;section('content')
-    &lt;section&gt;
+```
+@extends('layouts.default')
+
+{{-- @SECTION FOR THE START CONTENT --}}
+@section('content')
+    <section>
         hello world.
-    &lt;/section&gt;
-&#64;endsection</code></pre></div>
+    </section>
+@endsection
+```
 
 
 <p>You should have a functioning page by now. You can start replacing content within the @sections.</p>
