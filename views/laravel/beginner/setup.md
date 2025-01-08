@@ -16,13 +16,16 @@ title: Laravel Set-up
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“webshop” can be changed to your desired name.</p>
+
 ```
 laravel new webshop
 ```
 
 <h3>Step 2. Setup the .ENV file:</h3>
 <p>Most of the defaults should be fine, but these should be edited to work with MySQL. You can change webshop to your database name:</p>
-```DB_CONNECTION=mysql
+
+```
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=<span style="color: red;">webshop</span>
