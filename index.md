@@ -13,7 +13,7 @@ title: Home
 <h3>Guides Coming in the Future</h3>
 <button>Godot 4.3</button>
 <button>GitHub 2024</button>
-<button>Svelte 2024</button>
+<!-- <button>Svelte 2024</button> -->
 <button>Hacking 2024</button>
 
 <!-- <h3>Set-up Guides Development Environment</h3> -->
