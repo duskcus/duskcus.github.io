@@ -48,13 +48,13 @@ class ProductSeeder extends Seeder
 ```
 
 <h3>Lastly you will have to add the following lines inside app/database/seeders/DatabaseSeeder:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>// Beneath namespace
+
+```
+// Beneath namespace
   use App\Models\Product;
   // In public function run
-  $this->call(ProductSeeder::class);</code></pre></div>
+  $this->call(ProductSeeder::class);
+```
 
 <h3>DatabaseSeeder Example:</h3>
 
