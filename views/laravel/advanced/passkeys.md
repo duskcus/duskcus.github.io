@@ -9,8 +9,8 @@ title: Laravel Passkeys
 
 <h3>The following is used</h3>
 <li><a href="https://laravel.com/docs/11.x/sanctum/">https://laravel.com/docs/11.x/sanctum/</a></li>
-<li><a href="https://webauthn-doc.spomky-labs.com/">https://webauthn-doc.spomky-labs.com/</a></li>
-<li><a href="https://simplewebauthn.dev/">https://simplewebauthn.dev/</a></li>
+<li><a href="https://webauthn-doc.spomky-labs.com/">v5: https://webauthn-doc.spomky-labs.com/</a></li>
+<li><a href="https://simplewebauthn.dev/">v5.0.1: https://simplewebauthn.dev/</a></li>
 <p>You also need a https host, that isn't localhost. I'll use ngrok for this.</p>
 
 <p>When using ngrok you probably want to edit your app/Providers/AppServiceProvider.php</p>
@@ -36,7 +36,6 @@ APP_URL=https://ngroklink
 ```
 php artisan install:api
 php artisan make:model Passkey -f -m -p --resource
-php artisan make:policy PasskeyPolicy --model=Passkey
 php artisan make:controller Api/PasskeyController
 composer require web-auth/webauthn-lib
 npm install @simplewebauthn/browser
@@ -157,7 +156,7 @@ class PasskeyController extends Controller
         $publicKeyCredential = JsonSerializer::deserialize($data['answer'], PublicKeyCredential::class);
 
         if (! $publicKeyCredential->response instanceof AuthenticatorAssertionResponse) {
-            return to_route('profile.edit')->withFragment('managePasskeys');
+            return to_route('/user/profile')->withFragment('managePasskeys');
         }
 
         $passkey = Passkey::firstWhere('credential_id', $publicKeyCredential->rawId);
@@ -189,7 +188,7 @@ class PasskeyController extends Controller
 
         $request->session()->regenerate();
 
-        return to_route('dashboard');
+        return to_route('/user/profile');
     }
 
     /**
@@ -228,7 +227,7 @@ class PasskeyController extends Controller
             'data' => $publicKeyCredentialSource,
         ]);
 
-        return to_route('profile.edit')->withFragment('managePasskeys');
+        return to_route('/user/profile')->withFragment('managePasskeys');
     }
 
     /**
@@ -240,9 +239,10 @@ class PasskeyController extends Controller
 
         $passkey->delete();
 
-        return to_route('profile.edit')->withFragment('managePasskeys');
+        return to_route('/user/profile')->withFragment('managePasskeys');
     }
 }
+
 ```
 
 
@@ -283,7 +283,6 @@ class PasskeyController extends Controller
             ),
             challenge: Str::random(),
         );
-
         Session::flash('passkey-registration-options', $options);
 
         return JsonSerializer::serialize($options);
@@ -291,8 +290,7 @@ class PasskeyController extends Controller
 
     public function authenticateOptions(Request $request)
     {
-        $allowedCredentials = $request->query('email')
-            ? Passkey::whereRelation('user', 'email', $request->email)
+        $allowedCredentials = $request->query('email') ? Passkey::whereRelation('user', 'email', $request->email)
             ->get()
             ->map(fn(Passkey $passkey) => $passkey->data)
             ->map(fn(PublicKeyCredentialSource $publicKeyCredentialSource) => $publicKeyCredentialSource->getPublicKeyCredentialDescriptor())
@@ -321,8 +319,7 @@ class PasskeyController extends Controller
 use App\Http\Controllers\Api\PasskeyController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])
-    ->middleware('auth:sanctum');
+Route::get('/passkeys/register', [PasskeyController::class, 'registerOptions'])->middleware('auth:sanctum');
 
 Route::get('/passkeys/authenticate', [PasskeyController::class, 'authenticateOptions']);
 ```
@@ -331,18 +328,12 @@ Route::get('/passkeys/authenticate', [PasskeyController::class, 'authenticateOpt
 <h3>Step 6. Edit resources/js/app.js</h3>
 
 ```
-import {
-    browserSupportsWebAuthn,
-    startAuthentication,
-    startRegistration,
-} from '@simplewebauthn/browser'
 import './bootstrap'
+import { browserSupportsWebAuthn, startAuthentication, startRegistration } from '@simplewebauthn/browser'
+// import Alpine from 'alpinejs' // Uncomment if your using alpine without livewire
+// import { passkeyFailed } from './lang' // Example adding translations
 
-// import Alpine from 'alpinejs'
-import { passkeyFailed } from './lang'
-import axios from 'axios'
-
-// window.Alpine = Alpine
+// window.Alpine = Alpine // Uncomment if your using alpine without livewire
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('registerPasskey', () => ({
@@ -371,9 +362,13 @@ document.addEventListener('alpine:init', () => {
             let passkey
 
             try {
-                passkey = await startRegistration(options.data)
+                passkey = await startRegistration({
+                    optionsJSON: options.data,
+                    useAutoRegister: false
+                });
             } catch (e) {
-                this.errors = { name: [passkeyFailed[locale]] }
+                this.errors = { name: ['Passkey creation failed. Please try again.'] };
+                // this.errors = { name: [passkeyFailed[locale]] } // Example adding translations
                 return
             }
 
@@ -399,7 +394,10 @@ document.addEventListener('alpine:init', () => {
                 const options = await axios.get('/api/passkeys/authenticate', {
                     params: { email: this.email },
                 })
-                answer = await startAuthentication(options.data)
+                answer = await startAuthentication({
+                    optionsJSON: options.data,
+                    useAutoRegister: false
+                });
             } catch (e) {
                 if (manualSubmission) {
                     this.showPasswordField = true
@@ -420,20 +418,6 @@ document.addEventListener('alpine:init', () => {
 
 // Alpine.start()
 ```
-
-<p>If nothing shows up on your login screen it could be your .env file is not set to a stateful sanctum api</p>
-
-```
-use Illuminate\Support\Facades\URL;
-
-public function boot()
-    {
-    if (app()->environment('local')) {
-    URL::forceScheme('https');
-    }
-}
-```
-
 
 
 <h3>Checklist</h3>
