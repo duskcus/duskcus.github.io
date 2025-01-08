@@ -51,9 +51,10 @@ class ProductSeeder extends Seeder
 
 ```
 // Beneath namespace
-  use App\Models\Product;
-  // In public function run
-  $this->call(ProductSeeder::class);
+use App\Models\Product;
+
+// In public function run
+$this->call(ProductSeeder::class);
 ```
 
 <h3>DatabaseSeeder Example:</h3>
