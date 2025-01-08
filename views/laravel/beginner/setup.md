@@ -16,55 +16,43 @@ title: Laravel Set-up
 
 <h3>Step 1. Create a Laravel project:</h3>
 <p>“webshop” can be changed to your desired name.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>laravel new <span style="color: red;">webshop</span></code></pre></div>
+```
+laravel new webshop
+```
 
 <h3>Step 2. Setup the .ENV file:</h3>
 <p>Most of the defaults should be fine, but these should be edited to work with MySQL. You can change webshop to your database name:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>DB_CONNECTION=mysql
+```DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=<span style="color: red;">webshop</span>
 DB_USERNAME=root
-DB_PASSWORD=</code></pre></div>
+DB_PASSWORD=
+```
 
-<h3>Step 3. Open your folder in cmd/terminal and install Tailwind:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p</code></pre></div>
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
 <h3>Step 4. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
+
+```
 <code>@tailwind base;
 @tailwind components;
-@tailwind utilities;</code></pre></div>
+@tailwind utilities;
+```
 
 <h3>Step 5. Open your folder in cmd/terminal and install daisyUI:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>npm i -D daisyui@latest</code></pre></div>
+
+```
+npm i -D daisyui@latest
+```
 
 <h3>Step 6. Then add daisyUI to your Projectname/tailwind.config.js files:</h3>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>/** @type {import('tailwindcss').Config} */
+
+```
+/** @type {import('tailwindcss').Config} */
 export default {
     content: [
         "./resources/**/*.blade.php",
@@ -83,12 +71,11 @@ export default {
         themes: ["light", "dark", "<span style="color: red;">THEME YOU LIKE</span>"],
     },
   }</code></pre></div>
+```
 
 <p>Or you can use your own theme:</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet"><code>module.exports = {  //...
+```
+<code>module.exports = {  //...
   daisyui: {
     themes: [
       {
@@ -111,16 +98,16 @@ export default {
       },
     ],
   },
-}</code></pre></div>
+}
+```
 
 <h3>Step 7. Start host:</h3>
 <p>Commands to start server if you forgot. I recommend running it from the artisan serve path as I've experienced plenty of caching bugs etc when working with anything else.</p>
-<div class="codesnippet-wrapper">
-  <div class="line-numbers">
-</div>
-<pre class="codesnippet">
-<code>php artisan serve
-npm run dev</code></pre></div>
+
+```
+php artisan serve
+npm run dev
+```
 
 <a href="/views/laravel/"><button>Back</button></a>
 <a href="/views/laravel/components"><button>Next</button></a>
