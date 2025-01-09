@@ -10,7 +10,6 @@ title: Laravel Controllers
 
 ```
 php artisan make:controller ProductController
-
 ```
 
 <p>Laravel also has an alternative option for CRUD applications, here routes will automaticly created.</p>
