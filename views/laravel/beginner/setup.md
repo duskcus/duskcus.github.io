@@ -34,6 +34,7 @@ DB_PASSWORD=
 ```
 
 <h3>Step 3. Open your folder in cmd/terminal and install Tailwind:</h3>
+
 ```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
