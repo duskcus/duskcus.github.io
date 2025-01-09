@@ -41,7 +41,7 @@ npx tailwindcss init -p
 <h3>Step 4. Add the directives for each of Tailwind’s layers to your ./resources/css/app.css file:</h3>
 
 ```
-<code>@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
@@ -71,9 +71,9 @@ export default {
     darkMode: 'class', // Add this line to control dark mode via a class
     // Add the daisyui configuration here
     daisyui: {
-        themes: ["light", "dark", "<span style="color: red;">THEME YOU LIKE</span>"],
+        themes: ["THEME YOU LIKE"],
     },
-  }</code></pre></div>
+  }
 ```
 
 <p>Or you can use your own theme:</p>
