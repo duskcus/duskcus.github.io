@@ -80,7 +80,7 @@ export default {
 
 <p>Or you can use your own theme:</p>
 ```
-<code>module.exports = {  //...
+module.exports = {  //...
   daisyui: {
     themes: [
       {

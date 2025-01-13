@@ -11,7 +11,7 @@ title: Laravel Cheat Sheet
 <h3>Important Commands:</h3>
 
 ```
-<code>php artisan key:generate
+php artisan key:generate
 php artisan serve
 npm run dev
 php artisan migrate:fresh --seed
@@ -23,7 +23,7 @@ php artisan make:policy ProductPolicy --model=Product
 
 <h3>Caching Commands:</h3>
 ```
-<code>php artisan optimize
+php artisan optimize
 php artisan cache:clear
 php artisan route:clear
 php artisan view:clear
