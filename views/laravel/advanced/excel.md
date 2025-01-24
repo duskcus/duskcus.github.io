@@ -21,3 +21,8 @@ php artisan make:export UsersExport --model=User
 php artisan make:import UsersImport --model=User
 ```
 
+<p>CSV example</p>
+
+```
+Excel::import(new UsersImport, 'users.csv', null, \Maatwebsite\Excel\Excel::CSV);
+```
