@@ -5,8 +5,8 @@ title: Laravel Cheat Sheet
 
 <h2>Relations</h2>
 
+<h3>Model</h3>
 ```
-//model
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -25,12 +25,18 @@ public function comments(): HasMany
 {
     return $this->hasMany(Comment::class)->chaperone();
 }
+```
 
-//migrations
+<h3>Migrations</h3>
+
+```
 $table->unsignedBigInteger('tag_id')->nullable(); // Added tag_id column
 $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
+```
 
-//controller
+<h3>Controller</h3>
+
+```
 $user = User::find(1);
 $posts = $user->posts;
 
