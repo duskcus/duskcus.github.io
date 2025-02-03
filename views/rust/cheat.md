@@ -9,6 +9,12 @@ title: Rust Cheat Sheet
 
 <h3>Important Commands:</h3>
 
+
+<p>Creates a project</p>
+```
+cargo init
+```
+
 ```
 cargo build
 cargo run
