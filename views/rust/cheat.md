@@ -42,7 +42,14 @@ fn main(){
 <p>Functions and parameters</p>
 
 ```
-fn name(){
-    printlin!("Function was called.");
+// function with parameter
+fn display(param_name:String){
+    printlin!("param_name = {}", param_name);
+}
+
+// calling
+fn main(){
+    let name:String = String::from("Michael");
+    display(name);
 }
 ```
