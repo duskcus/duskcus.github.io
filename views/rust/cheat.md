@@ -15,8 +15,17 @@ title: Rust Cheat Sheet
 cargo init
 ```
 
+<p>Builds a project</p>
 ```
 cargo build
 cargo run
 cargo check
+```
+
+<p>Logic</p>
+```
+fn main(){
+    let mut name:i32;
+}
+
 ```
