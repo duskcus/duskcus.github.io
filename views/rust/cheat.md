@@ -24,9 +24,10 @@ cargo run
 cargo check
 ```
 
-<p>Logic</p>
+<p>If statement</p>
 
 ```
+// comment in rust
 fn main(){
     let mut num:i32 = 5;
     if num > 0 {
@@ -35,5 +36,13 @@ fn main(){
     else {
         printlin!("Number is smaller than 0");
     }
+}
+```
+
+<p>Functions and parameters</p>
+
+```
+fn name(){
+    printlin!("Function was called.");
 }
 ```
