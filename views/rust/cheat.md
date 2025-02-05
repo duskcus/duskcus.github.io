@@ -25,7 +25,10 @@ cargo check
 <p>Logic</p>
 ```
 fn main(){
-    let mut name:i32;
+    let mut num:i32 = 5;
+    if num > 0 {
+        printlin!("Number is bigger than 0");
+    }
 }
 
 ```
