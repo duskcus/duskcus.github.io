@@ -11,11 +11,13 @@ title: Rust Cheat Sheet
 
 
 <p>Creates a project</p>
+
 ```
 cargo init
 ```
 
 <p>Builds a project</p>
+
 ```
 cargo build
 cargo run
@@ -23,12 +25,15 @@ cargo check
 ```
 
 <p>Logic</p>
+
 ```
 fn main(){
     let mut num:i32 = 5;
     if num > 0 {
         printlin!("Number is bigger than 0");
     }
+    else {
+        printlin!("Number is smaller than 0");
+    }
 }
-
 ```
