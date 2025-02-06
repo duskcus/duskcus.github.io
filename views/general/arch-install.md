@@ -13,6 +13,3 @@ archinstall
 
 <p>Use pulseaudio, except if you do like music.</p>
 
-```
-sudo pacman -S lxqt
-```
