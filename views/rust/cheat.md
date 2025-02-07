@@ -53,3 +53,9 @@ fn main(){
     display(name);
 }
 ```
+
+```
+rustup update
+```
+
+https://crates.io/
