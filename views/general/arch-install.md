@@ -1,15 +1,18 @@
 ---
 layout: default
-title: Arch Install Quick Guide
+title: Arch Quick Guide
 ---
 
-<p>Step 1.</p>
+<p>Use Endeavour OS</p>
+
+<p>Install steam</p>
 
 ```
-archinstall
+sudo pacman -S steam
 ```
 
-<p>Use EXT4 for filesystem</p>
+<p>Install Discord</p>
 
-<p>Use pulseaudio, except if you do like music.</p>
-
+```
+sudo pacman -S steam
+```
