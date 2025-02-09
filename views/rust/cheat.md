@@ -16,6 +16,12 @@ title: Rust Cheat Sheet
 cargo init
 ```
 
+<p>Add packages</p>
+
+```
+cargo add packagename
+```
+
 <p>Builds a project</p>
 
 ```
