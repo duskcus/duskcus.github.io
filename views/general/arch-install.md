@@ -3,7 +3,7 @@ layout: default
 title: Arch Quick Guide
 ---
 
-<p>Use Endeavour OS</p>
+<p>Pranked, use Endeavour OS</p>
 
 <p>Install steam</p>
 
