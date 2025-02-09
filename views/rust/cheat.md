@@ -22,6 +22,12 @@ cargo init
 cargo add packagename
 ```
 
+<p>Cleans project</p>
+
+```
+cargo clean
+```
+
 <p>Builds a project</p>
 
 ```
